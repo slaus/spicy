@@ -1,0 +1,23 @@
+{
+  "name": "spicy",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "slaus"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "2.*",
+    "bootstrap": "4.0",
+    "components-font-awesome": "4.7.0"
+  }
+}

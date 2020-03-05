@@ -1,0 +1,76 @@
+/*!
+ * Main content
+ */
+
+.main {
+    padding-top: 70px;
+
+    .section {
+
+      &-votes {
+        background: url("../images/bg5.jpg") center center no-repeat;
+        background-size: cover;
+        transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+        padding: 130px 0 90px 0;
+      }
+
+        &-subscribe {
+
+            &-form {
+
+                &-input {
+                    width: 500px;
+                    padding: 12px 20px 11px 20px;
+                    border-radius: 0;
+                    background-color: rgba(255, 255, 255, 0);
+                    color: #79787F;
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 1.4em;
+                    border: 5px solid #e3e3e3;
+                    border-right: none;
+                    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0);
+
+                  @include md() {
+                    width: 400px;
+                  }
+
+                  @include sm() {
+                    width: 300px;
+                  }
+
+                  @include xs() {
+                    width: 200px;
+                  }
+                }
+
+                &-submit {
+                    background-color: $green;
+                    padding: 10px 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 16px;
+                    font-weight: 300;
+                    height: 55px;
+                    border-radius: 0;
+                    color: $white;
+                    text-transform: uppercase;
+                    border: 5px solid #e3e3e3;
+                    border-left: none;
+
+                  @include xs() {
+                    padding: 10px 20px;
+                  }
+
+                    &:hover {
+                        text-decoration: none;
+                        background: $black;
+                        border: 5px solid #e3e3e3;
+                        border-left: none;
+                    }
+                }
+            }
+        }
+    }
+}
