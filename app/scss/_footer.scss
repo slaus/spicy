@@ -2,7 +2,7 @@
  * Footer content
  */
 
-#colophon {
+.footer {
     padding: 145px 0 60px 0;
     background-repeat: no-repeat;
     background-position: top center;
@@ -10,14 +10,20 @@
     background-image: url("../images/footer-bg.jpg");
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
 
-    .footer-item {
+    .footer__item {
         display: flex;
         flex-direction: column;
         margin-bottom: 25px;
 
         &:hover {
-            & .footer-item-title {
+            & .footer__item-title {
                 color: $green;
+            }
+
+            & .fa {
+                -webkit-animation: scallEffect 2s ease-out 50ms;
+                -moz-animation: scallEffect 2s ease-out 50ms;
+                animation: scallEffect 2s ease-out 50ms;
             }
         }
 
@@ -62,6 +68,12 @@
         }
 
         &-social {
+
+            &:hover .fa {
+                -webkit-animation: scallEffect 2s ease-out 50ms;
+                -moz-animation: scallEffect 2s ease-out 50ms;
+                animation: scallEffect 2s ease-out 50ms;
+            }
 
             & a {
                 display: inline-flex;

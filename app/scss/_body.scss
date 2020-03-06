@@ -9,6 +9,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,6 +17,35 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 32px;
     font-weight: 400;
     line-height: 1.344em;
+}
+
+.hi-btn {
+  background-color: $green;
+  padding: 10px 30px;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  height: 55px;
+  border-radius: 0;
+  color: $white;
+  text-transform: uppercase;
+  border: 5px solid #e3e3e3;
+
+  @include md() {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  &:hover {
+    text-decoration: none;
+    background: $black;
+    border: 5px solid #e3e3e3;
+    cursor: pointer;
+    color: $white;
+  }
 }
 
 /* error if tags without attr */
@@ -83,6 +113,9 @@ a, a:hover {
   &:hover {
     background: $green;
     text-decoration: none;
+    -webkit-animation: scallEffect 1.5s ease-in 50ms;
+    -moz-animation: scallEffect 1.5s ease-in 50ms;
+    animation: scallEffect 1.5s ease-in 50ms;
   }
 }
 
