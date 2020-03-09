@@ -20,6 +20,19 @@ $('#back-to-top').click(function () {
 //Carousel responsive
 $(function () {
 
+    $("#cart-contents").click(function (e) {
+        e.preventDefault();
+        $("#widget_cart-2").toggleClass("show_shopping_cart");
+    });
+
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest(".cart.togg").length) {
+            $("#widget_cart-2").removeClass("show_shopping_cart");
+        }
+        e.stopPropagation();
+    });
+
+
     // Set up the carousel's "state"
     var prevIndex = 2;
     var currentIndex = 0;

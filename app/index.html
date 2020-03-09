@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>gulp-starter</title>
+    <title>Spicy</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -63,7 +63,7 @@
 
 <body>
 <div class="wrapper">
-    <header class="header">
+    <!--header class="header">
         <nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -105,6 +105,452 @@
                 </form>
             </div>
         </nav>
+    </header-->
+    <header class="header site-header site-header-fix">
+        <div class="topbar-outer header-fix">
+              <div class="container"></div>
+        </div>
+        <div class="site-header-main header-fix">
+            <div class="header-main">
+                <!-- Start header_Top -->
+                <!-- End header_Top -->
+                <!-- Start header_Center -->
+                <div class="header-middle">
+                    <div class="container">
+                        <!-- Header LOGO-->
+                        <div class="header-logo">
+                            <a href="" title="" rel="home">
+                                <img alt="" src="images/logo.png">
+                            </a>
+                        </div>
+                        <!-- Header LOGO-->
+                        <!-- Header Mob LOGO-->
+                        <div class="header-mob-logo">
+                            <a href="" title="" rel="home">
+                                <img alt="" src="images/logo.png">
+                            </a>
+                        </div>
+                        <!-- Header Mob LOGO-->
+                        <!-- Start header_left -->
+                        <div class="header-left">
+                            <div class="header-service">
+                                <div class="header-service-block">
+                                    <div class="service-inner">
+                                        <span class="topservice-contact-title">Нужна помощь ?</span>
+                                        <span class="topservice-contact-label"><a href="" class="animate">(+7) 995 789 1234</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Cart -->
+                        <div class="header-cart headercart-block">
+                            <div class="cart togg">
+                                <div class="shopping_cart tog" title="Перейти в корзину">
+                                    <span class="cart-icon"></span>
+                                    <a id="cart-contents" class="cart-contents" href="" title="Смотреть содержимое корзины">
+                                        <div class="cart-price"><span class="label">Моя корзина</span>
+                                            <div class="cart-qty">1</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--aside class="widget widget_shopping_cart tab_content">
+                                    <h3 class="widget-title">Cart</h3>
+                                    <div class="widget_shopping_cart_content">
+                                        <p class="cart__empty-message">Вы еще ничего не купили!</p>
+                                    </div>
+                                </aside-->
+                                <aside id="widget_cart-2" class="widget widget_shopping_cart tab_content animate">
+                                    <h3 class="widget-title">Корзина</h3>
+                                    <div class="widget_shopping_cart_content">
+                                        <ul class="mini-cart cart_list product_list_widget ">
+                                            <li class="mini-cart-item mini_cart_item">
+                                                <a href="" class="remove remove_from_cart_button">×</a>
+                                                <a href="" class="animate">
+                                                    <img src="images/polskaya-s-molotim.jpg" class="attachment_thumbnail size_thumbnail" alt="">Cras eget augue
+                                                </a>
+                                                <span class="quantity">1 × <span class="woocommerce-Price-amount amount">
+                                                    <span class="woocommerce-Price-currencySymbol">£</span>80.00</span>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <p class="mini-cart__total total">
+                                            <strong>Итого:</strong>
+                                            <span class="Price-amount amount"><span class="Price-currencySymbol">£</span>80.00</span>
+                                        </p>
+                                        <p class="mini-cart__buttons buttons">
+                                            <a href="" class="button wc-forward animate">В корзину</a>
+                                            <a href="" class="button checkout wc-forward animate">Оплатить</a>
+                                        </p>
+                                    </div>
+                                </aside>
+                            </div>
+                        </div>
+                        <!--Cart -->
+                        <!-- Topbar link -->
+                        <div class="topbar-link">
+                            <span class="topbar-link-toggle">Мой аккаунт</span>
+                            <div class="topbar-link-wrapper">
+                                <div class="header-menu-links">
+                                    <ul id="menu-header-top-links" class="header-menu">
+                                        <li class="menu-item">
+                                            <a href="">Оплатить</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href=""> Войти</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Topbar link -->
+                        <!--  header wishlist -->
+                        <div class="wishlist">
+                            <a href="" class="wishlist-icon" title="В желания">
+                                <span class="wishlist-count">0</span>
+                            </a>
+                            <span class="wishlist-title"><a href="" title="В желания">В желания</a></span>
+                        </div>
+                        <!-- End header wishlist -->
+                        <div class="header-search">
+                            <div class="header-toggle"></div>
+                            <div class="search-overlay">
+                                <form role="search" method="get" id="searchform" class="search-form" action="">
+                                    <div><label class="screen-reader-text" for="s">Поиск на сайте</label>
+                                        <input class="search-field" type="text" placeholder="Искать на сайте" value="" name="s" id="s">
+                                        <input class="search-submit" type="submit" id="searchsubmit" value="Искать">
+                                    </div>
+                                </form>
+                                <!--form method="post" action="" class="section-subscribe-form">
+                                    <div class="section-subscribe-form-group d-block">
+                                        <div class="d-flex align-items-center">
+                                            <input class="section-subscribe-form-input" type="email" name="email" placeholder="Введите свой email">
+                                            <a class="section-subscribe-form-submit hi-btn animate" href="#"><span class="hi-icon">Подписаться</span></a>
+                                        </div>
+                                    </div>
+                                </form-->
+                            </div>
+                        </div>
+                        <!--End Search-->
+                    </div>
+                </div>
+                <!-- End header_Center -->
+                <!-- Start header_Bottom -->
+                <div class="header-bottom">
+                    <div class="container">
+                        <!-- #site-navigation -->
+                        <nav id="site-navigation" class="navigation-bar main-navigation more">
+                            <div class="nav-mainmenu">
+								<span class="mainmenu-btn-wrapper">
+									<span class="mainmenu-btn"></span>
+								</span>
+                                <h3 class="menu-toggle">Menu</h3>
+                            </div>
+                            <a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to
+                                content</a>
+                            <div class="mega-menu">
+                                <div class="menu-mainmenu-container">
+                                    <ul id="menu-mainmenu" class="mega">
+                                        <li class="menu-item current_page_item">
+                                            <a href="" aria-current="page">Главная</a>
+                                        </li>
+                                        <li class="shop menu-item menu-item-has-children">
+                                            <a href="" class="dc-mega">Магазин<span class="dc-mega-icon"></span></a>
+                                            <div class="sub-container non-mega">
+                                                <ul class="sub-menu sub">
+                                                    <li class="menu-item">
+                                                        <a href="">Right Sidebar</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="">Left Sidebar</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="">Full Width</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="">Product Category</a>
+                                                    </li>
+                                                    <li class="sale-label tmpoption-menu-label menu-item">
+                                                        <a href="">Top rated product</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children dc-mega-li">
+                                            <a href="" class="dc-mega">Акции<span class="dc-mega-icon"></span></a>
+                                            <div class="sub-container mega">
+                                                <ul class="sub-menu sub">
+                                                    <div class="row">
+                                                        <li class="menu-item menu-item-has-children mega-unit mega-hdr">
+                                                            <a href="" class="mega-hdr-a">Gallery</a>
+                                                            <ul class="sub-menu">
+                                                                <li class="menu-item">
+                                                                    <a href="">2 Columns</a>
+                                                                </li>
+                                                                <li class="menu-item">
+                                                                    <a href="">3 Columns</a>
+                                                                </li>
+                                                                <li class="menu-item">
+                                                                    <a href="">4 Columns</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-has-children mega-unit mega-hdr last">
+                                                            <a href="" class="mega-hdr-a">Portfolio</a>
+                                                            <ul class="sub-menu">
+                                                                <li class="menu-item">
+                                                                    <a href="">2 Columns</a>
+                                                                </li>
+                                                                <li class="menu-item">
+                                                                    <a href="">3 Columns</a>
+                                                                </li>
+                                                                <li class="menu-item">
+                                                                    <a href="">4 Columns</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">О нас</a>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children">
+                                            <a href="" class="dc-mega">Блог<span class="dc-mega-icon"></span></a>
+                                            <div class="sub-container non-mega">
+                                                <ul class="sub-menu sub">
+                                                    <li class="menu-item">
+                                                        <a href="">Left Sidebar</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="">Right Sidebar</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="">Full Width</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children dc-mega-li">
+                                            <a href="#" class="dc-mega">Покупка<span class="dc-mega-icon"></span></a>
+                                            <div class="sub-container mega">
+                                                <ul class="sub-menu sub">
+                                                    <div class="row">
+                                                        <li class="menu-item menu-item-has-children mega-unit mega-hdr">
+                                                            <a href="#" class="mega-hdr-a">Shortcode Pages</a>
+                                                            <ul class="sub-menu">
+                                                                <li class="menu-item">
+                                                                    <a href="">Accordions &amp; Toggles</a>
+                                                                </li>
+                                                                <li class="menu-item">
+                                                                    <a href="">Buttons</a>
+                                                                </li>
+                                                                <li class="menu-item">
+                                                                    <a href="">Divider</a>
+                                                                </li>
+                                                                <li class="menu-item">
+                                                                    <a href="">Progress Bar &amp; Pie Chart</a>
+                                                                </li>
+                                                                <li class="menu-item">
+                                                                    <a href="">Lists</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-has-children mega-unit mega-hdr last">
+                                                            <a href="#" class="mega-hdr-a">Shortcode Pages</a>
+                                                            <ul class="sub-menu">
+                                                                <li class="menu-item">
+                                                                    <a href="">Services</a>
+                                                                </li>
+                                                                <li class="menu-item">
+                                                                    <a href="">Tabs</a>
+                                                                </li>
+                                                                <li class="menu-item">
+                                                                    <a href="">Map &amp; Contact</a>
+                                                                </li>
+                                                                <li class="menu-item">
+                                                                    <a href="">Message Boxes</a>
+                                                                </li>
+                                                                <li class="menu-item">
+                                                                    <a href="">Pricing table</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children">
+                                            <a href="" class="dc-mega">Доставка<span class="dc-mega-icon"></span></a>
+                                            <div class="sub-container non-mega">
+                                                <ul class="sub-menu sub">
+                                                    <li class="menu-item">
+                                                        <a href="">FAQs Page</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">Контакты</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            <div class="mobile-menu">
+                                <span class="close-menu"></span>
+                                <div class="menu-mainmenu-container">
+                                    <ul id="menu-mainmenu-1" class="mobile-menu-inner treeview-list treeview">
+                                        <li class="menu-item current-menu-item current_page_item">
+                                            <a href="" aria-current="page">Home</a>
+                                        </li>
+                                        <li class="shop menu-item">
+                                            <div class="hitarea shop-hitarea menu-item-hitarea"></div>
+                                            <a href="">Shop</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item">
+                                                    <a href="">Right Sidebar</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="">Left Sidebar</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="">Full Width</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="">Product Category</a>
+                                                </li>
+                                                <li class="sale-label tmpoption-menu-label menu-item last">
+                                                    <a href="">Top rated product</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item">
+                                            <div class="hitarea menu-item-hitarea"></div>
+                                            <a href="">Blog</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item">
+                                                    <a href="">Left Sidebar</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="">Right Sidebar</a>
+                                                </li>
+                                                <li class="menu-item last">
+                                                    <a href="">Full Width</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item">
+                                            <div class="hitarea menu-item-hitarea"></div>
+                                            <a href="">Media</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item">
+                                                    <div class="hitarea menu-item-hitarea"></div>
+                                                    <a href="">Gallery</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item">
+                                                            <a href="">2 Columns</a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="">3 Columns</a>
+                                                        </li>
+                                                        <li class="menu-item last">
+                                                            <a href="">4 Columns</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item lastExpandable">
+                                                    <div class="hitarea menu-item-hitarea"></div>
+                                                    <a href="">Portfolio</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item">
+                                                            <a href="">2 Columns</a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="">3 Columns</a>
+                                                        </li>
+                                                        <li class="menu-item last">
+                                                            <a href="">4 Columns</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item">
+                                            <div class="hitarea menu-item-hitarea"></div>
+                                            <a href="#">ShortCode</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item">
+                                                    <div class="hitarea menu-item-hitarea"></div>
+                                                    <a href="#">Shortcode Pages</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item">
+                                                            <a href="">Accordions &amp; Toggles</a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="">Buttons</a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="">Divider</a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="">Progress Bar &amp; Pie Chart</a>
+                                                        </li>
+                                                        <li class="menu-item last">
+                                                            <a href="">Lists</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item lastExpandable">
+                                                    <div class="hitarea menu-item-hitarea"></div>
+                                                    <a href="#">Shortcode Pages</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item">
+                                                            <a href="">Services</a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="">Tabs</a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="">Map &amp; Contact</a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="">Message Boxes</a>
+                                                        </li>
+                                                        <li class="menu-item last">
+                                                            <a href="">Pricing table</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item">
+                                            <div class="hitarea menu-item-hitarea "></div>
+                                            <a href="">Features</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item">
+                                                    <a href="">FAQs Page</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">About Us</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <!-- #site-navigation -->
+                    </div>
+                </div>
+                <!-- End header_Bottom -->
+            </div>
+            <!-- End header-main -->
+        </div>
     </header>
     <main class="main">
         <section class="section container-fluid carousel-container">
@@ -119,7 +565,8 @@
                         <img class="d-block w-100" src="./images/bg1.jpg" alt="First slide">
                         <div class="carousel-caption d-none d-md-block">
                             <h2 class="carousel-title">Lorem ipsum <span>dolor</span></h2>
-                            <p class="carousel-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, hic.</p>
+                            <p class="carousel-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Aliquid, hic.</p>
                             <a href="" class="hi-btn animate animate-1 mt-5">Подробнее</a>
                         </div>
                     </div>
@@ -127,7 +574,8 @@
                         <img class="d-block w-100" src="./images/bg1.jpg" alt="Second slide">
                         <div class="carousel-caption d-none d-md-block">
                             <h2 class="carousel-title">Lorem ipsum <span>dolor</span></h2>
-                            <p class="carousel-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, hic.</p>
+                            <p class="carousel-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Aliquid, hic.</p>
                             <a href="" class="hi-btn animate animate-1 mt-5">Подробнее</a>
                         </div>
                     </div>
@@ -135,7 +583,8 @@
                         <img class="d-block w-100" src="./images/bg1.jpg" alt="Third slide">
                         <div class="carousel-caption d-none d-md-block">
                             <h5 class="carousel-title">Lorem ipsum <span>dolor</span></h5>
-                            <p class="carousel-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, hic.</p>
+                            <p class="carousel-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Aliquid, hic.</p>
                             <a href="" class="hi-btn animate animate-1 mt-5">Подробнее</a>
                         </div>
                     </div>
