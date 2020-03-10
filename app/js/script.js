@@ -20,6 +20,11 @@ $('#back-to-top').click(function () {
 //Carousel responsive
 $(function () {
 
+    $("#account").click(function (e) {
+        e.preventDefault();
+        $(".topbar-link-wrapper").toggleClass("show-link-wrapper");
+    });
+
     $("#cart-contents").click(function (e) {
         e.preventDefault();
         $("#widget_cart-2").toggleClass("show_shopping_cart");
@@ -28,6 +33,9 @@ $(function () {
     $(document).on('click', function(e) {
         if (!$(e.target).closest(".cart.togg").length) {
             $("#widget_cart-2").removeClass("show_shopping_cart");
+        }
+        if (!$(e.target).closest(".topbar-link").length) {
+            $(".topbar-link-wrapper").removeClass("show-link-wrapper");
         }
         e.stopPropagation();
     });

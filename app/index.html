@@ -108,7 +108,7 @@
     </header-->
     <header class="header site-header site-header-fix">
         <div class="topbar-outer header-fix">
-              <div class="container"></div>
+            <div class="container"></div>
         </div>
         <div class="site-header-main header-fix">
             <div class="header-main">
@@ -146,8 +146,9 @@
                         <div class="header-cart headercart-block">
                             <div class="cart togg">
                                 <div class="shopping_cart tog" title="Перейти в корзину">
-                                    <span class="cart-icon"></span>
-                                    <a id="cart-contents" class="cart-contents" href="" title="Смотреть содержимое корзины">
+                                    <span class="cart-icon animate"></span>
+                                    <a id="cart-contents" class="cart-contents" href=""
+                                       title="Смотреть содержимое корзины">
                                         <div class="cart-price"><span class="label">Моя корзина</span>
                                             <div class="cart-qty">1</div>
                                         </div>
@@ -166,16 +167,20 @@
                                             <li class="mini-cart-item mini_cart_item">
                                                 <a href="" class="remove remove_from_cart_button">×</a>
                                                 <a href="" class="animate">
-                                                    <img src="images/polskaya-s-molotim.jpg" class="attachment_thumbnail size_thumbnail" alt="">Cras eget augue
+                                                    <img src="images/polskaya-s-molotim.jpg"
+                                                         class="attachment_thumbnail size_thumbnail" alt="">Cras eget
+                                                    augue
                                                 </a>
-                                                <span class="quantity">1 × <span class="woocommerce-Price-amount amount">
+                                                <span class="quantity">1 × <span
+                                                        class="woocommerce-Price-amount amount">
                                                     <span class="woocommerce-Price-currencySymbol">£</span>80.00</span>
                                                 </span>
                                             </li>
                                         </ul>
                                         <p class="mini-cart__total total">
                                             <strong>Итого:</strong>
-                                            <span class="Price-amount amount"><span class="Price-currencySymbol">£</span>80.00</span>
+                                            <span class="Price-amount amount"><span
+                                                    class="Price-currencySymbol">£</span>80.00</span>
                                         </p>
                                         <p class="mini-cart__buttons buttons">
                                             <a href="" class="button wc-forward animate">В корзину</a>
@@ -188,15 +193,22 @@
                         <!--Cart -->
                         <!-- Topbar link -->
                         <div class="topbar-link">
-                            <span class="topbar-link-toggle">Мой аккаунт</span>
+                            <span id="account" class="topbar-link-toggle animate"
+                                  title="Войти в аккаунт">Мой аккаунт</span>
                             <div class="topbar-link-wrapper">
                                 <div class="header-menu-links">
                                     <ul id="menu-header-top-links" class="header-menu">
                                         <li class="menu-item">
+                                            <a href="">Личный кабинет</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">История заказов</a>
+                                        </li>
+                                        <li class="menu-item">
                                             <a href="">Оплатить</a>
                                         </li>
                                         <li class="menu-item">
-                                            <a href=""> Войти</a>
+                                            <a href=""> Выйти</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -205,21 +217,23 @@
                         <!-- Topbar link -->
                         <!--  header wishlist -->
                         <div class="wishlist">
-                            <a href="" class="wishlist-icon" title="В желания">
+                            <a href="" class="wishlist-icon animate" title="Посмотреть сравнения">
                                 <span class="wishlist-count">0</span>
                             </a>
-                            <span class="wishlist-title"><a href="" title="В желания">В желания</a></span>
+                            <span class="wishlist-title"><a href=""
+                                                            title="Посмотреть сравнения">Посмотреть сравнения</a></span>
                         </div>
                         <!-- End header wishlist -->
                         <div class="header-search">
                             <div class="header-toggle"></div>
+
                             <div class="search-overlay">
-                                <form role="search" method="get" id="searchform" class="search-form" action="">
+                                <!--<form role="search" method="get" id="searchform" class="search-form" action="">
                                     <div><label class="screen-reader-text" for="s">Поиск на сайте</label>
                                         <input class="search-field" type="text" placeholder="Искать на сайте" value="" name="s" id="s">
                                         <input class="search-submit" type="submit" id="searchsubmit" value="Искать">
                                     </div>
-                                </form>
+                                </form>-->
                                 <!--form method="post" action="" class="section-subscribe-form">
                                     <div class="section-subscribe-form-group d-block">
                                         <div class="d-flex align-items-center">
@@ -250,299 +264,120 @@
                             <div class="mega-menu">
                                 <div class="menu-mainmenu-container">
                                     <ul id="menu-mainmenu" class="mega">
-                                        <li class="menu-item current_page_item">
-                                            <a href="" aria-current="page">Главная</a>
-                                        </li>
+                                        <li class="menu-item current_page_item"><a href=""
+                                                                                   aria-current="page">Главная</a></li>
                                         <li class="shop menu-item menu-item-has-children">
                                             <a href="" class="dc-mega">Магазин<span class="dc-mega-icon"></span></a>
-                                            <div class="sub-container non-mega">
-                                                <ul class="sub-menu sub">
-                                                    <li class="menu-item">
-                                                        <a href="">Right Sidebar</a>
-                                                    </li>
-                                                    <li class="menu-item">
-                                                        <a href="">Left Sidebar</a>
-                                                    </li>
-                                                    <li class="menu-item">
-                                                        <a href="">Full Width</a>
-                                                    </li>
-                                                    <li class="menu-item">
-                                                        <a href="">Product Category</a>
-                                                    </li>
-                                                    <li class="sale-label tmpoption-menu-label menu-item">
-                                                        <a href="">Top rated product</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="menu-item menu-item-has-children dc-mega-li">
-                                            <a href="" class="dc-mega">Акции<span class="dc-mega-icon"></span></a>
                                             <div class="sub-container mega">
                                                 <ul class="sub-menu sub">
-                                                    <div class="row">
-                                                        <li class="menu-item menu-item-has-children mega-unit mega-hdr">
-                                                            <a href="" class="mega-hdr-a">Gallery</a>
-                                                            <ul class="sub-menu">
-                                                                <li class="menu-item">
-                                                                    <a href="">2 Columns</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="">3 Columns</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="">4 Columns</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="menu-item menu-item-has-children mega-unit mega-hdr last">
-                                                            <a href="" class="mega-hdr-a">Portfolio</a>
-                                                            <ul class="sub-menu">
-                                                                <li class="menu-item">
-                                                                    <a href="">2 Columns</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="">3 Columns</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="">4 Columns</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                    </div>
+                                                    <li class="menu-item"><a href="">Все виды специй</a></li>
+                                                    <li class="menu-item"><a href="">Колбасные оболочки</a></li>
+                                                    <li class="menu-item"><a href="">Оборудование</a></li>
+                                                    <li class="menu-item"><a href="">Материалы</a></li>
+                                                    <li class="menu-item"><a href="">Экстракты пряностей</a></li>
+                                                    <li class="menu-item"><a href="">Приправы для кулинарии</a></li>
+                                                    <li class="menu-item"><a href="">Наборы смесей специй</a></li>
+                                                </ul>
+                                                <ul class="sub-menu sub">
+                                                    <li class="menu-item"><a href="">Все виды специй</a></li>
+                                                    <li class="menu-item"><a href="">Колбасные оболочки</a></li>
+                                                    <li class="menu-item"><a href="">Оборудование</a></li>
+                                                    <li class="menu-item"><a href="">Материалы</a></li>
+                                                    <li class="menu-item"><a href="">Экстракты пряностей</a></li>
+                                                    <li class="menu-item"><a href="">Приправы для кулинарии</a></li>
+                                                    <li class="menu-item"><a href="">Наборы смесей специй</a></li>
+                                                </ul>
+                                                <ul class="sub-menu sub">
+                                                    <li class="menu-item"><a href=""><img src="images/salami.jpg"
+                                                                                          alt=""></a></li>
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li class="menu-item">
-                                            <a href="">О нас</a>
-                                        </li>
+                                        <li class="menu-item"><a href="">О нас</a></li>
                                         <li class="menu-item menu-item-has-children">
                                             <a href="" class="dc-mega">Блог<span class="dc-mega-icon"></span></a>
                                             <div class="sub-container non-mega">
                                                 <ul class="sub-menu sub">
-                                                    <li class="menu-item">
-                                                        <a href="">Left Sidebar</a>
-                                                    </li>
-                                                    <li class="menu-item">
-                                                        <a href="">Right Sidebar</a>
-                                                    </li>
-                                                    <li class="menu-item">
-                                                        <a href="">Full Width</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="menu-item menu-item-has-children dc-mega-li">
-                                            <a href="#" class="dc-mega">Покупка<span class="dc-mega-icon"></span></a>
-                                            <div class="sub-container mega">
-                                                <ul class="sub-menu sub">
-                                                    <div class="row">
-                                                        <li class="menu-item menu-item-has-children mega-unit mega-hdr">
-                                                            <a href="#" class="mega-hdr-a">Shortcode Pages</a>
-                                                            <ul class="sub-menu">
-                                                                <li class="menu-item">
-                                                                    <a href="">Accordions &amp; Toggles</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="">Buttons</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="">Divider</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="">Progress Bar &amp; Pie Chart</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="">Lists</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="menu-item menu-item-has-children mega-unit mega-hdr last">
-                                                            <a href="#" class="mega-hdr-a">Shortcode Pages</a>
-                                                            <ul class="sub-menu">
-                                                                <li class="menu-item">
-                                                                    <a href="">Services</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="">Tabs</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="">Map &amp; Contact</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="">Message Boxes</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="">Pricing table</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                    </div>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="menu-item menu-item-has-children">
-                                            <a href="" class="dc-mega">Доставка<span class="dc-mega-icon"></span></a>
-                                            <div class="sub-container non-mega">
-                                                <ul class="sub-menu sub">
-                                                    <li class="menu-item">
-                                                        <a href="">FAQs Page</a>
-                                                    </li>
+                                                    <li class="menu-item"><a href="">Новости</a></li>
+                                                    <li class="menu-item"><a href="">Статьи</a></li>
+                                                    <li class="menu-item"><a href="">Рецепты</a></li>
                                                 </ul>
                                             </div>
                                         </li>
                                         <li class="menu-item">
-                                            <a href="">Контакты</a>
+                                            <a href="" class="dc-mega">Помощь<span class="dc-mega-icon"></span></a>
+                                            <div class="sub-container">
+                                                <ul class="sub-menu sub">
+                                                    <li class="menu-item"><a href="">Покупка и возврат</a></li>
+                                                    <li class="menu-item"><a href="">Оплата и доставка</a></li>
+                                                    <li class="menu-item"><a href="">Сотрудничество</a></li>
+                                                </ul>
+                                            </div>
                                         </li>
+                                        <li class="menu-item"><a href="">Контакты</a></li>
                                     </ul>
                                 </div>
                             </div>
 
 
                             <div class="mobile-menu">
-                                <span class="close-menu"></span>
                                 <div class="menu-mainmenu-container">
-                                    <ul id="menu-mainmenu-1" class="mobile-menu-inner treeview-list treeview">
-                                        <li class="menu-item current-menu-item current_page_item">
-                                            <a href="" aria-current="page">Home</a>
+                                    <ul id="mobile-mainmenu" class="mega">
+                                        <li class="menu-item current_page_item"><a href=""
+                                                                                   aria-current="page">Главная</a></li>
+                                        <li class="shop menu-item menu-item-has-children">
+                                            <a href="" class="dc-mega">Магазин<span class="dc-mega-icon"></span></a>
+                                            <div class="sub-container mega">
+                                                <ul class="sub-menu sub">
+                                                    <li class="menu-item"><a href="">Все виды специй</a></li>
+                                                    <li class="menu-item"><a href="">Колбасные оболочки</a></li>
+                                                    <li class="menu-item"><a href="">Оборудование</a></li>
+                                                    <li class="menu-item"><a href="">Материалы</a></li>
+                                                    <li class="menu-item"><a href="">Экстракты пряностей</a></li>
+                                                    <li class="menu-item"><a href="">Приправы для кулинарии</a></li>
+                                                    <li class="menu-item"><a href="">Наборы смесей специй</a></li>
+                                                </ul>
+                                                <ul class="sub-menu sub">
+                                                    <li class="menu-item"><a href="">Все виды специй</a></li>
+                                                    <li class="menu-item"><a href="">Колбасные оболочки</a></li>
+                                                    <li class="menu-item"><a href="">Оборудование</a></li>
+                                                    <li class="menu-item"><a href="">Материалы</a></li>
+                                                    <li class="menu-item"><a href="">Экстракты пряностей</a></li>
+                                                    <li class="menu-item"><a href="">Приправы для кулинарии</a></li>
+                                                    <li class="menu-item"><a href="">Наборы смесей специй</a></li>
+                                                </ul>
+                                                <ul class="sub-menu sub">
+                                                    <li class="menu-item"><a href=""><img src="images/salami.jpg"
+                                                                                          alt=""></a></li>
+                                                </ul>
+                                            </div>
                                         </li>
-                                        <li class="shop menu-item">
-                                            <div class="hitarea shop-hitarea menu-item-hitarea"></div>
-                                            <a href="">Shop</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item">
-                                                    <a href="">Right Sidebar</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="">Left Sidebar</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="">Full Width</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="">Product Category</a>
-                                                </li>
-                                                <li class="sale-label tmpoption-menu-label menu-item last">
-                                                    <a href="">Top rated product</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item">
-                                            <div class="hitarea menu-item-hitarea"></div>
-                                            <a href="">Blog</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item">
-                                                    <a href="">Left Sidebar</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="">Right Sidebar</a>
-                                                </li>
-                                                <li class="menu-item last">
-                                                    <a href="">Full Width</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item">
-                                            <div class="hitarea menu-item-hitarea"></div>
-                                            <a href="">Media</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item">
-                                                    <div class="hitarea menu-item-hitarea"></div>
-                                                    <a href="">Gallery</a>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item">
-                                                            <a href="">2 Columns</a>
-                                                        </li>
-                                                        <li class="menu-item">
-                                                            <a href="">3 Columns</a>
-                                                        </li>
-                                                        <li class="menu-item last">
-                                                            <a href="">4 Columns</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item lastExpandable">
-                                                    <div class="hitarea menu-item-hitarea"></div>
-                                                    <a href="">Portfolio</a>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item">
-                                                            <a href="">2 Columns</a>
-                                                        </li>
-                                                        <li class="menu-item">
-                                                            <a href="">3 Columns</a>
-                                                        </li>
-                                                        <li class="menu-item last">
-                                                            <a href="">4 Columns</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
+                                        <li class="menu-item"><a href="">О нас</a></li>
+                                        <li class="menu-item menu-item-has-children">
+                                            <a href="" class="dc-mega">Блог<span class="dc-mega-icon"></span></a>
+                                            <div class="sub-container non-mega">
+                                                <ul class="sub-menu sub">
+                                                    <li class="menu-item"><a href="">Новости</a></li>
+                                                    <li class="menu-item"><a href="">Статьи</a></li>
+                                                    <li class="menu-item"><a href="">Рецепты</a></li>
+                                                </ul>
+                                            </div>
                                         </li>
                                         <li class="menu-item">
-                                            <div class="hitarea menu-item-hitarea"></div>
-                                            <a href="#">ShortCode</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item">
-                                                    <div class="hitarea menu-item-hitarea"></div>
-                                                    <a href="#">Shortcode Pages</a>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item">
-                                                            <a href="">Accordions &amp; Toggles</a>
-                                                        </li>
-                                                        <li class="menu-item">
-                                                            <a href="">Buttons</a>
-                                                        </li>
-                                                        <li class="menu-item">
-                                                            <a href="">Divider</a>
-                                                        </li>
-                                                        <li class="menu-item">
-                                                            <a href="">Progress Bar &amp; Pie Chart</a>
-                                                        </li>
-                                                        <li class="menu-item last">
-                                                            <a href="">Lists</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item lastExpandable">
-                                                    <div class="hitarea menu-item-hitarea"></div>
-                                                    <a href="#">Shortcode Pages</a>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item">
-                                                            <a href="">Services</a>
-                                                        </li>
-                                                        <li class="menu-item">
-                                                            <a href="">Tabs</a>
-                                                        </li>
-                                                        <li class="menu-item">
-                                                            <a href="">Map &amp; Contact</a>
-                                                        </li>
-                                                        <li class="menu-item">
-                                                            <a href="">Message Boxes</a>
-                                                        </li>
-                                                        <li class="menu-item last">
-                                                            <a href="">Pricing table</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
+                                            <a href="" class="dc-mega">Помощь<span class="dc-mega-icon"></span></a>
+                                            <div class="sub-container">
+                                                <ul class="sub-menu sub">
+                                                    <li class="menu-item"><a href="">Покупка и возврат</a></li>
+                                                    <li class="menu-item"><a href="">Оплата и доставка</a></li>
+                                                    <li class="menu-item"><a href="">Сотрудничество</a></li>
+                                                </ul>
+                                            </div>
                                         </li>
-                                        <li class="menu-item">
-                                            <div class="hitarea menu-item-hitarea "></div>
-                                            <a href="">Features</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item">
-                                                    <a href="">FAQs Page</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="">About Us</a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="">Contact Us</a>
-                                        </li>
+                                        <li class="menu-item"><a href="">Контакты</a></li>
                                     </ul>
                                 </div>
                             </div>
+
                         </nav>
                         <!-- #site-navigation -->
                     </div>
@@ -599,68 +434,64 @@
                 </a>
             </div>
         </section>
-        <div class="container">
-            <div class="">
-                <div class="col-xs-12">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem beatae, consectetur, corporis cum
-                    dolor illum incidunt ipsam laboriosam odio quaerat quisquam vel! Accusamus accusantium aperiam, at
-                    consequatur corporis debitis dicta dolor ea hic impedit
-                    ipsam magnam molestias mollitia natus nesciunt numquam odit perferendis provident quas repellat
-                    saepe sequi temporibus voluptate voluptates voluptatibus. Accusamus alias atque, aut cupiditate
-                    delectus dolorem doloremque eaque et
-                    expedita iure libero molestias nemo perferendis quia, sapiente sed veritatis, vitae voluptatum. Et
-                    facilis, id itaque nobis nulla perspiciatis quaerat. Enim hic inventore maxime odio possialias
-                    atque, aut cupiditate delectus dolorem doloremque eaque et
-                    expedita iure libero molestias nemo perferendis quia, sapiente sed veritatis, vitae voluptatum. Et
-                    facilis, id itaque nobis nulla perspiciatis quaerat. Enim hic inventore maxime odio possimus quis
-                    similique tempora vitae! Aliquid
-                    cumque eius modi quia sequi soluta tempore? Delectus doloremque eius eos et explicabo facilis
-                    inventore ipsa magnam magni maiores maxime minima molestias nemo non nostrum nulla omnis optio porro
-                    praesentium quam quasi qui recusandae
-                    rem sed tempore unde, veritatis. Accusamus commodi culpa eius esse est harum hic, modi natus
-                    necessitatibus nobis omus quis similique tempora vitae! Aliquid
-                    cumque eius modi quia sequi soluta tempore? Delectus doloremque eius eos et explicabo facilis
-                    inventore ipsa magnam magni maiores maxime minima molestias nemo non nostrum nulla omnis optio porro
-                    praesentium quam quasi qui recusandae
-                    rem sed tempore unde, veritatis. Accusamus commodi culpa eius esse est harum hic, modi natus
-                    necessitatibus nobis odio officiis optio porro praesentium quia quidem temporibus voluptatibus? Amet
-                    consequatur doloribus laudantium
-                    quos. Deserunt ducimus eligendi esse ex facilis libero magni maxime perferendis quas recusandae,
-                    sequi sit sunt? Delectus esse ex expedita, molestias numquam sit? Architecto aut, debitis dicta
-                    dolores illo labore modi nesciunt
-                    officiis quam quia quidem repellat rerum tempore tenetur, veniam. Consectetur corporis deleniti
-                    dicta ea earum et, in inventore nam nobis odit praesentium quasi, quidem quos veritatis voluptatum?
-                    At eum itaque laboriosam maiores
-                    officiis quos vel! Architecto dignissimos distinctio hic ipsum odio pariatur quod veritatis
-                    voluptatibus. A aliquam aliquid amet aut autem beatae, consequatur corporis cumque dignissimos
-                    dolores enim eos eum id, illum inventore
-                    labore laborum maxime minus natus nisi obcaecati optio quae quaerat quidem, quis quos recusandae
-                    reiciendis rem repudiandae rerum saepe sed ut voluptatem! Alias architecto autem beatae commodi
-                    cupiditate dolorum eligendi est excepturi
-                    hic laboriosam magnam, pariatur, quasi sapiente suscipit velit? A accusamus alias beatae consequatur
-                    dicta dignissimos dolorum eligendi, enim eum facere facilis fuga id, illum impedit magni molestiae
-                    mollitia neque nesciunt non
-                    officiis qui repellendus reprehenderit sapiente tempore velit vero voluptatem voluptatum. Alias at
-                    commodi doloribus eaque esse maxime nobis odit rem repudiandae temporibus. Aliquam at deleniti et,
-                    eveniet iusto maiores nisi nobis
-                    perferendis perspiciatis ratione, sapiente, vitae! Dignissimos doloremque dolorum illo, magni
-                    provident rem sint. Aliquid assumenda at blanditiis consequuntur ea eius eum facilis omnis
-                    provident, quae quidem quo quod similique,
-                    sunt vitae. Aperiam eius explicabo, facere minima minus non quis. Adipisci eos minus nam, odio rem
-                    repellendus. Dolore dolorem est obcaecati officiis! Autem eaque, esse est quaerat quia ullam velit.
-                    Ad, aliquam assumenda aut consequuntur
-                    culpa cumque, deserunt dolorem ducimus ea earum facere impedit ipsam ipsum iure iusto laboriosam
-                    magni natus nisi perspiciatis qui quidem quis quos rerum sed ullam vero voluptatem voluptatibus?
-                    Consectetur ea laudantium, minus,
-                    nam nemo nihil, nostrum numquam qui reiciendis saepe sunt temporibus vero! Cum delectus deserunt
-                    dolore dolorum ducimus enim esse fugit inventore ipsum iste, magni maxime molestias neque, porro
-                    provident quidem quisquam, tenetur
-                    voluptatibus? Beatae dolorem, et eveniet harum illum impedit quisquam sint. Ad, alias aliquam cum
-                    delectus distinctio explicabo fugiat itaque iure optio possimus quae, veritatis. Dignissimos,
-                    maxime!
+        <section class="section container mb-3">
+            <div class="row">
+                <div class="col-12 text-center mb-3">
+                    <h1 class="title color-green">Добро пожаловать в наш магазин</h1>
+                </div>
+                <div class="col-12 text-center mb-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium consectetur dicta, dolorem
+                    eaque ex inventore laborum modi molestias odio pariatur repellat sequi unde. Adipisci at corporis
+                    dicta doloribus eaque enim iusto maxime quos tempore ullam? Amet blanditiis distinctio harum,
+                    officiis sapiente tempora tenetur! Accusantium animi atque aut beatae dolores, eos explicabo labore,
+                    magnam maiores nulla obcaecati odio? Aspernatur blanditiis culpa est excepturi libero magnam minima
+                    nihil nisi omnis perferendis, provident repudiandae sint, voluptas. Accusantium commodi molestiae
+                    nobis nulla sequi soluta unde veniam?
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="section container tabs-block">
+            <div class="row">
+                <div class="col-12 text-center mb-3">
+                    <h3 class="title">Наши товары</h3>
+                </div>
+                <div class="col-12 text-center mb-4">
+                    <ul class="nav nav-tabs">
+                        <li><a class="active" data-toggle="tab" href="#new">Новинки</a></li>
+                        <li><a data-toggle="tab" href="#popular">Популярные</a></li>
+                        <li><a data-toggle="tab" href="#special">Особые</a></li>
+                        <li><a data-toggle="tab" href="#action">Акции</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="new" class="tab-pane fade in active show">
+                            <h3 class="tab-content-title">Новинки</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae doloribus esse
+                                eveniet facilis hic iste itaque, laborum placeat quam quas quibusdam quisquam rerum sit
+                                vel! Esse incidunt non officiis.</p>
+                        </div>
+                        <div id="popular" class="tab-pane fade">
+                            <h3 class="tab-content-title">Популярные</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque facere illum odit!
+                                Aspernatur autem doloremque dolores enim excepturi ipsa itaque laudantium, molestiae
+                                mollitia nam nemo perspiciatis possimus sint suscipit vitae!</p>
+                        </div>
+                        <div id="special" class="tab-pane fade">
+                            <h3 class="tab-content-title">Особые</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolorem eligendi
+                                incidunt libero magni, nemo nihil nisi obcaecati, odio officia perspiciatis, porro quae
+                                quasi recusandae reiciendis sed sit temporibus vel!</p>
+                        </div>
+                        <div id="action" class="tab-pane fade">
+                            <h3 class="tab-content-title">Акции</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deserunt eius
+                                excepturi fuga harum libero mollitia non quia quis voluptas. Expedita inventore labore
+                                numquam obcaecati perferendis sapiente sint sit! Error.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="container-fluid section section-reviews">
             <div class="container">
                 <div class="row">

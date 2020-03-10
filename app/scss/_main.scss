@@ -6,6 +6,48 @@
 
     .section {
 
+        & h1.title {
+            font-size: 48px;
+        }
+
+        &.tabs-block {
+
+            & .nav.nav-tabs {
+                margin-top: 20px;
+                margin-bottom: 30px;
+                justify-content: center;
+                border-bottom: none;
+
+                & li {
+                    padding: 5px 50px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 14px;
+
+                    & a {
+                        color: $black;
+
+                        &:hover {
+                            text-decoration: none;
+                            color: $green;
+                        }
+
+                        &.active {
+                            color: $green;
+                        }
+                    }
+                }
+            }
+
+            & .tab-content {
+
+                &-title {
+                    font-family: inherit;
+                    font-size: 22px;
+                }
+            }
+        }
+
         &.carousel-container {
             margin: 0 auto 60px;
             overflow: hidden;
