@@ -579,7 +579,7 @@
   }
 
   &-bottom {
-    background-color: rgb(81, 125, 20);
+    background-color: $yellow;
     padding: 0;
     position: relative;
     float: left;
@@ -636,7 +636,7 @@
                 font-size: 0;
                 line-height: 0;
                 content: "\f299";
-                color: #86AE34;
+                color: #5b8c16;
                 font-weight: normal;
                 text-indent: 0;
                 -webkit-transform: rotate(-130deg);
@@ -747,7 +747,7 @@
             & a:hover {
               background-color: $white;
               text-decoration: none;
-              color: $green;
+              color: #5b8c16;
             }
 
             &:first-child {
@@ -845,7 +845,7 @@
             &.current_page_item {
 
               & a {
-                color: $green;
+                color: #5b8c16;
               }
             }
             
@@ -862,7 +862,7 @@
 
               & > a {
                 text-decoration: none;
-                color: $green;
+                color: #5b8c16;
               }
             }
           }
