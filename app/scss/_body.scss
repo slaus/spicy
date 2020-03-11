@@ -93,6 +93,14 @@ a, a:hover {
   padding: 0;
 }
 
+a.button-green {
+  background: $green !important;
+
+  &:hover {
+    background: $black !important;
+  }
+}
+
 #back-to-top {
   color: $white;
   width: 60px;
@@ -102,6 +110,32 @@ a, a:hover {
   position: fixed;
   right: 30px;
   bottom: 115px;
+  line-height: 55px;
+  font-size: 22px;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+  border-radius: 50%;
+
+  &:hover {
+    background: $green;
+    text-decoration: none;
+    -webkit-animation: scallEffect 1.5s ease-in 50ms;
+    -moz-animation: scallEffect 1.5s ease-in 50ms;
+    animation: scallEffect 1.5s ease-in 50ms;
+  }
+}
+
+#go-to-cart {
+  color: $white;
+  width: 60px;
+  height: 60px;
+  background: $green;
+  text-transform: uppercase;
+  position: fixed;
+  right: 30px;
+  top: 25%;
   line-height: 55px;
   font-size: 22px;
   text-align: center;

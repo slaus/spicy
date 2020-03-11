@@ -3,9 +3,9 @@
 //Back to top button
 $(window).scroll(function () {
     if ($(this).scrollTop() > 400) {
-        $('#back-to-top').fadeIn();
+        $('#back-to-top, #go-to-cart').fadeIn();
     } else {
-        $('#back-to-top').fadeOut();
+        $('#back-to-top, #go-to-cart').fadeOut();
     }
 });
 // scroll body to 0px on click
@@ -38,6 +38,10 @@ $(function () {
             $(".topbar-link-wrapper").removeClass("show-link-wrapper");
         }
         e.stopPropagation();
+    });
+
+    $(".mega-menu .sub-container").hover(function() {
+        $(this).parent(".menu-item").toggleClass("hover");
     });
 
 
