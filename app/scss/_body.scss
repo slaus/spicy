@@ -19,6 +19,17 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.344em;
 }
 
+h3.title {
+
+    @include sm() {
+        font-size: 24px;
+    }
+
+    @include xs() {
+        font-size: 24px;
+    }
+}
+
 .hi-btn {
     background-color: $green;
     padding: 10px 30px;
@@ -33,6 +44,11 @@ h1, h2, h3, h4, h5, h6 {
     color: $white;
     text-transform: uppercase;
     border: 5px solid #e3e3e3;
+
+    @include lg() {
+        padding: 10px 25px;
+        font-size: 15px;
+    }
 
     @include md() {
         padding: 10px 20px;
@@ -224,6 +240,10 @@ a.button-green {
 .jcarousel-wrapper {
     margin: 20px auto;
     position: relative;
+
+    @include md() {
+        margin-top: 0;
+    }
 }
 
 /** Carousel **/

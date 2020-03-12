@@ -3,6 +3,7 @@
  */
 .header {
     background: rgb(91, 140, 22);
+    position: relative;
 
     &-right {
         width: 240px;
@@ -746,6 +747,44 @@
 
             & .nav-mainmenu {
                 display: block;
+
+                & .mainmenu-btn-wrapper {
+                    background: $black;
+                    width: 35px;
+                    height: 35px;
+                    position: absolute;
+                    padding: 0;
+                    border-width: 0;
+                    right: 20px;
+                    top: -200px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 1000;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    transition: background-color .3s;
+
+                    &:hover {
+                        background: $yellow;
+                        transition: background-color .3s;
+
+                        & .mainmenu-btn {
+                            color: $black;
+                            transition: color .3s;
+                        }
+                    }
+
+                    .mainmenu-btn {
+                        font-family: 'Font Awesome';
+                        color: $white;
+                        transition: color .3s;
+
+                        &:after {
+                            content: '\f0c9';
+                        }
+                    }
+                }
             }
 
             & h3.menu-toggle {

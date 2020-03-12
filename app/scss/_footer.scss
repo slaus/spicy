@@ -15,6 +15,14 @@
         flex-direction: column;
         margin-bottom: 25px;
 
+        @include md() {
+             padding-left: 14%;
+         }
+
+        @include sm() {
+            padding-left: 14%;
+        }
+
         &:hover {
             & .footer__item-title {
                 color: $green;
@@ -40,6 +48,12 @@
 			margin-left: 0;
 			padding-left: 18px;
 			list-style: square;
+
+            @include xs() {
+                text-align: center;
+                list-style: none;
+                padding-left: 0;
+            }
 
             a {
                 color: $grey;
