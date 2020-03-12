@@ -20,6 +20,11 @@ $('#back-to-top').click(function () {
 //Carousel responsive
 $(function () {
 
+    $("#search").click(function (e) {
+        e.preventDefault();
+        $(".search-area").toggleClass("show-search-area");
+    });
+
     $("#account").click(function (e) {
         e.preventDefault();
         $(".topbar-link-wrapper").toggleClass("show-link-wrapper");
@@ -36,6 +41,9 @@ $(function () {
         }
         if (!$(e.target).closest(".topbar-link").length) {
             $(".topbar-link-wrapper").removeClass("show-link-wrapper");
+        }
+        if (!$(e.target).closest(".search-string").length) {
+            $(".search-area").removeClass("show-search-area");
         }
         e.stopPropagation();
     });
