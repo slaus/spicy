@@ -1,28 +1,107 @@
 /*!
  * Body content
  */
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,500,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,500,900&display=swap');
 
 body {
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  font-size: 17px;
+  font-size: 16px;
+  overflow-x: hidden;
+
+  &.mobile {
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+      content: "";
+      z-index: 99;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, .65);
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Pacifico", cursive;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.344em;
+}
+
+h3.title {
+
+  @include sm() {
+    font-size: 24px;
+  }
+
+  @include xs() {
+    font-size: 24px;
+  }
+}
+
+.hi-btn {
+  background-color: $green;
+  padding: 10px 30px;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  height: 55px;
+  border-radius: 0;
+  color: $white;
+  text-transform: uppercase;
+  border: 5px solid #e3e3e3;
+
+  @include lg() {
+    padding: 10px 25px;
+    font-size: 15px;
+  }
+
+  @include md() {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  @include sm() {
+    padding: 5px 20px;
+    font-size: 14px;
+  }
+
+  @include xs() {
+    padding: 5px 20px;
+    font-size: 14px;
+  }
+
+  &:hover {
+    text-decoration: none;
+    background: $black;
+    border: 5px solid #e3e3e3;
+    cursor: pointer;
+    color: $white;
+  }
 }
 
 /* error if tags without attr */
 img:not([alt]),
 label:not([for]),
 input[type=submit]:not([value]) {
-  outline: 1px dotted $red;
+  outline: 1px dotted red;
 }
 
 /* error if first child not used  */
 ul > *:not(li),
 ol > *:not(li),
 dl > *:not(dt):not(dd) {
-  outline: 1px dotted $red;
+  outline: 1px dotted red;
 }
 
 input:focus, textarea, a, button {
@@ -31,8 +110,10 @@ input:focus, textarea, a, button {
 }
 
 a, a:hover {
-  color: $red;
-  transition: .3s;
+  color: $green;
+  -webkit-transition: color .3s, background-color .3s;
+  -o-transition: color .3s, background-color .3s;
+  transition: color .3s, background-color .3s;
 }
 
 .clearfix {
@@ -43,13 +124,10 @@ a, a:hover {
     display: table;
     height: 0;
   }
+
   &:after {
     clear: both;
   }
-}
-
-.btn {
-  border-radius: 0 !important;
 }
 
 .wrapper {
@@ -58,75 +136,139 @@ a, a:hover {
   padding: 0;
 }
 
+a.button-green {
+  background: $green !important;
+
+  &:hover {
+    background: $black !important;
+  }
+}
+
+/* всплывающие подсказки */
+.tooltip-inner {
+
+  font-size: 9px;
+  font-weight: 300;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 0 .9375rem rgba(0, 0, 0, .25);;
+  box-shadow: 0 0 .9375rem rgba(0, 0, 0, .25);
+  //border-radius: 0;
+  //padding: .25rem .3rem;
+}
+
+
 #back-to-top {
   color: $white;
-  width: 50px;
-  height: 50px;
-  background: $red;
+  width: 60px;
+  height: 60px;
+  background: $green;
   text-transform: uppercase;
   position: fixed;
   right: 30px;
   bottom: 115px;
-  line-height: 50px;
+  line-height: 55px;
   font-size: 22px;
   text-align: center;
   cursor: pointer;
   display: none;
   z-index: 999;
+  border-radius: 50%;
+
+  @include sm() {
+    right: calc(50% - 110px);
+    bottom: 0;
+  }
+
+  @include xs() {
+    right: calc(50% - 110px);
+    bottom: 0;
+  }
 
   &:hover {
-    background: $red;
+    background: $green;
     text-decoration: none;
+    -webkit-animation: scallEffect 1.5s ease-in 50ms;
+    -moz-animation: scallEffect 1.5s ease-in 50ms;
+    animation: scallEffect 1.5s ease-in 50ms;
+  }
+}
+
+#go-to-cart {
+  color: $white;
+  width: 60px;
+  height: 60px;
+  background: $green;
+  text-transform: uppercase;
+  position: fixed;
+  right: 30px;
+  top: 25%;
+  line-height: 55px;
+  font-size: 22px;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+  border-radius: 50%;
+
+  @include sm() {
+    right: calc(50% + 50px);
+    top: auto;
+    bottom: 0;
+  }
+
+  @include xs() {
+    right: calc(50% + 50px);
+    top: auto;
+    bottom: 0;
+  }
+
+  &:hover {
+    background: $green;
+    text-decoration: none;
+    -webkit-animation: scallEffect 1.5s ease-in 50ms;
+    -moz-animation: scallEffect 1.5s ease-in 50ms;
+    animation: scallEffect 1.5s ease-in 50ms;
   }
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #ddd;
+  color: #bebebe;
 }
+
 ::-moz-placeholder { /* Firefox 19+ */
-  color: #ddd;
+  color: #bebebe;
 }
+
 :-ms-input-placeholder { /* IE 10+ */
-  color: #ddd;
+  color: #bebebe;
 }
+
 :-moz-placeholder { /* Firefox 18- */
-  color: #ddd;
+  color: #bebebe;
 }
 
-.scale {
-
-  &:hover {
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    transform: scale(1.05);
-  }
-}
-
-.animate {
-  transition: .3s;
-
-  &:hover {
-    transition: .3s;
-  }
-}
 
 /* Костыль для Safari*/
 .row:before, .row:after {
-content:'';
-display:block;
-width:100%;
-height:0;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 0;
 }
+
 .row:after {
-clear:both;
+  clear: both;
 }
+
 /* Костыль для Safari*/
 
 .jcarousel-wrapper {
   margin: 20px auto;
   position: relative;
+
+  @include md() {
+    margin-top: 0;
+  }
 }
 
 /** Carousel **/
@@ -154,6 +296,21 @@ clear:both;
   padding-left: 65px;
   padding-right: 65px;
   position: relative;
+
+  @media (min-width: 1200px) {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  @include xs() {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: 320px) and (max-width: 411px) {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
 }
 
 .jcarousel img.avatar {
@@ -178,7 +335,7 @@ clear:both;
   height: 30px;
   text-align: center;
   //background: #4E443C;
-  color: #fff;
+  color: $white;
   text-decoration: none;
   //text-shadow: 0 0 1px #000;
   -webkit-border-radius: 30px;
@@ -219,7 +376,7 @@ clear:both;
   width: 14px;
   line-height: 10px;
 
-  background: $red;
+  background: $green;
   color: #4E443C;
   border-radius: 10px;
   text-indent: -9999px;
@@ -231,7 +388,7 @@ clear:both;
 
 .jcarousel-pagination a.active {
   background: $black;
-  color: #fff;
+  color: $white;
   opacity: 1;
 
   -webkit-box-shadow: 0 0 2px #F0EFE7;
@@ -239,10 +396,136 @@ clear:both;
   box-shadow: 0 0 2px #F0EFE7;
 }
 
-.large {
-  font-size: 125%;
+.carousel-item {
+  z-index: 1;
 }
 
-.red {
-  color: $red;
+.carousel-item.active {
+  display: flex;
+  z-index: 0;
+}
+
+.modal {
+
+  .modal-content {
+    border: 10px solid rgba(0, 0, 0, .3);
+    border-radius: 0;
+  }
+
+  .modal-header {
+    align-items: center;
+    justify-content: center;
+    border-bottom: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
+
+    & .close {
+      line-height: 0;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  & .opacity-none {
+    opacity: 1 !important;
+  }
+
+  & h1 {
+    display: block;
+    margin: 0 0 20px;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 0 0 20px;
+  }
+
+  & .product-detail-wrapper .price {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+    & .hi-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+        background: $yellow;
+        color: $black;
+
+        &:hover {
+            color: $white;
+            background: $green;
+        }
+
+        &.one {
+            background: $green;
+
+            &:hover {
+                color: $white;
+                background: $black;
+            }
+        }
+    }
+
+  & .description {
+      font-size: 14px;
+      display: block;
+      height: 150px;
+      overflow: hidden;
+      margin-right: 1px;
+      margin-left: 1px;
+
+      @include lg() {
+          height: 120px;
+      }
+
+      @include md() {
+          height: 120px;
+      }
+
+      @include sm() {
+          height: 100px;
+      }
+
+      @include xs() {
+          height: 100px;
+      }
+
+      &::-webkit-scrollbar {
+          appearance: none;
+          -webkit-appearance: none;
+          width: 2px;
+          border-radius: 4px;
+      }
+
+      &::-webkit-scrollbar-track {
+          background-color: #e7e7e7;
+      }
+
+      &::-webkit-scrollbar-thumb {
+          border-radius: 4px;
+          background-color: $green;
+          box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+          -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+      }
+  }
+
+  &:hover .description {
+    font-size: 14px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+      -moz-overflow-scrolling: touch;
+      -ms-overflow-scrolling: touch;
+      -o-overflow-scrolling: touch;
+      overflow-scrolling: touch;
+      transition: .3s;
+      -moz-transition: .3s;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      margin-right: 0;
+      margin-left: 0;
+  }
 }

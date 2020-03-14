@@ -2,4 +2,152 @@
  * Footer content
  */
 
-.footer {}
+.footer {
+    padding: 145px 0 80px 0;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #f1f1f1;
+    background-image: url("../images/footer-bg.jpg");
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+
+    .footer__item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+
+        @include md() {
+             padding-left: 14%;
+         }
+
+        @include sm() {
+            padding-left: 14%;
+        }
+
+        &:hover {
+            & .footer__item-title {
+                color: $green;
+            }
+
+            & .fa {
+                -webkit-animation: scallEffect 2s ease-out 50ms;
+                -moz-animation: scallEffect 2s ease-out 50ms;
+                animation: scallEffect 2s ease-out 50ms;
+            }
+        }
+
+        &-title {
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 1.45em;
+            letter-spacing: 0.4px;
+            margin-bottom: 15px;
+        }
+
+        .menu {
+			color: $green;
+			margin-left: 0;
+			padding-left: 18px;
+			list-style: square;
+
+            @include xs() {
+                text-align: center;
+                list-style: none;
+                padding-left: 0;
+            }
+
+            a {
+                color: $grey;
+                padding: 5px 0;
+
+                &:hover {
+                    color: $green;
+                    text-decoration: none;
+                }
+            }
+
+            &-address {
+                list-style: none;
+				margin-left: -6px;
+				padding-left: 0;
+
+                .fa {
+                    display: inline-block;
+                    width: 25px;
+                    font-size: 16px;
+                    text-align: center;
+                    margin-bottom: 5px;
+                    color: $green;
+                }
+            }
+        }
+
+        &-social {
+
+            &:hover .fa {
+                -webkit-animation: scallEffect 2s ease-out 50ms;
+                -moz-animation: scallEffect 2s ease-out 50ms;
+                animation: scallEffect 2s ease-out 50ms;
+            }
+
+            & a {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                border-radius: 50%;
+                background: transparent;
+
+                &.fb.effect-2 .hi-icon:hover {
+                    background: #132dae;
+                }
+
+                &.vk.effect-2 .hi-icon:hover {
+                    background: #46a9ff;
+                }
+
+                &.yt.effect-2 .hi-icon:hover {
+                    background: #dd0008;
+                }
+
+                &.in.effect-2 .hi-icon:hover {
+                    background: #ff5887;
+                }
+
+                &:hover {
+                    background: $green;
+                    text-decoration: none;
+
+                    & .fa {
+                        color: $white;
+                    }
+                }
+
+                .fa {
+                    display: block;
+                    font-size: 22px;
+                    color: #3b3d42;
+                    line-height: 40px;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        &-copyright {
+            font-size: 14px;
+
+            & a {
+                color: $black;
+
+                &:hover {
+                    color: $green;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
