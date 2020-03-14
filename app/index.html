@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Spicy</title>
+    <title>gulp-starter</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -63,1875 +63,204 @@
 
 <body>
 <div class="wrapper">
-    <header class="header site-header site-header-fix">
-        <div class="topbar-outer header-fix">
-            <div class="container"></div>
-        </div>
-        <div class="site-header-main header-fix">
-            <div class="header-main">
-                <!-- Start header_Top -->
-                <!-- End header_Top -->
-                <!-- Start header_Center -->
-                <div class="header-middle">
-                    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-                        <!-- Start header_left -->
-                        <div class="header-left">
-                            <div class="header-service">
-                                <div class="header-service-block">
-                                    <div class="service-inner">
-                                        <span class="topservice-contact-title">Вам нужна помощь ?</span>
-                                        <span class="topservice-contact-label"><a href="tel:+79123158015" class="animate">+7 (912) 315-8015</a></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Header LOGO-->
-                        <div class="header-logo">
-                            <a href="" title="" rel="home">
-                                <img alt="" src="images/logo.png">
+    <header class="header">
+        <nav class="navbar fixed-top navbar-expand-xl navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" class="img-fluid" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link text-uppercase" href="#">Что нужно знать</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-uppercase text-uppercase" href="#"
+                               id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                               aria-expanded="false">
+                                Защитные комплекты
                             </a>
-                        </div>
-                        <!-- Header LOGO-->
-                        <!--Cart -->
-                        <div class="header-right">
-                            <div class="header-cart headercart-block">
-                                <div class="cart togg">
-                                    <a id="cart-contents" class="shopping_cart tog" data-toggle="tooltip" title="Моя корзина">
-                                        <span class="cart-icon animate"></span>
-                                        <div class="cart-contents">
-                                            <div class="cart-price"><span class="label">Моя корзина</span>
-                                                <div class="cart-qty">1</div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <!--aside class="widget widget_shopping_cart tab_content">
-                                        <h3 class="widget-title">Cart</h3>
-                                        <div class="widget_shopping_cart_content">
-                                            <p class="cart__empty-message">Вы еще ничего не купили!</p>
-                                        </div>
-                                    </aside-->
-                                    <aside id="widget_cart-2" class="widget widget_shopping_cart tab_content animate">
-                                        <h3 class="widget-title">Корзина</h3>
-                                        <div class="widget_shopping_cart_content">
-                                            <ul class="mini-cart cart_list product_list_widget ">
-                                                <li class="mini-cart-item mini_cart_item">
-                                                    <a href="" class="remove remove_from_cart_button">×</a>
-                                                    <a href="" class="animate">
-                                                        <img src="images/polskaya-s-molotim.jpg"
-                                                             class="attachment_thumbnail size_thumbnail" alt="">Cras eget
-                                                        augue
-                                                    </a>
-                                                    <span class="quantity">1 × <span
-                                                            class="woocommerce-Price-amount amount">
-                                                    <span class="woocommerce-Price-currencySymbol">£</span>80.00</span>
-                                                </span>
-                                                </li>
-                                            </ul>
-                                            <p class="mini-cart__total total">
-                                                <strong>Итого:</strong>
-                                                <span class="Price-amount amount"><span
-                                                        class="Price-currencySymbol">£</span>80.00</span>
-                                            </p>
-                                            <p class="mini-cart__buttons buttons">
-                                                <a href="" class="button wc-forward animate">В корзину</a>
-                                                <a href=""
-                                                   class="button checkout button-green wc-forward animate">Оплатить</a>
-                                            </p>
-                                        </div>
-                                    </aside>
-                                </div>
-                                <div id="go-to-cart" class="back-to-top effect-1">
-                                    <div class="hi-icon shopping_cart tog" data-toggle="tooltip" title="Перейти в корзину">
-                                        <a href="#" class="d-block mt-3 pl-2">
-                                            <span class="cart-icon animate"></span>
-                                            <div class="cart-contents" title="Смотреть корзину">
-                                                <div class="cart-price"><span class="label">Моя корзина</span>
-                                                    <div class="cart-qty">1</div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Комплект 1</a>
+                                <a class="dropdown-item" href="#">Комплект 2</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Все включено</a>
                             </div>
-                            <!--Cart -->
-                            <!-- Topbar link -->
-                            <div class="topbar-link">
-                                <a href="#" id="account" class="topbar-link-toggle animate" data-toggle="tooltip"
-                                   data-placement="top" title="Войти в аккаунт">Мой аккаунт</a>
-                                <div class="topbar-link-wrapper">
-                                    <div class="header-menu-links">
-                                        <ul id="menu-header-top-links" class="header-menu">
-                                            <li class="menu-item">
-                                                <a href="">Личный кабинет</a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="">История заказов</a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="">Оплатить</a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href=""> Выйти</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Topbar link -->
-                            <!--  header wishlist -->
-                            <div class="wishlist">
-                                <a href="" class="wishlist-icon animate" data-toggle="tooltip" title="Посмотреть любимые">
-<!--                                    <span class="wishlist-count">0</span>-->
-                                </a>
-                                <span class="wishlist-title"><a href="" title="Посмотреть любимые">Посмотреть любимые</a></span>
-                            </div>
-                            <!-- End header wishlist -->
-                            <div class="search-string">
-                                <a href="#" id="search" class="search-string-button animate" data-toggle="tooltip" data-placement="top" title="Поиск в магазине">Поиск в магазине</a>
-                                <div class="search-area search-overlay">
-                                    <form role="search" method="get" id="searchform" class="search-form" action="">
-                                        <div>
-                                            <input class="search-field" type="text" placeholder="Искать на сайте" value="" name="s" id="s">
-                                            <button class="search-submit" type="submit" id="searchsubmit"></button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#">Коронавирус</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-danger ml-4 text-uppercase" data-toggle="modal"
+                            data-target="#exampleModalCenter">
+                        Купить защиту от Covid-19
+                    </button>
                 </div>
-                <!-- End header_Center -->
-                <!-- Start header_Bottom -->
-                <div class="header-bottom">
-                    <div class="container">
-                        <!-- #site-navigation -->
-                        <nav id="site-navigation" class="navigation-bar main-navigation more">
-                            <div class="nav-mainmenu">
-								<span class="mainmenu-btn-wrapper">
-									<span class="mainmenu-btn"></span>
-								</span>
-                                <h3 class="menu-toggle">Menu</h3>
-                            </div>
-                            <a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to
-                                content</a>
-                            <div class="mega-menu">
-                                <div class="menu-mainmenu-container">
-                                    <ul id="menu-mainmenu" class="mega">
-                                        <li class="menu-item current_page_item"><a href=""
-                                                                                   aria-current="page">Главная</a></li>
-                                        <li class="shop menu-item menu-item-has-children">
-                                            <a href="" class="dc-mega">Магазин<span class="dc-mega-icon"></span></a>
-                                            <div class="sub-container mega">
-                                                <ul class="sub-menu sub">
-                                                    <li class="menu-item"><a href="">Все виды специй</a></li>
-                                                    <li class="menu-item"><a href="">Колбасные оболочки</a></li>
-                                                    <li class="menu-item"><a href="">Оборудование</a></li>
-                                                    <li class="menu-item"><a href="">Материалы</a></li>
-                                                    <li class="menu-item"><a href="">Экстракты пряностей</a></li>
-                                                    <li class="menu-item"><a href="">Приправы для кулинарии</a></li>
-                                                    <li class="menu-item"><a href="">Наборы смесей специй</a></li>
-                                                </ul>
-                                                <ul class="sub-menu sub">
-                                                    <li class="menu-item"><a href="">Все виды специй</a></li>
-                                                    <li class="menu-item"><a href="">Колбасные оболочки</a></li>
-                                                    <li class="menu-item"><a href="">Оборудование</a></li>
-                                                    <li class="menu-item"><a href="">Материалы</a></li>
-                                                    <li class="menu-item"><a href="">Экстракты пряностей</a></li>
-                                                    <li class="menu-item"><a href="">Приправы для кулинарии</a></li>
-                                                    <li class="menu-item"><a href="">Наборы смесей специй</a></li>
-                                                </ul>
-                                                <ul class="sub-menu sub">
-                                                    <li class="menu-item"><a href=""><img src="images/banner.jpg"
-                                                                                          alt=""></a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="menu-item"><a href="">О нас</a></li>
-                                        <li class="menu-item menu-item-has-children">
-                                            <a href="" class="dc-mega">Блог<span class="dc-mega-icon"></span></a>
-                                            <div class="sub-container non-mega">
-                                                <ul class="sub-menu sub">
-                                                    <li class="menu-item"><a href="">Новости</a></li>
-                                                    <li class="menu-item"><a href="">Статьи</a></li>
-                                                    <li class="menu-item"><a href="">Рецепты</a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="" class="dc-mega">Помощь<span class="dc-mega-icon"></span></a>
-                                            <div class="sub-container">
-                                                <ul class="sub-menu sub">
-                                                    <li class="menu-item"><a href="">Покупка и возврат</a></li>
-                                                    <li class="menu-item"><a href="">Оплата и доставка</a></li>
-                                                    <li class="menu-item"><a href="">Сотрудничество</a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="menu-item"><a href="">Контакты</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-<!--                            <div class="mobile-menu">-->
-<!--                                <div class="mobile-mainmenu-container">-->
-<!--                                    <ul id="mobile-mainmenu" class="mega">-->
-<!--                                        <li class="menu-item current_page_item"><a href=""-->
-<!--                                                                                   aria-current="page">Главная</a></li>-->
-<!--                                        <li class="shop menu-item menu-item-has-children">-->
-<!--                                            <a href="" class="dc-mega">Магазин<span class="dc-mega-icon"></span></a>-->
-<!--                                            <div class="sub-container mega">-->
-<!--                                                <ul class="sub-menu sub">-->
-<!--                                                    <li class="menu-item"><a href="">Все виды специй</a></li>-->
-<!--                                                    <li class="menu-item"><a href="">Колбасные оболочки</a></li>-->
-<!--                                                    <li class="menu-item"><a href="">Оборудование</a></li>-->
-<!--                                                    <li class="menu-item"><a href="">Материалы</a></li>-->
-<!--                                                    <li class="menu-item"><a href="">Экстракты пряностей</a></li>-->
-<!--                                                    <li class="menu-item"><a href="">Приправы для кулинарии</a></li>-->
-<!--                                                    <li class="menu-item"><a href="">Наборы смесей специй</a></li>-->
-<!--                                                </ul>-->
-<!--                                                <ul class="sub-menu sub">-->
-<!--                                                    <li class="menu-item"><a href="">Все виды специй</a></li>-->
-<!--                                                    <li class="menu-item"><a href="">Колбасные оболочки</a></li>-->
-<!--                                                    <li class="menu-item"><a href="">Оборудование</a></li>-->
-<!--                                                    <li class="menu-item"><a href="">Материалы</a></li>-->
-<!--                                                    <li class="menu-item"><a href="">Экстракты пряностей</a></li>-->
-<!--                                                    <li class="menu-item"><a href="">Приправы для кулинарии</a></li>-->
-<!--                                                    <li class="menu-item"><a href="">Наборы смесей специй</a></li>-->
-<!--                                                </ul>-->
-<!--                                                <ul class="sub-menu sub">-->
-<!--                                                    <li class="menu-item"><a href=""><img src="images/banner.jpg"-->
-<!--                                                                                          alt=""></a></li>-->
-<!--                                                </ul>-->
-<!--                                            </div>-->
-<!--                                        </li>-->
-<!--                                        <li class="menu-item"><a href="">О нас</a></li>-->
-<!--                                        <li class="menu-item menu-item-has-children">-->
-<!--                                            <a href="" class="dc-mega">Блог<span class="dc-mega-icon"></span></a>-->
-<!--                                            <div class="sub-container non-mega">-->
-<!--                                                <ul class="sub-menu sub">-->
-<!--                                                    <li class="menu-item"><a href="">Новости</a></li>-->
-<!--                                                    <li class="menu-item"><a href="">Статьи</a></li>-->
-<!--                                                    <li class="menu-item"><a href="">Рецепты</a></li>-->
-<!--                                                </ul>-->
-<!--                                            </div>-->
-<!--                                        </li>-->
-<!--                                        <li class="menu-item">-->
-<!--                                            <a href="" class="dc-mega">Помощь<span class="dc-mega-icon"></span></a>-->
-<!--                                            <div class="sub-container">-->
-<!--                                                <ul class="sub-menu sub">-->
-<!--                                                    <li class="menu-item"><a href="">Покупка и возврат</a></li>-->
-<!--                                                    <li class="menu-item"><a href="">Оплата и доставка</a></li>-->
-<!--                                                    <li class="menu-item"><a href="">Сотрудничество</a></li>-->
-<!--                                                </ul>-->
-<!--                                            </div>-->
-<!--                                        </li>-->
-<!--                                        <li class="menu-item"><a href="">Контакты</a></li>-->
-<!--                                    </ul>-->
-<!--                                </div>-->
-<!--                            </div>-->
-
-                        </nav>
-                        <!-- #site-navigation -->
-                    </div>
-                </div>
-                <!-- End header_Bottom -->
             </div>
-            <!-- End header-main -->
-        </div>
+        </nav>
     </header>
     <main class="main">
-        <section class="section container-fluid carousel-container">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100 carousel-img" src="./images/bg1.jpg" alt="First slide">
-                        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center d-md-block">
-                            <h2 class="carousel-title text-white">Lorem ipsum <span>dolor</span></h2>
-                            <p class="carousel-description text-white">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit.
-                                Aliquid, hic.</p>
-                            <a href="" class="hi-btn animate animate-1 mt-4 mt-lg-5">Подробнее</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100 carousel-img" src="./images/bg2.jpg" alt="Second slide">
-                        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center d-md-block">
-                            <h2 class="carousel-title text-white">Lorem ipsum <span>dolor</span></h2>
-                            <p class="carousel-description text-white">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit.
-                                Aliquid, hic.</p>
-                            <a href="" class="hi-btn animate animate-1 mt-4 mt-lg-5">Подробнее</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100 carousel-img" src="./images/bg3.jpg" alt="Third slide">
-                        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center d-md-block">
-                            <h5 class="carousel-title text-white">Lorem ipsum <span>dolor</span></h5>
-                            <p class="carousel-description text-white">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit.
-                                Aliquid, hic.</p>
-                            <a href="" class="hi-btn animate animate-1 mt-4 mt-lg-5">Подробнее</a>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </section>
-        <section class="section section-welcome container mb-3">
-            <div class="row">
-                <div class="col-12 text-center mb-3">
-                    <h1 class="title color-green">Добро пожаловать в наш магазин</h1>
-                </div>
-                <div class="col-12 text-center mb-3 mb-lg-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium consectetur dicta, dolorem
-                    eaque ex inventore laborum modi molestias odio pariatur repellat sequi unde. Adipisci at corporis
-                    dicta doloribus eaque enim iusto maxime quos tempore ullam? Amet blanditiis distinctio harum,
-                    officiis sapiente tempora tenetur! Accusantium animi atque aut beatae dolores, eos explicabo labore,
-                    magnam maiores nulla obcaecati odio? Aspernatur blanditiis culpa est excepturi libero magnam minima
-                    nihil nisi omnis perferendis, provident repudiandae sint, voluptas. Accusantium commodi molestiae
-                    nobis nulla sequi soluta unde veniam?
-                </div>
-            </div>
-        </section>
-        <section class="section container-fluid ban-block mb-2 mb-5-sm">
-            <div class="row">
-                <div class="col-12 col-md-4 p-1 text-center">
-                    <a href="" class="img-block">
-                        <img src="images/banners1.jpg" class="img-fluid" alt="">
-                    </a>
-                </div>
-                <div class="col-12 col-md-4 p-1 text-center">
-                    <a href="" class="img-block">
-                        <img src="images/banners.jpg" class="img-fluid" alt="">
-                    </a>
-                </div>
-                <div class="col-12 col-md-4 p-1 text-center">
-                    <a href="" class="img-block">
-                        <img src="images/banners3.jpg" class="img-fluid" alt="">
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="section container tabs-block">
-            <div class="row">
-                <div class="col-12 text-center mb-0">
-                    <ul class="nav nav-tabs">
-                        <li><a class="active" data-toggle="tab" href="#new">Новинки</a></li>
-                        <li><a data-toggle="tab" href="#popular">Популярные</a></li>
-                        <li><a data-toggle="tab" href="#special">Особые</a></li>
-                        <li><a data-toggle="tab" href="#action">Акции</a></li>
-                    </ul>
-
-                    <div class="tab-content">
-                        <div id="new" class="tab-pane fade in active show">
-                            <h3 class="tab-content-title">Новинки</h3>
-                            <div class="row">
-                                <div class="product col-6 col-sm-6 col-lg-3">
-                                    <div class="container-inner">
-                                        <span class="product-loading"></span>
-                                        <div class="product-block-inner">
-                                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                            <div class="image-block">
-                                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                                <a href="#">
-                                                    <img src="images/maslo-s-travami.jpg"
-                                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                                    <img src="images/maslo-s-travami-b.jpg"
-                                                         class="secondary-image attachment-shop-catalog img-fluid"
-                                                         alt="">
-                                                    <span class="onsale">-6%</span>
-                                                </a>
-                                                <div class="product-button-hover">
-                                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                                </div>
-                                            </div>
-                                            <div class="product-detail-wrapper">
-                                                <a href="#" title="Tic small Alessi dolore labore">
-                                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                                </a>
-                                                <span class="price">
-                                                <del><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>85.00</span>
-                                                </del>
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                                <div class="button-group effect-2">
-                                                    <div class="product-button-outer hi-icon">
-                                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product col-6 col-sm-6 col-lg-3">
-                                    <div class="container-inner">
-                                        <span class="product-loading"></span>
-                                        <div class="product-block-inner">
-                                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                            <div class="image-block">
-                                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                                <a href="#">
-                                                    <img src="images/rystika-dla-VK-kolbas.jpg"
-                                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                                    <img src="images/rystika-dla-VK-kolbas-b.jpg"
-                                                         class="secondary-image attachment-shop-catalog img-fluid"
-                                                         alt="">
-                                                </a>
-                                                <div class="product-button-hover">
-                                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                                </div>
-                                            </div>
-                                            <div class="product-detail-wrapper">
-                                                <a href="#" title="Tic small Alessi dolore labore">
-                                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                                </a>
-                                                <span class="price">
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                                <div class="button-group effect-2">
-                                                    <div class="product-button-outer hi-icon">
-                                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product col-6 col-sm-6 col-lg-3">
-                                    <div class="container-inner">
-                                        <span class="product-loading"></span>
-                                        <div class="product-block-inner">
-                                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                            <div class="image-block">
-                                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                                <a href="#">
-                                                    <img src="images/polskaya-s-molotim.jpg"
-                                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                                    <img src="images/polskaya-s-molotim-b.jpg"
-                                                         class="secondary-image attachment-shop-catalog img-fluid"
-                                                         alt="">
-                                                </a>
-                                                <div class="product-button-hover">
-                                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                                </div>
-                                            </div>
-                                            <div class="product-detail-wrapper">
-                                                <a href="#" title="Tic small Alessi dolore labore">
-                                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                                </a>
-                                                <span class="price">
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                                <div class="button-group effect-2">
-                                                    <div class="product-button-outer hi-icon">
-                                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product col-6 col-sm-6 col-lg-3">
-                                    <div class="container-inner">
-                                        <span class="product-loading"></span>
-                                        <div class="product-block-inner">
-                                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                            <div class="image-block">
-                                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                                <a href="#">
-                                                    <img src="images/moskovskaya.jpg"
-                                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                                    <img src="images/moskovskaya-b.jpg"
-                                                         class="secondary-image attachment-shop-catalog img-fluid"
-                                                         alt="">
-                                                </a>
-                                                <div class="product-button-hover">
-                                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                                </div>
-                                            </div>
-                                            <div class="product-detail-wrapper">
-                                                <a href="#" title="Tic small Alessi dolore labore">
-                                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                                </a>
-                                                <span class="price">
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                                <div class="button-group effect-2">
-                                                    <div class="product-button-outer hi-icon">
-                                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="popular" class="row tab-pane fade">
-                            <h3 class="tab-content-title">Популярные</h3>
-                            <div class="row">
-                                <div class="product col-6 col-sm-6 col-lg-3">
-                                    <div class="container-inner">
-                                        <span class="product-loading"></span>
-                                        <div class="product-block-inner">
-                                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                            <div class="image-block">
-                                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                                <a href="#">
-                                                    <img src="images/rystika-dla-VK-kolbas.jpg"
-                                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                                    <img src="images/rystika-dla-VK-kolbas-b.jpg"
-                                                         class="secondary-image attachment-shop-catalog img-fluid"
-                                                         alt="">
-                                                    <span class="onsale">-6%</span>
-                                                </a>
-                                                <div class="product-button-hover">
-                                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                                </div>
-                                            </div>
-                                            <div class="product-detail-wrapper">
-                                                <a href="#" title="Tic small Alessi dolore labore">
-                                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                                </a>
-                                                <span class="price">
-                                                <del><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>85.00</span>
-                                                </del>
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                                <div class="button-group effect-2">
-                                                    <div class="product-button-outer hi-icon">
-                                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product col-6 col-sm-6 col-lg-3">
-                                    <div class="container-inner">
-                                        <span class="product-loading"></span>
-                                        <div class="product-block-inner">
-                                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                            <div class="image-block">
-                                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                                <a href="#">
-                                                    <img src="images/polskaya-s-molotim.jpg"
-                                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                                    <img src="images/polskaya-s-molotim-b.jpg"
-                                                         class="secondary-image attachment-shop-catalog img-fluid"
-                                                         alt="">
-                                                </a>
-                                                <div class="product-button-hover">
-                                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                                </div>
-                                            </div>
-                                            <div class="product-detail-wrapper">
-                                                <a href="#" title="Tic small Alessi dolore labore">
-                                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                                </a>
-                                                <span class="price">
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                                <div class="button-group effect-2">
-                                                    <div class="product-button-outer hi-icon">
-                                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product col-6 col-sm-6 col-lg-3">
-                                    <div class="container-inner">
-                                        <span class="product-loading"></span>
-                                        <div class="product-block-inner">
-                                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                            <div class="image-block">
-                                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                                <a href="#">
-                                                    <img src="images/moskovskaya.jpg"
-                                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                                    <img src="images/moskovskaya-b.jpg"
-                                                         class="secondary-image attachment-shop-catalog img-fluid"
-                                                         alt="">
-                                                </a>
-                                                <div class="product-button-hover">
-                                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                                </div>
-                                            </div>
-                                            <div class="product-detail-wrapper">
-                                                <a href="#" title="Tic small Alessi dolore labore">
-                                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                                </a>
-                                                <span class="price">
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                                <div class="button-group effect-2">
-                                                    <div class="product-button-outer hi-icon">
-                                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product col-6 col-sm-6 col-lg-3">
-                                    <div class="container-inner">
-                                        <span class="product-loading"></span>
-                                        <div class="product-block-inner">
-                                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                            <div class="image-block">
-                                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                                <a href="#">
-                                                    <img src="images/maslo-s-travami.jpg"
-                                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                                    <img src="images/maslo-s-travami-b.jpg"
-                                                         class="secondary-image attachment-shop-catalog img-fluid"
-                                                         alt="">
-                                                </a>
-                                                <div class="product-button-hover">
-                                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                                </div>
-                                            </div>
-                                            <div class="product-detail-wrapper">
-                                                <a href="#" title="Tic small Alessi dolore labore">
-                                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                                </a>
-                                                <span class="price">
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                                <div class="button-group effect-2">
-                                                    <div class="product-button-outer hi-icon">
-                                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="special" class="row tab-pane fade">
-                            <h3 class="tab-content-title">Особые</h3>
-                            <div class="row">
-                                <div class="product col-6 col-sm-6 col-lg-3">
-                                    <div class="container-inner">
-                                        <span class="product-loading"></span>
-                                        <div class="product-block-inner">
-                                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                            <div class="image-block">
-                                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                                <a href="#">
-                                                    <img src="images/polskaya-s-molotim.jpg"
-                                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                                    <img src="images/polskaya-s-molotim-b.jpg"
-                                                         class="secondary-image attachment-shop-catalog img-fluid"
-                                                         alt="">
-                                                    <span class="onsale">-6%</span>
-                                                </a>
-                                                <div class="product-button-hover">
-                                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                                </div>
-                                            </div>
-                                            <div class="product-detail-wrapper">
-                                                <a href="#" title="Tic small Alessi dolore labore">
-                                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                                </a>
-                                                <span class="price">
-                                                <del><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>85.00</span>
-                                                </del>
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                                <div class="button-group effect-2">
-                                                    <div class="product-button-outer hi-icon">
-                                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product col-6 col-sm-6 col-lg-3">
-                                    <div class="container-inner">
-                                        <span class="product-loading"></span>
-                                        <div class="product-block-inner">
-                                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                            <div class="image-block">
-                                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                                <a href="#">
-                                                    <img src="images/moskovskaya.jpg"
-                                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                                    <img src="images/moskovskaya-b.jpg"
-                                                         class="secondary-image attachment-shop-catalog img-fluid"
-                                                         alt="">
-                                                </a>
-                                                <div class="product-button-hover">
-                                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                                </div>
-                                            </div>
-                                            <div class="product-detail-wrapper">
-                                                <a href="#" title="Tic small Alessi dolore labore">
-                                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                                </a>
-                                                <span class="price">
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                                <div class="button-group effect-2">
-                                                    <div class="product-button-outer hi-icon">
-                                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product col-6 col-sm-6 col-lg-3">
-                                    <div class="container-inner">
-                                        <span class="product-loading"></span>
-                                        <div class="product-block-inner">
-                                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                            <div class="image-block">
-                                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                                <a href="#">
-                                                    <img src="images/maslo-s-travami.jpg"
-                                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                                    <img src="images/maslo-s-travami-b.jpg"
-                                                         class="secondary-image attachment-shop-catalog img-fluid"
-                                                         alt="">
-                                                </a>
-                                                <div class="product-button-hover">
-                                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                                </div>
-                                            </div>
-                                            <div class="product-detail-wrapper">
-                                                <a href="#" title="Tic small Alessi dolore labore">
-                                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                                </a>
-                                                <span class="price">
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                                <div class="button-group effect-2">
-                                                    <div class="product-button-outer hi-icon">
-                                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product col-6 col-sm-6 col-lg-3">
-                                    <div class="container-inner">
-                                        <span class="product-loading"></span>
-                                        <div class="product-block-inner">
-                                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                            <div class="image-block">
-                                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                                <a href="#">
-                                                    <img src="images/rystika-dla-VK-kolbas.jpg"
-                                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                                    <img src="images/rystika-dla-VK-kolbas-b.jpg"
-                                                         class="secondary-image attachment-shop-catalog img-fluid"
-                                                         alt="">
-                                                </a>
-                                                <div class="product-button-hover">
-                                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                                </div>
-                                            </div>
-                                            <div class="product-detail-wrapper">
-                                                <a href="#" title="Tic small Alessi dolore labore">
-                                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                                </a>
-                                                <span class="price">
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                                <div class="button-group effect-2">
-                                                    <div class="product-button-outer hi-icon">
-                                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="action" class="row tab-pane fade">
-                            <h3 class="tab-content-title">Акции</h3>
-                            <div class="row">
-                                <div class="product col-6 col-sm-6 col-lg-3">
-                                    <div class="container-inner">
-                                        <span class="product-loading"></span>
-                                        <div class="product-block-inner">
-                                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                            <div class="image-block">
-                                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                                <a href="#">
-                                                    <img src="images/moskovskaya.jpg"
-                                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                                    <img src="images/moskovskaya-b.jpg"
-                                                         class="secondary-image attachment-shop-catalog img-fluid"
-                                                         alt="">
-                                                    <span class="onsale">-6%</span>
-                                                </a>
-                                                <div class="product-button-hover">
-                                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                                </div>
-                                            </div>
-                                            <div class="product-detail-wrapper">
-                                                <a href="#" title="Tic small Alessi dolore labore">
-                                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                                </a>
-                                                <span class="price">
-                                                <del><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>85.00</span>
-                                                </del>
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                                <div class="button-group effect-2">
-                                                    <div class="product-button-outer hi-icon">
-                                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product col-6 col-sm-6 col-lg-3">
-                                    <div class="container-inner">
-                                        <span class="product-loading"></span>
-                                        <div class="product-block-inner">
-                                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                            <div class="image-block">
-                                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                                <a href="#">
-                                                    <img src="images/maslo-s-travami.jpg"
-                                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                                    <img src="images/maslo-s-travami-b.jpg"
-                                                         class="secondary-image attachment-shop-catalog img-fluid"
-                                                         alt="">
-                                                </a>
-                                                <div class="product-button-hover">
-                                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                                </div>
-                                            </div>
-                                            <div class="product-detail-wrapper">
-                                                <a href="#" title="Tic small Alessi dolore labore">
-                                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                                </a>
-                                                <span class="price">
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                                <div class="button-group effect-2">
-                                                    <div class="product-button-outer hi-icon">
-                                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product col-6 col-sm-6 col-lg-3">
-                                    <div class="container-inner">
-                                        <span class="product-loading"></span>
-                                        <div class="product-block-inner">
-                                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                            <div class="image-block">
-                                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                                <a href="#">
-                                                    <img src="images/rystika-dla-VK-kolbas.jpg"
-                                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                                    <img src="images/rystika-dla-VK-kolbas-b.jpg"
-                                                         class="secondary-image attachment-shop-catalog img-fluid"
-                                                         alt="">
-                                                </a>
-                                                <div class="product-button-hover">
-                                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                                </div>
-                                            </div>
-                                            <div class="product-detail-wrapper">
-                                                <a href="#" title="Tic small Alessi dolore labore">
-                                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                                </a>
-                                                <span class="price">
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                                <div class="button-group effect-2">
-                                                    <div class="product-button-outer hi-icon">
-                                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product col-6 col-sm-6 col-lg-3">
-                                    <div class="container-inner">
-                                        <span class="product-loading"></span>
-                                        <div class="product-block-inner">
-                                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                            <div class="image-block">
-                                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                                <a href="#">
-                                                    <img src="images/polskaya-s-molotim.jpg"
-                                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                                    <img src="images/polskaya-s-molotim-b.jpg"
-                                                         class="secondary-image attachment-shop-catalog img-fluid"
-                                                         alt="">
-                                                </a>
-                                                <div class="product-button-hover">
-                                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                                </div>
-                                            </div>
-                                            <div class="product-detail-wrapper">
-                                                <a href="#" title="Tic small Alessi dolore labore">
-                                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                                </a>
-                                                <span class="price">
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                                <div class="button-group effect-2">
-                                                    <div class="product-button-outer hi-icon">
-                                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section container-fluid section-full-ban my-2">
+        <section class="section-header my-5 py-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h3 class="section-full-ban-title text-center text-white mt-3">Скидка <span>10%</span> на специи!</h3>
-                        <h4 class="section-full-ban-subtitle text-center text-white">Специи для домашних колбас — от баварских до варенных.</h4>
-                        <p class="description text-center text-white">Специи — это неотъемлемый ингредиент для
-                            приготовления
-                            домашних колбас. Благодаря им из
-                            одного и того же набора мясного сырья можно сделать десятки и сотни различных видов
-                            деликотесов. У нас Вы можете купить специи для колбас, которые подчеркнут вкус и аромат
-                            готового продукта и позволят ему раскрыться с новой стороны.</p>
-                        <div class="w-100 d-flex justify-content-center my-5">
-                            <a href="" class="hi-btn animate animate-1">Подробнее</a>
-                        </div>
+                <div class="d-flex w-100 flex-row justify-content-between">
+                    <div class="text-uppercase">
+                        ПРОТИВОСТОЯНИЕ С ВИРУСОМ ПРОДОЛЖАЕТСЯ
+                    </div>
+                    <div class="text-uppercase">
+                        <div id="text"></div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column">
+                    <h1>КОРОНАВИРУС</h1>
+                    <h2>COVID-19</h2>
+                </div>
+                <div class="d-flex w-100 flex-row justify-content-between align-items-center">
+                    <div class="py-3 pr-3 pl-0">
+                        <img src="images/who.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="p-3 px-5 large">
+                        Что нужно обязательно знать и как уберечь себя от коронавируса
+                    </div>
+                    <div class="py-3 pl-3 pr-0">
+                        <a href="" class="btn btn-danger btn-lg text-uppercase">
+                            Посмотреть 12 правил
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex flex-row my-5 py-4">
+                    <div class="col-12 col-md-8 frame">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6uu1MGyGjvI"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen=""></iframe>
+                    </div>
+                    <div class="position-relative">
+                        <h4>РАСПРОСТРАНЕНИЕ ВИРУСА COVID-19</h4>
+                        <div class="line"></div>
+                        <p class="large">Смотреть видео</p>
+                        <p class="time red">3:10 мин</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section products-block container">
-            <div class="row">
-                <div class="col-12 text-center mt-4 mb-2 mb-md-5">
-                    <h3 class="title">Наши товары</h3>
-                </div>
-                <div class="product col-6 col-sm-6 col-lg-3">
-                    <div class="container-inner">
-                        <span class="product-loading"></span>
-                        <div class="product-block-inner">
-                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                            <div class="image-block">
-                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                <a href="#">
-                                    <img src="images/maslo-s-travami.jpg"
-                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                    <img src="images/maslo-s-travami-b.jpg"
-                                         class="secondary-image attachment-shop-catalog img-fluid" alt="">
-                                    <span class="onsale">-6%</span>
-                                </a>
-                                <div class="product-button-hover">
-                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                </div>
-                            </div>
-                            <div class="product-detail-wrapper">
-                                <a href="#" title="Tic small Alessi dolore labore">
-                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                </a>
-                                <span class="price">
-                                                <del><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>85.00</span>
-                                                </del>
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                <div class="button-group effect-2">
-                                    <div class="product-button-outer hi-icon">
-                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product col-6 col-sm-6 col-lg-3">
-                    <div class="container-inner">
-                        <span class="product-loading"></span>
-                        <div class="product-block-inner">
-                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                            <div class="image-block">
-                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                <a href="#">
-                                    <img src="images/rystika-dla-VK-kolbas.jpg"
-                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                    <img src="images/rystika-dla-VK-kolbas-b.jpg"
-                                         class="secondary-image attachment-shop-catalog img-fluid" alt="">
-                                </a>
-                                <div class="product-button-hover">
-                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                </div>
-                            </div>
-                            <div class="product-detail-wrapper">
-                                <a href="#" title="Tic small Alessi dolore labore">
-                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                </a>
-                                <span class="price">
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                <div class="button-group effect-2">
-                                    <div class="product-button-outer hi-icon">
-                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product col-6 col-sm-6 col-lg-3">
-                    <div class="container-inner">
-                        <span class="product-loading"></span>
-                        <div class="product-block-inner">
-                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                            <div class="image-block">
-                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                <a href="#">
-                                    <img src="images/polskaya-s-molotim.jpg"
-                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                    <img src="images/polskaya-s-molotim-b.jpg"
-                                         class="secondary-image attachment-shop-catalog img-fluid" alt="">
-                                </a>
-                                <div class="product-button-hover">
-                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                </div>
-                            </div>
-                            <div class="product-detail-wrapper">
-                                <a href="#" title="Tic small Alessi dolore labore">
-                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                </a>
-                                <span class="price">
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                <div class="button-group effect-2">
-                                    <div class="product-button-outer hi-icon">
-                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product col-6 col-sm-6 col-lg-3">
-                    <div class="container-inner">
-                        <span class="product-loading"></span>
-                        <div class="product-block-inner">
-                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                            <div class="image-block">
-                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                <a href="#">
-                                    <img src="images/moskovskaya.jpg"
-                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                    <img src="images/moskovskaya-b.jpg"
-                                         class="secondary-image attachment-shop-catalog img-fluid" alt="">
-                                </a>
-                                <div class="product-button-hover">
-                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                </div>
-                            </div>
-                            <div class="product-detail-wrapper">
-                                <a href="#" title="Tic small Alessi dolore labore">
-                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                </a>
-                                <span class="price">
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                <div class="button-group effect-2">
-                                    <div class="product-button-outer hi-icon">
-                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product col-6 col-sm-6 col-lg-3">
-                    <div class="container-inner">
-                        <span class="product-loading"></span>
-                        <div class="product-block-inner">
-                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                            <div class="image-block">
-                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                <a href="#">
-                                    <img src="images/rystika-dla-VK-kolbas.jpg"
-                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                    <img src="images/rystika-dla-VK-kolbas-b.jpg"
-                                         class="secondary-image attachment-shop-catalog img-fluid" alt="">
-                                    <span class="onsale">-6%</span>
-                                </a>
-                                <div class="product-button-hover">
-                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                </div>
-                            </div>
-                            <div class="product-detail-wrapper">
-                                <a href="#" title="Tic small Alessi dolore labore">
-                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                </a>
-                                <span class="price">
-                                                <del><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>85.00</span>
-                                                </del>
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                <div class="button-group effect-2">
-                                    <div class="product-button-outer hi-icon">
-                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product col-6 col-sm-6 col-lg-3">
-                    <div class="container-inner">
-                        <span class="product-loading"></span>
-                        <div class="product-block-inner">
-                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                            <div class="image-block">
-                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                <a href="#">
-                                    <img src="images/polskaya-s-molotim.jpg"
-                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                    <img src="images/polskaya-s-molotim-b.jpg"
-                                         class="secondary-image attachment-shop-catalog img-fluid" alt="">
-                                </a>
-                                <div class="product-button-hover">
-                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                </div>
-                            </div>
-                            <div class="product-detail-wrapper">
-                                <a href="#" title="Tic small Alessi dolore labore">
-                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                </a>
-                                <span class="price">
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                <div class="button-group effect-2">
-                                    <div class="product-button-outer hi-icon">
-                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product col-6 col-sm-6 col-lg-3">
-                    <div class="container-inner">
-                        <span class="product-loading"></span>
-                        <div class="product-block-inner">
-                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                            <div class="image-block">
-                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                <a href="#">
-                                    <img src="images/moskovskaya.jpg"
-                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                    <img src="images/moskovskaya-b.jpg"
-                                         class="secondary-image attachment-shop-catalog img-fluid" alt="">
-                                </a>
-                                <div class="product-button-hover">
-                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                </div>
-                            </div>
-                            <div class="product-detail-wrapper">
-                                <a href="#" title="Tic small Alessi dolore labore">
-                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                </a>
-                                <span class="price">
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                <div class="button-group effect-2">
-                                    <div class="product-button-outer hi-icon">
-                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product col-6 col-sm-6 col-lg-3">
-                    <div class="container-inner">
-                        <span class="product-loading"></span>
-                        <div class="product-block-inner">
-                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                            <div class="image-block">
-                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                <a href="#">
-                                    <img src="images/maslo-s-travami.jpg"
-                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                    <img src="images/maslo-s-travami-b.jpg"
-                                         class="secondary-image attachment-shop-catalog img-fluid" alt="">
-                                </a>
-                                <div class="product-button-hover">
-                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                </div>
-                            </div>
-                            <div class="product-detail-wrapper">
-                                <a href="#" title="Tic small Alessi dolore labore">
-                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                </a>
-                                <span class="price">
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                <div class="button-group effect-2">
-                                    <div class="product-button-outer hi-icon">
-                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product col-6 col-sm-6 col-lg-3">
-                    <div class="container-inner">
-                        <span class="product-loading"></span>
-                        <div class="product-block-inner">
-                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                            <div class="image-block">
-                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                <a href="#">
-                                    <img src="images/polskaya-s-molotim.jpg"
-                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                    <img src="images/polskaya-s-molotim-b.jpg"
-                                         class="secondary-image attachment-shop-catalog img-fluid" alt="">
-                                    <span class="onsale">-6%</span>
-                                </a>
-                                <div class="product-button-hover">
-                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                </div>
-                            </div>
-                            <div class="product-detail-wrapper">
-                                <a href="#" title="Tic small Alessi dolore labore">
-                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                </a>
-                                <span class="price">
-                                                <del><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>85.00</span>
-                                                </del>
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                <div class="button-group effect-2">
-                                    <div class="product-button-outer hi-icon">
-                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product col-6 col-sm-6 col-lg-3">
-                    <div class="container-inner">
-                        <span class="product-loading"></span>
-                        <div class="product-block-inner">
-                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                            <div class="image-block">
-                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                <a href="#">
-                                    <img src="images/moskovskaya.jpg"
-                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                    <img src="images/moskovskaya-b.jpg"
-                                         class="secondary-image attachment-shop-catalog img-fluid" alt="">
-                                </a>
-                                <div class="product-button-hover">
-                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                </div>
-                            </div>
-                            <div class="product-detail-wrapper">
-                                <a href="#" title="Tic small Alessi dolore labore">
-                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                </a>
-                                <span class="price">
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                <div class="button-group effect-2">
-                                    <div class="product-button-outer hi-icon">
-                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product col-6 col-sm-6 col-lg-3">
-                    <div class="container-inner">
-                        <span class="product-loading"></span>
-                        <div class="product-block-inner">
-                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                            <div class="image-block">
-                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                <a href="#">
-                                    <img src="images/maslo-s-travami.jpg"
-                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                    <img src="images/maslo-s-travami-b.jpg"
-                                         class="secondary-image attachment-shop-catalog img-fluid" alt="">
-                                </a>
-                                <div class="product-button-hover">
-                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                </div>
-                            </div>
-                            <div class="product-detail-wrapper">
-                                <a href="#" title="Tic small Alessi dolore labore">
-                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                </a>
-                                <span class="price">
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                <div class="button-group effect-2">
-                                    <div class="product-button-outer hi-icon">
-                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product col-6 col-sm-6 col-lg-3">
-                    <div class="container-inner">
-                        <span class="product-loading"></span>
-                        <div class="product-block-inner">
-                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                            <div class="image-block">
-                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                <a href="#">
-                                    <img src="images/rystika-dla-VK-kolbas.jpg"
-                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                    <img src="images/rystika-dla-VK-kolbas-b.jpg"
-                                         class="secondary-image attachment-shop-catalog img-fluid" alt="">
-                                </a>
-                                <div class="product-button-hover">
-                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                </div>
-                            </div>
-                            <div class="product-detail-wrapper">
-                                <a href="#" title="Tic small Alessi dolore labore">
-                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                </a>
-                                <span class="price">
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                <div class="button-group effect-2">
-                                    <div class="product-button-outer hi-icon">
-                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product col-6 col-sm-6 col-lg-3">
-                    <div class="container-inner">
-                        <span class="product-loading"></span>
-                        <div class="product-block-inner">
-                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                            <div class="image-block">
-                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                <a href="#">
-                                    <img src="images/moskovskaya.jpg"
-                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                    <img src="images/moskovskaya-b.jpg"
-                                         class="secondary-image attachment-shop-catalog img-fluid" alt="">
-                                    <span class="onsale">-6%</span>
-                                </a>
-                                <div class="product-button-hover">
-                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                </div>
-                            </div>
-                            <div class="product-detail-wrapper">
-                                <a href="#" title="Tic small Alessi dolore labore">
-                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                </a>
-                                <span class="price">
-                                                <del><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>85.00</span>
-                                                </del>
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                <div class="button-group effect-2">
-                                    <div class="product-button-outer hi-icon">
-                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product col-6 col-sm-6 col-lg-3">
-                    <div class="container-inner">
-                        <span class="product-loading"></span>
-                        <div class="product-block-inner">
-                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                            <div class="image-block">
-                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                <a href="#">
-                                    <img src="images/maslo-s-travami.jpg"
-                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                    <img src="images/maslo-s-travami-b.jpg"
-                                         class="secondary-image attachment-shop-catalog img-fluid" alt="">
-                                </a>
-                                <div class="product-button-hover">
-                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                </div>
-                            </div>
-                            <div class="product-detail-wrapper">
-                                <a href="#" title="Tic small Alessi dolore labore">
-                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                </a>
-                                <span class="price">
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                <div class="button-group effect-2">
-                                    <div class="product-button-outer hi-icon">
-                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product col-6 col-sm-6 col-lg-3">
-                    <div class="container-inner">
-                        <span class="product-loading"></span>
-                        <div class="product-block-inner">
-                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                            <div class="image-block">
-                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                <a href="#">
-                                    <img src="images/rystika-dla-VK-kolbas.jpg"
-                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                    <img src="images/rystika-dla-VK-kolbas-b.jpg"
-                                         class="secondary-image attachment-shop-catalog img-fluid" alt="">
-                                </a>
-                                <div class="product-button-hover">
-                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                </div>
-                            </div>
-                            <div class="product-detail-wrapper">
-                                <a href="#" title="Tic small Alessi dolore labore">
-                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                </a>
-                                <span class="price">
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                <div class="button-group effect-2">
-                                    <div class="product-button-outer hi-icon">
-                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product col-6 col-sm-6 col-lg-3">
-                    <div class="container-inner">
-                        <span class="product-loading"></span>
-                        <div class="product-block-inner">
-                            <a href="#" class="LoopProduct-link loop-product__link"></a>
-                            <div class="image-block">
-                                <a href="#" class="LoopProduct-link loop-product__link"></a>
-                                <a href="#">
-                                    <img src="images/polskaya-s-molotim.jpg"
-                                         class="attachment_thumbnail size_thumbnail img-fluid" alt="">
-                                    <img src="images/polskaya-s-molotim-b.jpg"
-                                         class="secondary-image attachment-shop-catalog img-fluid" alt="">
-                                </a>
-                                <div class="product-button-hover">
-                                    <a href="#" class="button view-button" data-toggle="tooltip" data-placement="left" title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip" data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip" data-placement="left" title="Сравнить">Сравнить</a>
-                                </div>
-                            </div>
-                            <div class="product-detail-wrapper">
-                                <a href="#" title="Tic small Alessi dolore labore">
-                                    <h3 class="product-name">Tic small Alessi dolore labore</h3>
-                                </a>
-                                <span class="price">
-                                                <ins><span class="Price-amount amount">
-                                                    <span class="Price-currencySymbol">£</span>80.00</span>
-                                                </ins>
-                                            </span>
-                                <div class="button-group effect-2">
-                                    <div class="product-button-outer hi-icon">
-                                        <a href="#" class="button add_to_cart_button" rel="nofollow" data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В корзину</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section section-blog container mt-0 mt-lg-4">
-            <div class="row">
-                <div class="col-12 mb-3 mb-lg-5">
-                    <h3 class="section-blog-title text-center">Последние статьи на сайте</h3>
-                </div>
-                <div class="col-12 col-md-6 mb-4 mb-md-2 blog-item">
-                    <div class="section-blog-item">
-                        <a href="" class="img-block"><img src="images/Cold-Palm-Springs.jpg" class="img-fluid"
-                                                          alt=""></a>
-                    </div>
-                    <div class="d-flex justify-content-start mt-3">
-                        <div class="show-date">10 марта 2020</div>
-                        <div class="blog-author">admin</div>
-                    </div>
-                    <h4 class="section-blog-article"><a href="">Как вкусно приготовить салат</a></h4>
-                    <p class="section-blog-text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor error, eum minus modi
-                        quasi saepe sunt voluptates. Consequatur culpa distinctio eos numquam quod repudiandae veniam.
-                        Asperiores laudantium soluta ut. Lorem ipsum dolor sit amet.
-                    </p>
-                </div>
-                <div class="col-12 col-md-6 mb-4 mb-md-2 blog-item">
-                    <div class="section-blog-item">
-                        <a href="" class="img-block"><img src="images/post10.jpg" class="img-fluid" alt=""></a>
-                    </div>
-                    <div class="d-flex justify-content-start mt-3">
-                        <div class="show-date">20 февраля 2020</div>
-                        <div class="blog-author">admin</div>
-                    </div>
-                    <h4 class="section-blog-article"><a href="">Рецепт крем-супа с молодой капусты</a></h4>
-                    <p class="section-blog-text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur assumenda aut beatae
-                        consectetur cumque deserunt, eos exercitationem fugiat harum laudantium mollitia natus, numquam,
-                        omnis possimus quis quo repudiandae vero.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="section container-fluid section-reviews">
+        <section class="section-main">
             <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h3 class="section-reviews-title text-center text-white">Отзывы наших клиентов</h3>
-                    </div>
-                    <div class="col-12">
-                        <div class="jcarousel-wrapper">
-                            <div class="jcarousel swiper-container mt-2">
-                                <ul class="swiper-wrapper">
-                                    <li class="section-reviews__item swiper-slide d-flex align-items-center justify-content-center flex-column mb-4 animate">
-                                        <div class="section-reviews__img">
-                                            <img src="images/testi.png" alt="" class="animate-1">
-                                        </div>
-                                        <h3><i class="fa fa-quote-left text-white mt-2"></i></h3>
-                                        <p class="text-white font-weight-bold">Максим Н.</p>
-                                        <p class="section-reviews-description text-center text-white animate mb-5">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi cumque
-                                            dolorem enim error, excepturi, exercitationem facere fuga harum nemo odio
-                                            optio tempore totam voluptate. Lorem ipsum dolor sit amet, consectetur
-                                            adipisicing elit. Ab amet aut earum eos modi mollitia pariatur quisquam
-                                            quod. Eum, in? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab,
-                                            accusantium amet dolor dolore eius ex expedita modi molestiae
-                                            necessitatibus, non numquam omnis pariatur, perferendis quo recusandae
-                                            reiciendis voluptas voluptates voluptatum. Lorem ipsum dolor sit amet,
-                                            consectetur adipisicing elit. Alias nisi nobis quibusdam quos vitae. Amet
-                                            debitis facere neque sapiente sunt. Lorem ipsum dolor sit amet.
-                                        </p>
-                                    </li>
-                                    <li class="section-reviews__item swiper-slide d-flex align-items-center justify-content-center flex-column mb-4 animate">
-                                        <div class="section-reviews__img">
-                                            <img src="images/testi.png" alt="" class="animate-1">
-                                        </div>
-                                        <h3><i class="fa fa-quote-left text-white mt-2"></i></h3>
-                                        <p class="text-white font-weight-bold">Максим Н.</p>
-                                        <p class="section-reviews-description text-center text-white animate mb-5">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi cumque
-                                            dolorem enim error, excepturi, exercitationem facere fuga harum nemo odio
-                                            optio tempore totam voluptate.
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <a href="#" class="jcarousel-control-prev carousel-control-prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a href="#" class="jcarousel-control-next carousel-control-next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-
-                            <p class="jcarousel-pagination"></p>
+                <div class="d-flex">
+                    <div class="col-12 col-sm-4 col-md-3 text-uppercase red large font-weight-normal position-relative">
+                        <div class="sticky">
+                            Как распознать<br>
+                            Что делать<br>
+                            Как предотвратить<br>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section class="container section section-subscribe py-3 py-lg-5">
-            <div class="row">
-                <div class="col-12">
-                    <h3 class="section-subscribe-title text-center">Подписаться на новости</h3>
-                </div>
-                <div class="col-12 mt-5 d-flex justify-content-center">
-                    <form method="post" action="" class="section-subscribe-form">
-                        <div class="section-subscribe-form-group d-block">
-                            <div class="d-flex align-items-center">
-                                <input class="section-subscribe-form-input" type="email" name="email"
-                                       placeholder="Введите свой email">
-                                <a class="section-subscribe-form-submit hi-btn animate" href="#"><span class="hi-icon">Подписаться</span></a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-        <section class="section section-manufacturers container-fluid mt-5 pt-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 d-flex justify-content-between">
-                        <a href=""><img src="images/br1.png" alt=""></a>
-                        <a href=""><img src="images/br2.png" alt=""></a>
-                        <a href=""><img src="images/br3.png" alt=""></a>
-                        <a href=""><img src="images/br4.png" alt=""></a>
-                        <a href=""><img src="images/br5.png" alt=""></a>
-                        <a href=""><img src="images/br6.png" alt=""></a>
+                    <div class="col-12 col-sm-8 col-md-9">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid molestiae mollitia
+                        provident? Ad, assumenda beatae consequuntur corporis, delectus dicta eaque fuga magni maiores
+                        necessitatibus nesciunt nobis pariatur tempore, velit voluptatum. A accusantium adipisci,
+                        aliquid at commodi consectetur consequatur delectus ea, error ex excepturi expedita fugiat illo
+                        in iste iure libero molestiae optio perspiciatis quibusdam quidem quod sapiente, sit tempora ut
+                        vitae voluptas! Amet nesciunt quae quia veritatis voluptatibus! Aspernatur deleniti eaque fugiat
+                        veritatis! A ab animi aperiam asperiores aspernatur consequuntur eius eligendi error esse
+                        eveniet ex expedita fuga fugiat hic maxime nulla omnis, perferendis quae reprehenderit
+                        repudiandae ut velit veritatis voluptatum! Ab dolores eligendi harum id ipsum iste, magni
+                        possimus quam totam ut. A accusamus atque dolor dolorum ducimus, impedit laborum minus nulla
+                        quasi ratione repudiandae, sunt, suscipit. Ab adipisci asperiores atque dignissimos dolorem
+                        ducimus eius ex exercitationem expedita, facilis id in ipsum labore laborum maxime nostrum,
+                        numquam quia repudiandae temporibus vel? Ad amet atque beatae commodi deleniti deserunt dicta
+                        dolore eligendi eos, eum hic ipsa ipsam iste iusto laboriosam laudantium maxime minus nam
+                        officia quaerat quia reiciendis reprehenderit sapiente sit soluta sunt, totam veritatis? Aperiam
+                        architecto autem dolorem, eaque excepturi hic ipsam pariatur perferendis porro praesentium quas
+                        quis recusandae suscipit tempora temporibus unde voluptatem. Architecto assumenda, cum enim illo
+                        impedit laudantium quasi quisquam saepe sapiente temporibus? A accusamus aperiam autem, delectus
+                        explicabo in itaque quis quos veniam voluptatem? Commodi cum exercitationem necessitatibus rem
+                        velit? Error, repellendus sunt. Accusamus aliquam, eaque mollitia quae sit voluptatem?
+                        Blanditiis cumque doloribus eius facere, fugiat ipsa perspiciatis qui quidem tenetur velit.
+                        Architecto commodi, culpa dolorem illo quae quis quod repellat suscipit tempora velit? Animi
+                        commodi consectetur cumque delectus distinctio dolor, excepturi ipsa iste laborum neque odio
+                        quas, quod reiciendis tempora veniam? Ad beatae cum dolorem error et explicabo impedit ipsam,
+                        iste, maiores optio provident repellat voluptatem? Alias beatae, culpa dignissimos, enim eos
+                        iste labore laboriosam minima minus molestias natus nemo nisi obcaecati porro quos repudiandae
+                        voluptatibus. Ab deleniti dolor eos labore magni neque quaerat sequi tempora! Autem explicabo
+                        facilis magni maxime minus similique soluta. Accusamus culpa delectus dolor eum incidunt
+                        inventore, laudantium nam numquam optio pariatur provident quos sapiente veritatis? Accusantium,
+                        atque eos et nesciunt quaerat sint voluptatibus! Aliquam dignissimos eligendi ex fugiat incidunt
+                        iusto modi? Accusamus eum minus nobis odit, quasi sint totam! Ad adipisci aliquam aliquid animi
+                        blanditiis cupiditate delectus doloribus ea eligendi error eveniet expedita fugit in ipsam iure
+                        iusto labore maiores natus necessitatibus nihil nulla obcaecati officiis pariatur quam
+                        quibusdam, quis repellendus repudiandae, sapiente sed soluta ullam veritatis voluptates
+                        voluptatum. Alias aspernatur culpa debitis eligendi illo ipsa magnam magni necessitatibus nihil
+                        possimus quod reiciendis rem, sed tenetur unde voluptate voluptatem voluptatibus. Beatae
+                        provident quaerat quidem repellendus suscipit, veritatis voluptates. A accusantium alias aperiam
+                        consequuntur corporis deleniti dolorum eligendi esse, expedita laudantium magnam maxime minima
+                        molestiae omnis provident quibusdam recusandae tempora unde vel velit! Ad aliquid asperiores
+                        blanditiis commodi dicta eius excepturi explicabo libero saepe veritatis? Aspernatur, atque
+                        corporis debitis dolore dolorem ea et eveniet expedita harum impedit maxime modi molestias
+                        neque, nihil qui rem repellendus reprehenderit, saepe temporibus tenetur vel velit voluptatum?
+                        Accusantium dolorem ducimus et expedita, hic, id, laboriosam minima minus nesciunt perspiciatis
+                        quae qui quia sed sequi tempore. Accusantium aspernatur consequuntur dicta eveniet hic in,
+                        incidunt molestiae, numquam obcaecati quia reiciendis voluptas voluptatem. Ad alias blanditiis
+                        cumque delectus distinctio excepturi explicabo id laborum laudantium natus, nobis numquam odit
+                        possimus, quaerat repellat sequi voluptas. Accusantium ad aliquam aliquid, amet asperiores
+                        assumenda atque aut consequatur cumque debitis deleniti deserunt dicta dignissimos doloribus
+                        eius eligendi enim excepturi exercitationem expedita facere illum incidunt ipsam, iusto laborum
+                        libero modi molestiae nihil obcaecati odit officia optio placeat quisquam reiciendis sed, sit
+                        soluta unde. Aliquam aliquid aperiam architecto asperiores, dolorum eius expedita ipsam ipsum
+                        minima natus nihil numquam possimus quo quod, sapiente soluta sunt tempore unde vitae voluptas?
+                        Adipisci culpa delectus dignissimos impedit incidunt labore laudantium minima minus modi natus
+                        nobis, repellat sint velit. A ab ad adipisci, asperiores at doloremque esse excepturi fuga
+                        fugit, harum hic inventore libero maxime minima modi molestiae mollitia, nobis nostrum obcaecati
+                        odit provident quae quas quia quo totam veritatis vitae! Aliquam autem consequuntur dolor
+                        dolores dolorum eligendi enim est excepturi facilis impedit laudantium minima minus nam neque
+                        non quae, quaerat quod quos reiciendis repellendus repudiandae rerum veritatis? Asperiores
+                        aspernatur corporis cumque delectus dolorem molestias. Blanditiis debitis earum eius error
+                        eveniet explicabo fuga iste laborum nihil nisi quam quibusdam ratione repellendus sint suscipit
+                        veniam, voluptatem voluptates voluptatum? Amet consequuntur dicta eaque facere facilis impedit,
+                        itaque labore nulla obcaecati, pariatur perspiciatis quam ratione sapiente tenetur vitae
+                        voluptate voluptates voluptatum. Aperiam, consequatur deserunt eligendi fugiat officia placeat
+                        suscipit ut velit. Aliquid aperiam aspernatur at aut cupiditate doloribus earum et eveniet ex
+                        harum iure laboriosam magnam maiores minus nam necessitatibus nemo nobis non nulla obcaecati
+                        odio quasi, qui quidem quo repudiandae tenetur voluptates? Aliquid asperiores commodi dolor
+                        doloremque doloribus ea earum incidunt magni neque, nesciunt non odio odit omnis provident
+                        quibusdam quo repellendus rerum sapiente velit veritatis. Animi debitis distinctio hic maxime
+                        molestias nihil quis quisquam repellat repellendus soluta. Ad aliquid assumenda consequuntur
+                        debitis dolore dolorum enim eum facere fugiat ipsam iusto, labore nam nemo nulla odit pariatur,
+                        perspiciatis placeat quas quia quo reiciendis temporibus tenetur vitae voluptatem voluptatibus.
+                        Accusantium adipisci at cupiditate ducimus et facilis fugit inventore iste iure laboriosam
+                        libero, maiores nihil officia officiis placeat quam, quidem quo, reprehenderit repudiandae
+                        suscipit tenetur velit voluptates. Atque aut culpa, dicta distinctio dolore eius fugit libero
+                        magnam modi molestiae molestias mollitia nam neque nostrum possimus provident quae rem repellat
+                        saepe sapiente sequi sit voluptas voluptatem? Commodi est in ipsam ipsum, obcaecati, odit
+                        officiis pariatur quae quasi sapiente soluta suscipit ullam vitae? A at, cum deserunt dolor
+                        dolores eius ex, illo impedit laudantium magni placeat quaerat repellendus ullam velit
+                        voluptatum. Asperiores at atque debitis deserunt expedita illum maiores perspiciatis quaerat
+                        quam quo, quos repellat totam vel! Adipisci amet, atque consequatur est eveniet exercitationem
+                        explicabo harum impedit itaque modi natus nulla odio omnis pariatur perferendis placeat quos
+                        repellat repellendus sapiente tempore ullam ut vitae voluptates!
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <!--begin footer#colophon-->
-    <footer class="footer">
+    <footer class="footer padding-top-30">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-6 col-lg-3 footer__item">
-                    <h4 class="footer__item-title text-center text-sm-left animate">Каталог</h4>
-                    <div class="footer__item-menu">
-                        <ul class="menu">
-                            <li><a href="">Все виды специй</a></li>
-                            <li><a href="">Колбасные оболочки</a></li>
-                            <li><a href="">Оборудование</a></li>
-                            <li><a href="">Материалы</a></li>
-                            <li><a href="">Экстракты пряностей</a></li>
-                            <li><a href="">Приправы для кулинарии</a></li>
-                            <li><a href="">Наборы смесей специй</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-3 footer__item">
-                    <h4 class="footer__item-title text-center text-sm-left animate">Информация</h4>
-                    <div class="footer__item-menu">
-                        <ul class="menu">
-                            <li><a href="">Акции</a></li>
-                            <li><a href="">О нас</a></li>
-                            <li><a href="">Статьи</a></li>
-                            <li><a href="">Покупка и возврат</a></li>
-                            <li><a href="">Оплата и доставка</a></li>
-                            <li><a href="">Сотрудничество</a></li>
-                            <li><a href="">Контакты</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-3 footer__item">
-                    <h4 class="footer__item-title text-center text-sm-left animate">Мой аккаунт</h4>
-                    <div class="footer__item-menu">
-                        <ul class="menu">
-                            <li><a href="">Корзина</a></li>
-                            <li><a href="">Личный кабинет</a></li>
-                            <li><a href="">История заказов</a></li>
-                            <li><a href="">Закладки</a></li>
-                            <li><a href="">Сравнение</a></li>
-                            <li><a href="">Предзаказ</a></li>
-                            <li><a href="">Рассылки</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-3 footer__item">
-                    <h4 class="footer__item-title text-center text-sm-left animate">Адрес</h4>
-                    <div class="footer__item-menu">
-                        <ul class="menu menu-address">
-                            <li><a href=""><i class="fa fa-map-marker"></i> Челябинск, ул. Мира</a></li>
-                            <li><a href=""><i class="fa fa-phone"></i> +799 999-9999</a></li>
-                            <li><a href=""><i class="fa fa-clock-o"></i> Пн-Пт 9.00-18.00</a></li>
-                            <li><a href=""><i class="fa fa-clock"></i> Сб-Вс 9.00-15.00</a></li>
-                            <li><a href=""><i class="fa fa-envelope"></i> info@site.com</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 text-center">
-                    <div class="footer__item-social mt-5 mb-2">
-                        <a href="" class="fb m-1 effect-2">
-                            <div class="hi-icon"><i class="fa fa-facebook-square"></i></div>
-                        </a>
-                        <a href="" class="vk m-1 effect-2">
-                            <div class="hi-icon"><i class="fa fa-vk"></i></div>
-                        </a>
-                        <a href="" class="yt m-1 effect-2">
-                            <div class="hi-icon"><i class="fa fa-youtube"></i></div>
-                        </a>
-                        <a href="" class="in m-1 effect-2">
-                            <div class="hi-icon"><i class="fa fa-instagram"></i></div>
-                        </a>
-                    </div>
-                    <div class="footer__item-copyright mt-3">
-                        <a href="" target="_blank">Copyright © 2020 xWork</a> | <a href="">Соглашение о
-                        конфиденциальности</a>
+                <div class="container">
+                    <div class="row">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque consequuntur cumque,
+                        doloribus eligendi et eveniet exercitationem, fugiat ipsam itaque libero non quisquam reiciendis
+                        totam ut. Minus quod reprehenderit voluptas?
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    <!--end footer#colophon-->
-    <div id="back-to-top" class="back-to-top effect-1" data-toggle="tooltip" title="Наверх">
-        <div class="hi-icon"><i class="fa fa-chevron-up"></i></div>
-    </div>
+    <a id="back-to-top" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 </div>
 
 <!-- Modal -->
@@ -1959,21 +288,13 @@
 </div>
 
 <script src="js/jquery-1.12.4.min.js"></script>
-<script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.jcarousel.min.js"></script>
 <script src="js/jquery.matchHeight-min.js"></script>
-<script src="js/swiper.min.js"></script>
 <!--build:js js/main.min.js -->
 <script src="js/script.js"></script>
 <!-- endbuild -->
-<script>
-    $(document).ready(function () {
-        var swiper = new Swiper('.swiper-container');
-        $('.carousel').carousel({interval: 10000});
-        $('[data-toggle="tooltip"]').tooltip();
-    });
-</script>
+
 </body>
 
 </html>

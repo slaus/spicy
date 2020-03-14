@@ -24,10 +24,9 @@ $font-icon: 'Glyphicons Halflings';
 $font-awesome: 'Font Awesome';
 
 $black: #363636 !default;
-$green: #64a530 !default;
+$red: #dc3545 !default;
 $white: #ffffff !default;
-$grey: #79787f !default;
-$yellow: #ffeb00 !default;
+$grey: #a8aaab !default;
 
 @mixin xs() {
   @media (max-width: 575px) {
