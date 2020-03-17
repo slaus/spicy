@@ -62,6 +62,13 @@
 </head>
 
 <body>
+<div class="mb-0 alert alert-light alert-dismissible close-alert text-center py-3 px-5 fade show" role="alert">
+    Мы используем файлы «cookie», чтобы запоминать сведения о пользователе и отображать
+    подходящую ему рекламу и другие материалы. <a href="">Наша политика в отношении обработки персональных данных</a>.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
 <div class="wrapper">
     <header class="header site-header site-header-fix">
         <div class="topbar-outer header-fix">
@@ -69,31 +76,39 @@
         </div>
         <div class="site-header-main header-fix">
             <div class="header-main">
-                <!-- Start header_Top -->
-                <!-- End header_Top -->
-                <!-- Start header_Center -->
                 <div class="header-middle">
-                    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-                        <!-- Start header_left -->
-                        <div class="header-left">
-                            <div class="header-service">
-                                <div class="header-service-block">
-                                    <div class="service-inner">
-                                        <span class="topservice-contact-title">Вам нужна помощь ?</span>
-                                        <span class="topservice-contact-label"><a href="tel:+79123158015"
-                                                                                  class="animate">+7 (912) 315-8015</a></span>
+                    <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                        <div class="header-logo">
+                            <a href="/" title="" rel="home">
+                                <img alt="" src="images/logo.png">
+                            </a>
+                        </div>
+                        <div class="d-flex flex-column flex-sm-row">
+                            <div class="header-left mx-4 my-3 my-lg-0">
+                                <div class="header-service">
+                                    <div class="header-service-block">
+                                        <div class="service-inner">
+                                            <span class="topservice-contact-title">Наш адрес</span>
+                                            <span class="topservice-contact-address text-nowrap">г. Челябинск, пр. Мира, 8/44</span>
+                                            <span class="topservice-contact-time">Пн—Вс 09<sup>00</sup>—18<sup>00</sup></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-left mx-4 my-3 my-lg-0">
+                                <div class="header-service">
+                                    <div class="header-service-block">
+                                        <div class="service-inner">
+                                            <span class="topservice-contact-title">Наши телефоны</span>
+                                            <span class="topservice-contact-label"><a href="tel:+79123158015"
+                                                                                      class="animate">+7 (800) 315-8015</a></span>
+                                            <span class="topservice-contact-mobile"><a href="tel:+79123158015"
+                                                                                       class="animate">+7 (912) 315-8015</a></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Header LOGO-->
-                        <div class="header-logo">
-                            <a href="" title="" rel="home">
-                                <img alt="" src="images/logo.png">
-                            </a>
-                        </div>
-                        <!-- Header LOGO-->
-                        <!--Cart -->
                         <div class="header-right">
                             <div class="header-cart headercart-block">
                                 <div class="cart togg">
@@ -157,8 +172,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--Cart -->
-                            <!-- Topbar link -->
                             <div class="topbar-link">
                                 <a href="#" id="account" class="topbar-link-toggle animate" data-toggle="tooltip"
                                    data-placement="top" title="Войти в аккаунт">Мой аккаунт</a>
@@ -181,44 +194,49 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Topbar link -->
-                            <!--  header wishlist -->
                             <div class="wishlist">
                                 <a href="" class="wishlist-icon animate" data-toggle="tooltip"
                                    title="Посмотреть любимые">
-                                    <!--                                    <span class="wishlist-count">0</span>-->
+                                    <!--<span class="wishlist-count">0</span>-->
                                 </a>
                                 <span class="wishlist-title"><a href=""
                                                                 title="Посмотреть любимые">Посмотреть любимые</a></span>
                             </div>
-                            <!-- End header wishlist -->
-                            <div class="search-string">
+                            <!--<div class="search-string">
                                 <a href="#" id="search" class="search-string-button animate" data-toggle="tooltip"
                                    data-placement="top" title="Поиск в магазине">Поиск в магазине</a>
                                 <div class="search-area search-overlay">
-                                    <form role="search" method="get" id="searchform" class="search-form" action="">
+                                    <form role="search" method="get" class="search-form" action="">
                                         <div>
                                             <input class="search-field" type="text" placeholder="Искать на сайте"
-                                                   value="" name="s" id="s">
-                                            <button class="search-submit" type="submit" id="searchsubmit"></button>
+                                                   value="">
+                                            <button class="search-submit searchsubmit" type="submit"></button>
                                         </div>
                                     </form>
                                 </div>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                 </div>
-                <!-- End header_Center -->
-                <!-- Start header_Bottom -->
                 <div class="header-bottom">
                     <div class="container">
-                        <!-- #site-navigation -->
                         <nav id="site-navigation" class="navigation-bar main-navigation more">
                             <div class="nav-mainmenu">
-								<span id="hamburger" class="mainmenu-btn-wrapper">
+								<span class="mainmenu-btn-wrapper" id="hamburger">
 									<span class="mainmenu-btn"></span>
 								</span>
-                                <h3 class="menu-toggle">Menu</h3>
+                                <div class="d-flex flex-row justify-content-between">
+                                    <h3 class="menu-toggle">Каталог</h3>
+                                    <div class="search-area search-overlay d-flex d-lg-none">
+                                        <form role="search" method="get" class="search-form" action="">
+                                            <div>
+                                                <input class="search-field" type="text" placeholder="Искать в магазине"
+                                                       value="">
+                                                <button class="search-submit searchsubmit" type="submit"></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                             <a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to
                                 content</a>
@@ -276,6 +294,19 @@
                                             </div>
                                         </li>
                                         <li class="menu-item"><a href="">Контакты</a></li>
+                                        <li class="menu-item d-none d-lg-block">
+                                            <div class="search-area search-overlay">
+                                                <form role="search" method="get" class="search-form" action="">
+                                                    <div>
+                                                        <input class="search-field" type="text"
+                                                               placeholder="Искать в магазине"
+                                                               value="">
+                                                        <button class="search-submit searchsubmit"
+                                                                type="submit"></button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -388,7 +419,7 @@
                         <div id="new" class="tab-pane fade in active show">
                             <h3 class="tab-content-title">Новинки</h3>
                             <div class="row">
-                                <div class="product col-12 col-sm-6 col-lg-3">
+                                <div class="product col-6 col-sm-6 col-lg-3">
                                     <div class="container-inner">
                                         <span class="product-loading"></span>
                                         <div class="product-block-inner">
@@ -438,7 +469,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product col-12 col-sm-6 col-lg-3">
+                                <div class="product col-6 col-sm-6 col-lg-3">
                                     <div class="container-inner">
                                         <span class="product-loading"></span>
                                         <div class="product-block-inner">
@@ -484,7 +515,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product col-12 col-sm-6 col-lg-3">
+                                <div class="product col-6 col-sm-6 col-lg-3">
                                     <div class="container-inner">
                                         <span class="product-loading"></span>
                                         <div class="product-block-inner">
@@ -530,7 +561,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product col-12 col-sm-6 col-lg-3">
+                                <div class="product col-6 col-sm-6 col-lg-3">
                                     <div class="container-inner">
                                         <span class="product-loading"></span>
                                         <div class="product-block-inner">
@@ -581,7 +612,7 @@
                         <div id="popular" class="row tab-pane fade">
                             <h3 class="tab-content-title">Популярные</h3>
                             <div class="row">
-                                <div class="product col-12 col-sm-6 col-lg-3">
+                                <div class="product col-6 col-sm-6 col-lg-3">
                                     <div class="container-inner">
                                         <span class="product-loading"></span>
                                         <div class="product-block-inner">
@@ -631,7 +662,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product col-12 col-sm-6 col-lg-3">
+                                <div class="product col-6 col-sm-6 col-lg-3">
                                     <div class="container-inner">
                                         <span class="product-loading"></span>
                                         <div class="product-block-inner">
@@ -677,7 +708,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product col-12 col-sm-6 col-lg-3">
+                                <div class="product col-6 col-sm-6 col-lg-3">
                                     <div class="container-inner">
                                         <span class="product-loading"></span>
                                         <div class="product-block-inner">
@@ -723,7 +754,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product col-12 col-sm-6 col-lg-3">
+                                <div class="product col-6 col-sm-6 col-lg-3">
                                     <div class="container-inner">
                                         <span class="product-loading"></span>
                                         <div class="product-block-inner">
@@ -774,7 +805,7 @@
                         <div id="special" class="row tab-pane fade">
                             <h3 class="tab-content-title">Особые</h3>
                             <div class="row">
-                                <div class="product col-12 col-sm-6 col-lg-3">
+                                <div class="product col-6 col-sm-6 col-lg-3">
                                     <div class="container-inner">
                                         <span class="product-loading"></span>
                                         <div class="product-block-inner">
@@ -824,7 +855,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product col-12 col-sm-6 col-lg-3">
+                                <div class="product col-6 col-sm-6 col-lg-3">
                                     <div class="container-inner">
                                         <span class="product-loading"></span>
                                         <div class="product-block-inner">
@@ -870,7 +901,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product col-12 col-sm-6 col-lg-3">
+                                <div class="product col-6 col-sm-6 col-lg-3">
                                     <div class="container-inner">
                                         <span class="product-loading"></span>
                                         <div class="product-block-inner">
@@ -916,7 +947,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product col-12 col-sm-6 col-lg-3">
+                                <div class="product col-6 col-sm-6 col-lg-3">
                                     <div class="container-inner">
                                         <span class="product-loading"></span>
                                         <div class="product-block-inner">
@@ -967,7 +998,7 @@
                         <div id="action" class="row tab-pane fade">
                             <h3 class="tab-content-title">Акции</h3>
                             <div class="row">
-                                <div class="product col-12 col-sm-6 col-lg-3">
+                                <div class="product col-6 col-sm-6 col-lg-3">
                                     <div class="container-inner">
                                         <span class="product-loading"></span>
                                         <div class="product-block-inner">
@@ -1017,7 +1048,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product col-12 col-sm-6 col-lg-3">
+                                <div class="product col-6 col-sm-6 col-lg-3">
                                     <div class="container-inner">
                                         <span class="product-loading"></span>
                                         <div class="product-block-inner">
@@ -1063,7 +1094,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product col-12 col-sm-6 col-lg-3">
+                                <div class="product col-6 col-sm-6 col-lg-3">
                                     <div class="container-inner">
                                         <span class="product-loading"></span>
                                         <div class="product-block-inner">
@@ -1109,7 +1140,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product col-12 col-sm-6 col-lg-3">
+                                <div class="product col-6 col-sm-6 col-lg-3">
                                     <div class="container-inner">
                                         <span class="product-loading"></span>
                                         <div class="product-block-inner">
@@ -1187,7 +1218,7 @@
                 <div class="col-12 text-center mt-4 mb-2 mb-md-5">
                     <h3 class="title">Наши товары</h3>
                 </div>
-                <div class="product col-12 col-sm-6 col-lg-3">
+                <div class="product col-6 col-sm-6 col-lg-3">
                     <div class="container-inner">
                         <span class="product-loading"></span>
                         <div class="product-block-inner">
@@ -1234,7 +1265,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product col-12 col-sm-6 col-lg-3">
+                <div class="product col-6 col-sm-6 col-lg-3">
                     <div class="container-inner">
                         <span class="product-loading"></span>
                         <div class="product-block-inner">
@@ -1277,7 +1308,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product col-12 col-sm-6 col-lg-3">
+                <div class="product col-6 col-sm-6 col-lg-3">
                     <div class="container-inner">
                         <span class="product-loading"></span>
                         <div class="product-block-inner">
@@ -1320,7 +1351,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product col-12 col-sm-6 col-lg-3">
+                <div class="product col-6 col-sm-6 col-lg-3">
                     <div class="container-inner">
                         <span class="product-loading"></span>
                         <div class="product-block-inner">
@@ -1363,7 +1394,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product col-12 col-sm-6 col-lg-3">
+                <div class="product col-6 col-sm-6 col-lg-3">
                     <div class="container-inner">
                         <span class="product-loading"></span>
                         <div class="product-block-inner">
@@ -1410,7 +1441,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product col-12 col-sm-6 col-lg-3">
+                <div class="product col-6 col-sm-6 col-lg-3">
                     <div class="container-inner">
                         <span class="product-loading"></span>
                         <div class="product-block-inner">
@@ -1453,7 +1484,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product col-12 col-sm-6 col-lg-3">
+                <div class="product col-6 col-sm-6 col-lg-3">
                     <div class="container-inner">
                         <span class="product-loading"></span>
                         <div class="product-block-inner">
@@ -1496,7 +1527,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product col-12 col-sm-6 col-lg-3">
+                <div class="product col-6 col-sm-6 col-lg-3">
                     <div class="container-inner">
                         <span class="product-loading"></span>
                         <div class="product-block-inner">
@@ -1539,7 +1570,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product col-12 col-sm-6 col-lg-3">
+                <div class="product col-6 col-sm-6 col-lg-3">
                     <div class="container-inner">
                         <span class="product-loading"></span>
                         <div class="product-block-inner">
@@ -1586,7 +1617,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product col-12 col-sm-6 col-lg-3">
+                <div class="product col-6 col-sm-6 col-lg-3">
                     <div class="container-inner">
                         <span class="product-loading"></span>
                         <div class="product-block-inner">
@@ -1629,7 +1660,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product col-12 col-sm-6 col-lg-3">
+                <div class="product col-6 col-sm-6 col-lg-3">
                     <div class="container-inner">
                         <span class="product-loading"></span>
                         <div class="product-block-inner">
@@ -1672,7 +1703,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product col-12 col-sm-6 col-lg-3">
+                <div class="product col-6 col-sm-6 col-lg-3">
                     <div class="container-inner">
                         <span class="product-loading"></span>
                         <div class="product-block-inner">
@@ -1715,7 +1746,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product col-12 col-sm-6 col-lg-3">
+                <div class="product col-6 col-sm-6 col-lg-3">
                     <div class="container-inner">
                         <span class="product-loading"></span>
                         <div class="product-block-inner">
@@ -1762,7 +1793,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product col-12 col-sm-6 col-lg-3">
+                <div class="product col-6 col-sm-6 col-lg-3">
                     <div class="container-inner">
                         <span class="product-loading"></span>
                         <div class="product-block-inner">
@@ -1805,7 +1836,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product col-12 col-sm-6 col-lg-3">
+                <div class="product col-6 col-sm-6 col-lg-3">
                     <div class="container-inner">
                         <span class="product-loading"></span>
                         <div class="product-block-inner">
@@ -1848,7 +1879,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product col-12 col-sm-6 col-lg-3">
+                <div class="product col-6 col-sm-6 col-lg-3">
                     <div class="container-inner">
                         <span class="product-loading"></span>
                         <div class="product-block-inner">
@@ -2192,8 +2223,10 @@
                                     </div>
                                     <div class="widget_shopping_cart_content">
                                         <p class="mini-cart__buttons buttons mt-3 d-flex flex-row">
-                                            <a href="" class="hi-btn animate animate-1 mr-1" data-toggle="tooltip" title="Добавить в корзину">В корзину</a>
-                                            <a href="" class="hi-btn one animate animate-1 mr-1" data-toggle="tooltip" title="Купить в один клик">Купить быстро</a>
+                                            <a href="" class="hi-btn animate animate-1 mr-1" data-toggle="tooltip"
+                                               title="Добавить в корзину">В корзину</a>
+                                            <a href="" class="hi-btn one animate animate-1 mr-1" data-toggle="tooltip"
+                                               title="Купить в один клик">Купить быстро</a>
                                         </p>
                                     </div>
                                 </div>

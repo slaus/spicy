@@ -6,9 +6,19 @@
     position: relative;
 
     &-right {
-        width: 240px;
+        width: auto;
+
+        @include md() {
+            width: 180px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row-reverse;
+            margin-right: 15px;
+        }
 
         @include sm() {
+            width: 180px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -17,6 +27,7 @@
         }
 
         @include xs() {
+            width: 180px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -52,33 +63,77 @@
         z-index: 5;
         text-align: left;
         margin: 12px 0 0;
-        width: 230px;
+        width: auto;
 
         & .topservice-contact-title {
-            color: #ffffff;
-            font-size: 14px;
+            color: $white;
+            font-size: 13px;
             display: block;
             margin-top: -10px;
             padding-left: 22px;
 
-            @include sm() {
+            @include xs() {
                 text-align: center;
             }
+        }
+
+        & .topservice-contact-time {
+            color: $white;
+            font-size: 16px;
+            font-weight: 300;
+            position: relative;
+            display: block;
+
             @include xs() {
+                text-align: center;
+            }
+
+            &:before {
+                content: "\f017";
+                display: inline-block;
+                vertical-align: top;
+                margin: 0 8px 0 0;
+                font-family: 'Font Awesome';
+                color: $yellow;
+                font-size: 16px;
+                line-height: 22px;
+                width: 15px;
+                text-align: center;
+            }
+        }
+
+        & .topservice-contact-address {
+            color: $white;
+            font-size: 16px;
+            font-weight: 400;
+            position: relative;
+            display: block;
+
+            @include xs() {
+                text-align: center;
+            }
+
+            &:before {
+                content: "\f041";
+                display: inline-block;
+                vertical-align: top;
+                margin: 0 8px 0 0;
+                font-family: 'Font Awesome';
+                color: $yellow;
+                font-size: 16px;
+                line-height: 22px;
+                width: 15px;
                 text-align: center;
             }
         }
 
         & .topservice-contact-label {
             color: $white;
-            font-size: 17px;
-            font-weight: 500;
+            font-size: 16px;
+            font-weight: 400;
             position: relative;
             display: block;
 
-            @include sm() {
-                text-align: center;
-            }
             @include xs() {
                 text-align: center;
             }
@@ -92,6 +147,49 @@
                 color: $yellow;
                 font-size: 16px;
                 line-height: 22px;
+                width: 15px;
+                text-align: center;
+            }
+
+            & > a {
+                color: $white;
+
+                &:hover {
+                    color: $yellow;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        & .topservice-contact-mobile {
+            color: $white;
+            font-size: 16px;
+            font-weight: 400;
+            position: relative;
+            display: block;
+
+            @include md() {
+                text-align: center;
+            }
+
+            @include sm() {
+                text-align: center;
+            }
+            @include xs() {
+                text-align: center;
+            }
+
+            &:before {
+                content: "\f10b";
+                display: inline-block;
+                vertical-align: top;
+                margin: 0 8px 0 0;
+                font-family: 'Font Awesome';
+                color: $yellow;
+                font-size: 16px;
+                line-height: 22px;
+                width: 15px;
+                text-align: center;
             }
 
             & > a {
@@ -235,7 +333,7 @@
         position: relative;
         float: right;
         margin: 20px 0 0 10px;
-        padding: 0 0 0 15px;;
+        padding: 0 0 0 15px;
 
         &:before {
             content: '';
@@ -292,6 +390,18 @@
             -moz-box-shadow: 0 5px 5px 0 rgba(51, 51, 51, 0.5);
             box-shadow: 0 5px 5px 0 rgba(51, 51, 51, 0.5);
 
+            @include md() {
+                right: -60px;
+            }
+
+            @include sm() {
+                right: -60px;
+            }
+
+            @include xs() {
+                right: -60px;
+            }
+
             &.show-link-wrapper {
                 display: block;
             }
@@ -329,29 +439,18 @@
                 transition: color .3s;
             }
         }
-        
+
         & .search-area {
             background-color: $white;
             display: none;
-            position: absolute;
             padding: 15px 20px;
             z-index: 9;
-            min-width: 300px;
+            min-width: 150px;
             text-align: left;
-            top: 40px;
-            right: -25px;
             -webkit-box-shadow: 0 5px 5px 0 rgba(51, 51, 51, 0.5);
             -moz-box-shadow: 0 5px 5px 0 rgba(51, 51, 51, 0.5);
             box-shadow: 0 5px 5px 0 rgba(51, 51, 51, 0.5);
 
-            @include sm() {
-                right: -240px;
-            }
-
-            @include xs() {
-                right: -240px;
-            }
-            
             &.show-search-area {
                 display: block;
             }
@@ -417,18 +516,18 @@
             margin-top: 5px;
         }
 
-        &:before {
-            content: '';
-            display: block;
-            position: absolute;
-            left: 0;
-            right: auto;
-            top: 0;
-            bottom: auto;
-            height: 100%;
-            width: 1px;
-            background: #64a530;
-        }
+        //&:before {
+        //    content: '';
+        //    display: block;
+        //    position: absolute;
+        //    left: 0;
+        //    right: auto;
+        //    top: 0;
+        //    bottom: auto;
+        //    height: 100%;
+        //    width: 1px;
+        //    background: #64a530;
+        //}
     }
 
     &-logo {
@@ -439,7 +538,7 @@
         width: 250px;
         height: 72px;
         float: left;
-        margin: 0 30px;
+        margin: 0;
 
         @include md() {
             width: 220px;
@@ -511,9 +610,12 @@
     }
 
     .search-overlay {
-        position: static;
-        display: block;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
         z-index: 5;
+        margin-left: 2px;
+        height: 100%;
         background: $white;
 
         & .screen-reader-text {
@@ -526,26 +628,42 @@
             background-color: $white;
             border: none;
             padding: 15px;
-            width: 300px;
-            max-height: 45px;
+            width: 210px;
+            max-height: 100%;
             font-weight: 300;
+
+            @include xl() {
+                width: 350px;
+            }
+
+            @include lg() {
+                width: 300px;
+            }
+
+            @include md() {
+                width: 300px;
+            }
+
+            @include sm() {
+                width: 300px;
+            }
         }
 
-        & #searchsubmit {
+        & .searchsubmit {
             background-image: none;
             border: 0 none;
             color: $black;
             float: none;
-            font-size: 0;
+            //font-size: 0;
             background: $white;
-            line-height: 45px;
-            height: 45px;
+            line-height: 100%;
+            height: 100%;
             font-weight: 600;
             width: auto;
             position: absolute;
             top: 0;
             bottom: auto;
-            padding: 16px 20px;
+            padding: 16px;
             right: 0;
             left: auto;
             transition: all 0.3s ease-out 0s;
@@ -555,12 +673,13 @@
             -o-transition: all 0.3s ease-out 0s;
             text-transform: uppercase;
             z-index: 0;
+            cursor: pointer;
 
             &:after {
                 content: "\f002";
                 font-family: 'Font Awesome';
                 font-size: 24px;
-                color: $white;
+                color: $black;
                 z-index: 1;
             }
         }
@@ -592,15 +711,27 @@
                     position: absolute;
                     padding: 0;
                     border-width: 0;
-                    right: 20px;
-                    top: -200px;
-                    display: flex;
+                    top: 10px;
+                    left: 15px;
+                    display: none;
                     justify-content: center;
                     align-items: center;
                     z-index: 1000;
                     cursor: pointer;
                     border-radius: 5px;
                     transition: background-color .3s;
+
+                    @include md() {
+                        display: flex;
+                    }
+
+                    @include sm() {
+                        display: flex;
+                    }
+
+                    @include xs() {
+                        display: flex;
+                    }
 
                     .mainmenu-btn {
                         font-family: 'Font Awesome';
@@ -623,6 +754,22 @@
 
             & h3.menu-toggle {
                 display: none;
+                margin-bottom: 0;
+                padding-top: 5px;
+                padding-bottom: 6px;
+                margin-left: 50px;
+
+                @include md() {
+                    display: block;
+                }
+
+                @include sm() {
+                    display: block;
+                }
+
+                @include xs() {
+                    display: block;
+                }
             }
 
             & .screen-reader-text {
@@ -812,7 +959,7 @@
 
                         & .sub-container {
                             display: none;
-                            z-index: 1;
+                            z-index: 9;
                             height: auto;
                             width: 250px;
                             position: absolute;
@@ -856,8 +1003,8 @@
                                     }
                                 }
 
-                                @include md() {
-                                    margin-left: -134px;
+                                @include lg() {
+                                    margin-left: -15px;
                                 }
                             }
                         }
@@ -892,7 +1039,11 @@
                     background-color: $white;
                     text-decoration: none;
                 }
-                
+
+                @include md() {
+                    display: none;
+                }
+
                 @include sm() {
                     display: none;
                 }
@@ -906,7 +1057,7 @@
                 display: flex;
                 position: fixed;
                 flex-direction: column;
-                right: -5px;
+                right: 0;
                 top: 0;
                 z-index: 999;
                 background: $yellow;
@@ -914,6 +1065,7 @@
                 width: 40%;
                 min-width: 280px;
                 overflow-y: scroll;
+                overflow-x: hidden;
 
                 & a.dc-mega {
                     position: relative;
@@ -934,6 +1086,43 @@
                             top: -32px !important;
                             font-size: 0 !important;
                             line-height: 0 !important;
+                        }
+
+                        &:hover {
+                            background: $white !important;
+                            color: $green !important;
+
+                            &:before {
+                                left: calc(50% - 3px) !important;
+                                font-size: 18px !important;
+                                line-height: 20px !important;
+                                margin-left: -5px !important;
+                                top: 2px !important;
+                                margin-bottom: 0;
+                                z-index: 1;
+                                -webkit-transform: rotate(23deg);
+                                -ms-transform: rotate(23deg);
+                                transform: rotate(23deg);
+                                -webkit-transition: all .6s ease;
+                                -o-transition: all .6s ease;
+                                transition: all .6s ease;
+                            }
+
+                            &:after {
+                                left: 50% !important;
+                                font-size: 20px !important;
+                                line-height: 20px !important;
+                                top: 5px !important;
+                                margin-left: -16px !important;
+                                margin-bottom: 0 !important;
+                                z-index: 1;
+                                -webkit-transform: rotate(350deg);
+                                -ms-transform: rotate(350deg);
+                                transform: rotate(350deg);
+                                -webkit-transition: all .4s ease;
+                                -o-transition: all .4s ease;
+                                transition: all .4s ease;
+                            }
                         }
                     }
 
@@ -1007,6 +1196,24 @@
                 }
             }
         }
+
+        @include md() {
+            & .container {
+                max-width: 100%;
+            }
+        }
+
+        @include sm() {
+            & .container {
+                max-width: 100%;
+            }
+        }
+
+        @include xs() {
+            & .container {
+                max-width: 100%;
+            }
+        }
     }
 }
 
@@ -1037,12 +1244,16 @@
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 
+    @include md() {
+        right: -65px;
+    }
+
     @include sm() {
-        right: -40px;
+        right: -65px;
     }
 
     @include xs() {
-        right: -40px;
+        right: -65px;
     }
 
     &.show_shopping_cart {

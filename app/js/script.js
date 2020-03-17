@@ -20,6 +20,19 @@ $('#back-to-top').click(function () {
 //Carousel responsive
 $(function () {
 
+    if (window.sessionStorage && window.localStorage) {
+        const AGREE = "Yes";
+
+        if (localStorage.getItem("Agreement") == AGREE) {
+            $(".alert-dismissible.close-alert").hide();
+        } else {
+            $(".close-alert .close").click(function () {
+                localStorage.setItem("Agreement", AGREE);
+            });
+        }
+    }
+
+
     $(".dc-mega-icon").click(function (e) {
         e.preventDefault();
         $(".dc-mega").removeClass("hide-active");

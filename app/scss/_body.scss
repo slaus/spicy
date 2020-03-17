@@ -25,6 +25,10 @@ body {
       right: 0;
       background: rgba(0, 0, 0, .65);
     }
+
+    & .mainmenu-btn-wrapper {
+      right: 44px !important;
+    }
   }
 }
 
@@ -527,5 +531,19 @@ a.button-green {
       -o-transition: .3s;
       margin-right: 0;
       margin-left: 0;
+  }
+}
+
+.alert-dismissible {
+  font-size: 14px;
+
+  & a {
+    border-bottom: 1px dashed $green;
+
+    &:hover {
+      text-decoration: none;
+      color: #e5bd00;
+      border-bottom: 1px dashed #e5bd00;
+    }
   }
 }

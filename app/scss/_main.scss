@@ -756,7 +756,7 @@
                     position: relative;
 
                     &:after {
-                        display: none;
+                        /*display: none;
                         justify-content: center;
                         align-items: center;
                         position: absolute;
@@ -770,7 +770,20 @@
                         font-size: 64px;
                         color: $white;
                         content: "\f055";
-                        text-shadow: 0 0 5px $black;
+                        text-shadow: 0 0 5px $black;*/
+                        display: none;
+                        position: absolute;
+                        width: 50%;
+                        height: 50%;
+                        left: -30%;
+                        bottom: -30%;
+                        font-family: "Font Awesome";
+                        font-size: 30px;
+                        color: $black;
+                        background: $white;
+                        content: "\f055";
+                        transform: rotate(45deg);
+                        padding-left: calc(30% - 26px);
 
                         @include md() {
                             display: flex;
@@ -782,6 +795,8 @@
 
                         @include xs() {
                             display: flex;
+                            padding-left: calc(30% - 40px);
+                            font-size: 36px;
                         }
                     }
                 }
@@ -1182,6 +1197,12 @@
                     }
                 }
             }
+        }
+
+        @include xs() {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
         }
     }
 
