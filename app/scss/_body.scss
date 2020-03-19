@@ -27,7 +27,22 @@ body {
     }
 
     & .mainmenu-btn-wrapper {
-      right: 44px !important;
+      background: $yellow !important;
+
+      @include md() {
+        right: 277px !important;
+        display: flex !important;
+      }
+
+      @include sm() {
+        right: 277px !important;
+          display: flex !important;
+      }
+
+      @include xs() {
+        right: 277px !important;
+          display: flex !important;
+      }
     }
   }
 }

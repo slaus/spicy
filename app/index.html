@@ -112,7 +112,7 @@
                         <div class="header-right">
                             <div class="header-cart headercart-block">
                                 <div class="cart togg">
-                                    <a id="cart-contents" class="shopping_cart tog" data-toggle="tooltip"
+                                    <a id="cart-contents" class="shopping_cart tog" data-tooltip="tooltip"
                                        title="Моя корзина">
                                         <span class="cart-icon animate"></span>
                                         <div class="cart-contents">
@@ -159,7 +159,7 @@
                                     </aside>
                                 </div>
                                 <div id="go-to-cart" class="back-to-top effect-1">
-                                    <div class="hi-icon shopping_cart tog" data-toggle="tooltip"
+                                    <div class="hi-icon shopping_cart tog" data-tooltip="tooltip"
                                          title="Перейти в корзину">
                                         <a href="#" class="d-block mt-3 pl-2">
                                             <span class="cart-icon animate"></span>
@@ -173,7 +173,7 @@
                                 </div>
                             </div>
                             <div class="topbar-link">
-                                <a href="#" id="account" class="topbar-link-toggle animate" data-toggle="tooltip"
+                                <a href="#" id="account" class="topbar-link-toggle animate" data-tooltip="tooltip"
                                    data-placement="top" title="Войти в аккаунт">Мой аккаунт</a>
                                 <div class="topbar-link-wrapper">
                                     <div class="header-menu-links">
@@ -195,7 +195,7 @@
                                 </div>
                             </div>
                             <div class="wishlist">
-                                <a href="" class="wishlist-icon animate" data-toggle="tooltip"
+                                <a href="" class="wishlist-icon animate" data-tooltip="tooltip"
                                    title="Посмотреть любимые">
                                     <!--<span class="wishlist-count">0</span>-->
                                 </a>
@@ -203,7 +203,7 @@
                                                                 title="Посмотреть любимые">Посмотреть любимые</a></span>
                             </div>
                             <!--<div class="search-string">
-                                <a href="#" id="search" class="search-string-button animate" data-toggle="tooltip"
+                                <a href="#" id="search" class="search-string-button animate" data-tooltip="tooltip"
                                    data-placement="top" title="Поиск в магазине">Поиск в магазине</a>
                                 <div class="search-area search-overlay">
                                     <form role="search" method="get" class="search-form" action="">
@@ -222,11 +222,11 @@
                     <div class="container">
                         <nav id="site-navigation" class="navigation-bar main-navigation more">
                             <div class="nav-mainmenu">
-								<span class="mainmenu-btn-wrapper" id="hamburger">
+								<span class="mainmenu-btn-wrapper">
 									<span class="mainmenu-btn"></span>
 								</span>
                                 <div class="d-flex flex-row justify-content-between">
-                                    <h3 class="menu-toggle">Каталог</h3>
+                                    <h3 class="menu-toggle" id="hamburger">Каталог</h3>
                                     <div class="search-area search-overlay d-flex d-lg-none">
                                         <form role="search" method="get" class="search-form" action="">
                                             <div>
@@ -436,14 +436,14 @@
                                                 </a>
                                                 <div class="product-button-hover">
                                                     <a href="#" class="button view-button" data-toggle="modal"
-                                                       data-target="#exampleModalCenter" data-toggle="tooltip"
+                                                       data-target="#exampleModalCenter" data-tooltip="tooltip"
                                                        data-placement="left" title="Быстрый просмотр">Быстрый
                                                         просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button"
-                                                       data-toggle="tooltip" data-placement="left"
-                                                       title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                                    <a href="#" class="button add-to-wishlist-button"-->
+<!--                                                       data-tooltip="tooltip" data-placement="left"-->
+<!--                                                       title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                                 </div>
                                             </div>
                                             <div class="product-detail-wrapper">
@@ -461,7 +461,7 @@
                                                 <div class="button-group effect-2">
                                                     <div class="product-button-outer hi-icon">
                                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                                           data-toggle="tooltip" data-placement="left"
+                                                           data-tooltip="tooltip" data-placement="left"
                                                            title="Добавить в корзину">В корзину</a>
                                                     </div>
                                                 </div>
@@ -485,14 +485,14 @@
                                                 </a>
                                                 <div class="product-button-hover">
                                                     <a href="#" class="button view-button" data-toggle="modal"
-                                                       data-target="#exampleModalCenter" data-toggle="tooltip"
+                                                       data-target="#exampleModalCenter" data-tooltip="tooltip"
                                                        data-placement="left" title="Быстрый просмотр">Быстрый
                                                         просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button"
-                                                       data-toggle="tooltip" data-placement="left"
-                                                       title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                                    <a href="#" class="button add-to-wishlist-button"-->
+<!--                                                       data-tooltip="tooltip" data-placement="left"-->
+<!--                                                       title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                                 </div>
                                             </div>
                                             <div class="product-detail-wrapper">
@@ -507,7 +507,7 @@
                                                 <div class="button-group effect-2">
                                                     <div class="product-button-outer hi-icon">
                                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                                           data-toggle="tooltip" data-placement="left"
+                                                           data-tooltip="tooltip" data-placement="left"
                                                            title="Добавить в корзину">В корзину</a>
                                                     </div>
                                                 </div>
@@ -531,14 +531,14 @@
                                                 </a>
                                                 <div class="product-button-hover">
                                                     <a href="#" class="button view-button" data-toggle="modal"
-                                                       data-target="#exampleModalCenter" data-toggle="tooltip"
+                                                       data-target="#exampleModalCenter" data-tooltip="tooltip"
                                                        data-placement="left" title="Быстрый просмотр">Быстрый
                                                         просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button"
-                                                       data-toggle="tooltip" data-placement="left"
-                                                       title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                                    <a href="#" class="button add-to-wishlist-button"-->
+<!--                                                       data-tooltip="tooltip" data-placement="left"-->
+<!--                                                       title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                                 </div>
                                             </div>
                                             <div class="product-detail-wrapper">
@@ -553,7 +553,7 @@
                                                 <div class="button-group effect-2">
                                                     <div class="product-button-outer hi-icon">
                                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                                           data-toggle="tooltip" data-placement="left"
+                                                           data-tooltip="tooltip" data-placement="left"
                                                            title="Добавить в корзину">В корзину</a>
                                                     </div>
                                                 </div>
@@ -577,14 +577,14 @@
                                                 </a>
                                                 <div class="product-button-hover">
                                                     <a href="#" class="button view-button" data-toggle="modal"
-                                                       data-target="#exampleModalCenter" data-toggle="tooltip"
+                                                       data-target="#exampleModalCenter" data-tooltip="tooltip"
                                                        data-placement="left" title="Быстрый просмотр">Быстрый
                                                         просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button"
-                                                       data-toggle="tooltip" data-placement="left"
-                                                       title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                                    <a href="#" class="button add-to-wishlist-button"-->
+<!--                                                       data-tooltip="tooltip" data-placement="left"-->
+<!--                                                       title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                                 </div>
                                             </div>
                                             <div class="product-detail-wrapper">
@@ -599,7 +599,7 @@
                                                 <div class="button-group effect-2">
                                                     <div class="product-button-outer hi-icon">
                                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                                           data-toggle="tooltip" data-placement="left"
+                                                           data-tooltip="tooltip" data-placement="left"
                                                            title="Добавить в корзину">В корзину</a>
                                                     </div>
                                                 </div>
@@ -629,14 +629,14 @@
                                                 </a>
                                                 <div class="product-button-hover">
                                                     <a href="#" class="button view-button" data-toggle="modal"
-                                                       data-target="#exampleModalCenter" data-toggle="tooltip"
+                                                       data-target="#exampleModalCenter" data-tooltip="tooltip"
                                                        data-placement="left" title="Быстрый просмотр">Быстрый
                                                         просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button"
-                                                       data-toggle="tooltip" data-placement="left"
-                                                       title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                                    <a href="#" class="button add-to-wishlist-button"-->
+<!--                                                       data-tooltip="tooltip" data-placement="left"-->
+<!--                                                       title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                                 </div>
                                             </div>
                                             <div class="product-detail-wrapper">
@@ -654,7 +654,7 @@
                                                 <div class="button-group effect-2">
                                                     <div class="product-button-outer hi-icon">
                                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                                           data-toggle="tooltip" data-placement="left"
+                                                           data-tooltip="tooltip" data-placement="left"
                                                            title="Добавить в корзину">В корзину</a>
                                                     </div>
                                                 </div>
@@ -678,14 +678,14 @@
                                                 </a>
                                                 <div class="product-button-hover">
                                                     <a href="#" class="button view-button" data-toggle="modal"
-                                                       data-target="#exampleModalCenter" data-toggle="tooltip"
+                                                       data-target="#exampleModalCenter" data-tooltip="tooltip"
                                                        data-placement="left" title="Быстрый просмотр">Быстрый
                                                         просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button"
-                                                       data-toggle="tooltip" data-placement="left"
-                                                       title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                                    <a href="#" class="button add-to-wishlist-button"-->
+<!--                                                       data-tooltip="tooltip" data-placement="left"-->
+<!--                                                       title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                                 </div>
                                             </div>
                                             <div class="product-detail-wrapper">
@@ -700,7 +700,7 @@
                                                 <div class="button-group effect-2">
                                                     <div class="product-button-outer hi-icon">
                                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                                           data-toggle="tooltip" data-placement="left"
+                                                           data-tooltip="tooltip" data-placement="left"
                                                            title="Добавить в корзину">В корзину</a>
                                                     </div>
                                                 </div>
@@ -724,14 +724,14 @@
                                                 </a>
                                                 <div class="product-button-hover">
                                                     <a href="#" class="button view-button" data-toggle="modal"
-                                                       data-target="#exampleModalCenter" data-toggle="tooltip"
+                                                       data-target="#exampleModalCenter" data-tooltip="tooltip"
                                                        data-placement="left" title="Быстрый просмотр">Быстрый
                                                         просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button"
-                                                       data-toggle="tooltip" data-placement="left"
-                                                       title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                                    <a href="#" class="button add-to-wishlist-button"-->
+<!--                                                       data-tooltip="tooltip" data-placement="left"-->
+<!--                                                       title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                                 </div>
                                             </div>
                                             <div class="product-detail-wrapper">
@@ -746,7 +746,7 @@
                                                 <div class="button-group effect-2">
                                                     <div class="product-button-outer hi-icon">
                                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                                           data-toggle="tooltip" data-placement="left"
+                                                           data-tooltip="tooltip" data-placement="left"
                                                            title="Добавить в корзину">В корзину</a>
                                                     </div>
                                                 </div>
@@ -770,14 +770,14 @@
                                                 </a>
                                                 <div class="product-button-hover">
                                                     <a href="#" class="button view-button" data-toggle="modal"
-                                                       data-target="#exampleModalCenter" data-toggle="tooltip"
+                                                       data-target="#exampleModalCenter" data-tooltip="tooltip"
                                                        data-placement="left" title="Быстрый просмотр">Быстрый
                                                         просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button"
-                                                       data-toggle="tooltip" data-placement="left"
-                                                       title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                                    <a href="#" class="button add-to-wishlist-button"-->
+<!--                                                       data-tooltip="tooltip" data-placement="left"-->
+<!--                                                       title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                                 </div>
                                             </div>
                                             <div class="product-detail-wrapper">
@@ -792,7 +792,7 @@
                                                 <div class="button-group effect-2">
                                                     <div class="product-button-outer hi-icon">
                                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                                           data-toggle="tooltip" data-placement="left"
+                                                           data-tooltip="tooltip" data-placement="left"
                                                            title="Добавить в корзину">В корзину</a>
                                                     </div>
                                                 </div>
@@ -822,14 +822,14 @@
                                                 </a>
                                                 <div class="product-button-hover">
                                                     <a href="#" class="button view-button" data-toggle="modal"
-                                                       data-target="#exampleModalCenter" data-toggle="tooltip"
+                                                       data-target="#exampleModalCenter" data-tooltip="tooltip"
                                                        data-placement="left" title="Быстрый просмотр">Быстрый
                                                         просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button"
-                                                       data-toggle="tooltip" data-placement="left"
-                                                       title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                                    <a href="#" class="button add-to-wishlist-button"-->
+<!--                                                       data-tooltip="tooltip" data-placement="left"-->
+<!--                                                       title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                                 </div>
                                             </div>
                                             <div class="product-detail-wrapper">
@@ -847,7 +847,7 @@
                                                 <div class="button-group effect-2">
                                                     <div class="product-button-outer hi-icon">
                                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                                           data-toggle="tooltip" data-placement="left"
+                                                           data-tooltip="tooltip" data-placement="left"
                                                            title="Добавить в корзину">В корзину</a>
                                                     </div>
                                                 </div>
@@ -871,14 +871,14 @@
                                                 </a>
                                                 <div class="product-button-hover">
                                                     <a href="#" class="button view-button" data-toggle="modal"
-                                                       data-target="#exampleModalCenter" data-toggle="tooltip"
+                                                       data-target="#exampleModalCenter" data-tooltip="tooltip"
                                                        data-placement="left" title="Быстрый просмотр">Быстрый
                                                         просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button"
-                                                       data-toggle="tooltip" data-placement="left"
-                                                       title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                                    <a href="#" class="button add-to-wishlist-button"-->
+<!--                                                       data-tooltip="tooltip" data-placement="left"-->
+<!--                                                       title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                                 </div>
                                             </div>
                                             <div class="product-detail-wrapper">
@@ -893,7 +893,7 @@
                                                 <div class="button-group effect-2">
                                                     <div class="product-button-outer hi-icon">
                                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                                           data-toggle="tooltip" data-placement="left"
+                                                           data-tooltip="tooltip" data-placement="left"
                                                            title="Добавить в корзину">В корзину</a>
                                                     </div>
                                                 </div>
@@ -917,14 +917,14 @@
                                                 </a>
                                                 <div class="product-button-hover">
                                                     <a href="#" class="button view-button" data-toggle="modal"
-                                                       data-target="#exampleModalCenter" data-toggle="tooltip"
+                                                       data-target="#exampleModalCenter" data-tooltip="tooltip"
                                                        data-placement="left" title="Быстрый просмотр">Быстрый
                                                         просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button"
-                                                       data-toggle="tooltip" data-placement="left"
-                                                       title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                                    <a href="#" class="button add-to-wishlist-button"-->
+<!--                                                       data-tooltip="tooltip" data-placement="left"-->
+<!--                                                       title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                                 </div>
                                             </div>
                                             <div class="product-detail-wrapper">
@@ -939,7 +939,7 @@
                                                 <div class="button-group effect-2">
                                                     <div class="product-button-outer hi-icon">
                                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                                           data-toggle="tooltip" data-placement="left"
+                                                           data-tooltip="tooltip" data-placement="left"
                                                            title="Добавить в корзину">В корзину</a>
                                                     </div>
                                                 </div>
@@ -963,14 +963,14 @@
                                                 </a>
                                                 <div class="product-button-hover">
                                                     <a href="#" class="button view-button" data-toggle="modal"
-                                                       data-target="#exampleModalCenter" data-toggle="tooltip"
+                                                       data-target="#exampleModalCenter" data-tooltip="tooltip"
                                                        data-placement="left" title="Быстрый просмотр">Быстрый
                                                         просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button"
-                                                       data-toggle="tooltip" data-placement="left"
-                                                       title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                                    <a href="#" class="button add-to-wishlist-button"-->
+<!--                                                       data-tooltip="tooltip" data-placement="left"-->
+<!--                                                       title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                                 </div>
                                             </div>
                                             <div class="product-detail-wrapper">
@@ -985,7 +985,7 @@
                                                 <div class="button-group effect-2">
                                                     <div class="product-button-outer hi-icon">
                                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                                           data-toggle="tooltip" data-placement="left"
+                                                           data-tooltip="tooltip" data-placement="left"
                                                            title="Добавить в корзину">В корзину</a>
                                                     </div>
                                                 </div>
@@ -1015,14 +1015,14 @@
                                                 </a>
                                                 <div class="product-button-hover">
                                                     <a href="#" class="button view-button" data-toggle="modal"
-                                                       data-target="#exampleModalCenter" data-toggle="tooltip"
+                                                       data-target="#exampleModalCenter" data-tooltip="tooltip"
                                                        data-placement="left" title="Быстрый просмотр">Быстрый
                                                         просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button"
-                                                       data-toggle="tooltip" data-placement="left"
-                                                       title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                                    <a href="#" class="button add-to-wishlist-button"-->
+<!--                                                       data-tooltip="tooltip" data-placement="left"-->
+<!--                                                       title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                                 </div>
                                             </div>
                                             <div class="product-detail-wrapper">
@@ -1040,7 +1040,7 @@
                                                 <div class="button-group effect-2">
                                                     <div class="product-button-outer hi-icon">
                                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                                           data-toggle="tooltip" data-placement="left"
+                                                           data-tooltip="tooltip" data-placement="left"
                                                            title="Добавить в корзину">В корзину</a>
                                                     </div>
                                                 </div>
@@ -1064,14 +1064,14 @@
                                                 </a>
                                                 <div class="product-button-hover">
                                                     <a href="#" class="button view-button" data-toggle="modal"
-                                                       data-target="#exampleModalCenter" data-toggle="tooltip"
+                                                       data-target="#exampleModalCenter" data-tooltip="tooltip"
                                                        data-placement="left" title="Быстрый просмотр">Быстрый
                                                         просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button"
-                                                       data-toggle="tooltip" data-placement="left"
-                                                       title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                                    <a href="#" class="button add-to-wishlist-button"-->
+<!--                                                       data-tooltip="tooltip" data-placement="left"-->
+<!--                                                       title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                                 </div>
                                             </div>
                                             <div class="product-detail-wrapper">
@@ -1086,7 +1086,7 @@
                                                 <div class="button-group effect-2">
                                                     <div class="product-button-outer hi-icon">
                                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                                           data-toggle="tooltip" data-placement="left"
+                                                           data-tooltip="tooltip" data-placement="left"
                                                            title="Добавить в корзину">В корзину</a>
                                                     </div>
                                                 </div>
@@ -1110,14 +1110,14 @@
                                                 </a>
                                                 <div class="product-button-hover">
                                                     <a href="#" class="button view-button" data-toggle="modal"
-                                                       data-target="#exampleModalCenter" data-toggle="tooltip"
+                                                       data-target="#exampleModalCenter" data-tooltip="tooltip"
                                                        data-placement="left" title="Быстрый просмотр">Быстрый
                                                         просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button"
-                                                       data-toggle="tooltip" data-placement="left"
-                                                       title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                                    <a href="#" class="button add-to-wishlist-button"-->
+<!--                                                       data-tooltip="tooltip" data-placement="left"-->
+<!--                                                       title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                                 </div>
                                             </div>
                                             <div class="product-detail-wrapper">
@@ -1132,7 +1132,7 @@
                                                 <div class="button-group effect-2">
                                                     <div class="product-button-outer hi-icon">
                                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                                           data-toggle="tooltip" data-placement="left"
+                                                           data-tooltip="tooltip" data-placement="left"
                                                            title="Добавить в корзину">В корзину</a>
                                                     </div>
                                                 </div>
@@ -1156,14 +1156,14 @@
                                                 </a>
                                                 <div class="product-button-hover">
                                                     <a href="#" class="button view-button" data-toggle="modal"
-                                                       data-target="#exampleModalCenter" data-toggle="tooltip"
+                                                       data-target="#exampleModalCenter" data-tooltip="tooltip"
                                                        data-placement="left" title="Быстрый просмотр">Быстрый
                                                         просмотр</a>
-                                                    <a href="#" class="button add-to-wishlist-button"
-                                                       data-toggle="tooltip" data-placement="left"
-                                                       title="Добавить в любимые">Добавить в любимые</a>
-                                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                                    <a href="#" class="button add-to-wishlist-button"-->
+<!--                                                       data-tooltip="tooltip" data-placement="left"-->
+<!--                                                       title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                                 </div>
                                             </div>
                                             <div class="product-detail-wrapper">
@@ -1178,7 +1178,7 @@
                                                 <div class="button-group effect-2">
                                                     <div class="product-button-outer hi-icon">
                                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                                           data-toggle="tooltip" data-placement="left"
+                                                           data-tooltip="tooltip" data-placement="left"
                                                            title="Добавить в корзину">В корзину</a>
                                                     </div>
                                                 </div>
@@ -1234,12 +1234,12 @@
                                 </a>
                                 <div class="product-button-hover">
                                     <a href="#" class="button view-button" data-toggle="modal"
-                                       data-target="#exampleModalCenter" data-toggle="tooltip" data-placement="left"
+                                       data-target="#exampleModalCenter" data-tooltip="tooltip" data-placement="left"
                                        title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip"
-                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                    <a href="#" class="button add-to-wishlist-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                 </div>
                             </div>
                             <div class="product-detail-wrapper">
@@ -1257,7 +1257,7 @@
                                 <div class="button-group effect-2">
                                     <div class="product-button-outer hi-icon">
                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                           data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В
+                                           data-tooltip="tooltip" data-placement="left" title="Добавить в корзину">В
                                             корзину</a>
                                     </div>
                                 </div>
@@ -1280,12 +1280,12 @@
                                 </a>
                                 <div class="product-button-hover">
                                     <a href="#" class="button view-button" data-toggle="modal"
-                                       data-target="#exampleModalCenter" data-toggle="tooltip" data-placement="left"
+                                       data-target="#exampleModalCenter" data-tooltip="tooltip" data-placement="left"
                                        title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip"
-                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                    <a href="#" class="button add-to-wishlist-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                 </div>
                             </div>
                             <div class="product-detail-wrapper">
@@ -1300,7 +1300,7 @@
                                 <div class="button-group effect-2">
                                     <div class="product-button-outer hi-icon">
                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                           data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В
+                                           data-tooltip="tooltip" data-placement="left" title="Добавить в корзину">В
                                             корзину</a>
                                     </div>
                                 </div>
@@ -1323,12 +1323,12 @@
                                 </a>
                                 <div class="product-button-hover">
                                     <a href="#" class="button view-button" data-toggle="modal"
-                                       data-target="#exampleModalCenter" data-toggle="tooltip" data-placement="left"
+                                       data-target="#exampleModalCenter" data-tooltip="tooltip" data-placement="left"
                                        title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip"
-                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                    <a href="#" class="button add-to-wishlist-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                 </div>
                             </div>
                             <div class="product-detail-wrapper">
@@ -1343,7 +1343,7 @@
                                 <div class="button-group effect-2">
                                     <div class="product-button-outer hi-icon">
                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                           data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В
+                                           data-tooltip="tooltip" data-placement="left" title="Добавить в корзину">В
                                             корзину</a>
                                     </div>
                                 </div>
@@ -1366,12 +1366,12 @@
                                 </a>
                                 <div class="product-button-hover">
                                     <a href="#" class="button view-button" data-toggle="modal"
-                                       data-target="#exampleModalCenter" data-toggle="tooltip" data-placement="left"
+                                       data-target="#exampleModalCenter" data-tooltip="tooltip" data-placement="left"
                                        title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip"
-                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                    <a href="#" class="button add-to-wishlist-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                 </div>
                             </div>
                             <div class="product-detail-wrapper">
@@ -1386,7 +1386,7 @@
                                 <div class="button-group effect-2">
                                     <div class="product-button-outer hi-icon">
                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                           data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В
+                                           data-tooltip="tooltip" data-placement="left" title="Добавить в корзину">В
                                             корзину</a>
                                     </div>
                                 </div>
@@ -1410,12 +1410,12 @@
                                 </a>
                                 <div class="product-button-hover">
                                     <a href="#" class="button view-button" data-toggle="modal"
-                                       data-target="#exampleModalCenter" data-toggle="tooltip" data-placement="left"
+                                       data-target="#exampleModalCenter" data-tooltip="tooltip" data-placement="left"
                                        title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip"
-                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                    <a href="#" class="button add-to-wishlist-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                 </div>
                             </div>
                             <div class="product-detail-wrapper">
@@ -1433,7 +1433,7 @@
                                 <div class="button-group effect-2">
                                     <div class="product-button-outer hi-icon">
                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                           data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В
+                                           data-tooltip="tooltip" data-placement="left" title="Добавить в корзину">В
                                             корзину</a>
                                     </div>
                                 </div>
@@ -1456,12 +1456,12 @@
                                 </a>
                                 <div class="product-button-hover">
                                     <a href="#" class="button view-button" data-toggle="modal"
-                                       data-target="#exampleModalCenter" data-toggle="tooltip" data-placement="left"
+                                       data-target="#exampleModalCenter" data-tooltip="tooltip" data-placement="left"
                                        title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip"
-                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                    <a href="#" class="button add-to-wishlist-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                 </div>
                             </div>
                             <div class="product-detail-wrapper">
@@ -1476,7 +1476,7 @@
                                 <div class="button-group effect-2">
                                     <div class="product-button-outer hi-icon">
                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                           data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В
+                                           data-tooltip="tooltip" data-placement="left" title="Добавить в корзину">В
                                             корзину</a>
                                     </div>
                                 </div>
@@ -1499,12 +1499,12 @@
                                 </a>
                                 <div class="product-button-hover">
                                     <a href="#" class="button view-button" data-toggle="modal"
-                                       data-target="#exampleModalCenter" data-toggle="tooltip" data-placement="left"
+                                       data-target="#exampleModalCenter" data-tooltip="tooltip" data-placement="left"
                                        title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip"
-                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                    <a href="#" class="button add-to-wishlist-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                 </div>
                             </div>
                             <div class="product-detail-wrapper">
@@ -1519,7 +1519,7 @@
                                 <div class="button-group effect-2">
                                     <div class="product-button-outer hi-icon">
                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                           data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В
+                                           data-tooltip="tooltip" data-placement="left" title="Добавить в корзину">В
                                             корзину</a>
                                     </div>
                                 </div>
@@ -1542,12 +1542,12 @@
                                 </a>
                                 <div class="product-button-hover">
                                     <a href="#" class="button view-button" data-toggle="modal"
-                                       data-target="#exampleModalCenter" data-toggle="tooltip" data-placement="left"
+                                       data-target="#exampleModalCenter" data-tooltip="tooltip" data-placement="left"
                                        title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip"
-                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                    <a href="#" class="button add-to-wishlist-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                 </div>
                             </div>
                             <div class="product-detail-wrapper">
@@ -1562,7 +1562,7 @@
                                 <div class="button-group effect-2">
                                     <div class="product-button-outer hi-icon">
                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                           data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В
+                                           data-tooltip="tooltip" data-placement="left" title="Добавить в корзину">В
                                             корзину</a>
                                     </div>
                                 </div>
@@ -1586,12 +1586,12 @@
                                 </a>
                                 <div class="product-button-hover">
                                     <a href="#" class="button view-button" data-toggle="modal"
-                                       data-target="#exampleModalCenter" data-toggle="tooltip" data-placement="left"
+                                       data-target="#exampleModalCenter" data-tooltip="tooltip" data-placement="left"
                                        title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip"
-                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                    <a href="#" class="button add-to-wishlist-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                 </div>
                             </div>
                             <div class="product-detail-wrapper">
@@ -1609,7 +1609,7 @@
                                 <div class="button-group effect-2">
                                     <div class="product-button-outer hi-icon">
                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                           data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В
+                                           data-tooltip="tooltip" data-placement="left" title="Добавить в корзину">В
                                             корзину</a>
                                     </div>
                                 </div>
@@ -1632,12 +1632,12 @@
                                 </a>
                                 <div class="product-button-hover">
                                     <a href="#" class="button view-button" data-toggle="modal"
-                                       data-target="#exampleModalCenter" data-toggle="tooltip" data-placement="left"
+                                       data-target="#exampleModalCenter" data-tooltip="tooltip" data-placement="left"
                                        title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip"
-                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                    <a href="#" class="button add-to-wishlist-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                 </div>
                             </div>
                             <div class="product-detail-wrapper">
@@ -1652,7 +1652,7 @@
                                 <div class="button-group effect-2">
                                     <div class="product-button-outer hi-icon">
                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                           data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В
+                                           data-tooltip="tooltip" data-placement="left" title="Добавить в корзину">В
                                             корзину</a>
                                     </div>
                                 </div>
@@ -1675,12 +1675,12 @@
                                 </a>
                                 <div class="product-button-hover">
                                     <a href="#" class="button view-button" data-toggle="modal"
-                                       data-target="#exampleModalCenter" data-toggle="tooltip" data-placement="left"
+                                       data-target="#exampleModalCenter" data-tooltip="tooltip" data-placement="left"
                                        title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip"
-                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                    <a href="#" class="button add-to-wishlist-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                 </div>
                             </div>
                             <div class="product-detail-wrapper">
@@ -1695,7 +1695,7 @@
                                 <div class="button-group effect-2">
                                     <div class="product-button-outer hi-icon">
                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                           data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В
+                                           data-tooltip="tooltip" data-placement="left" title="Добавить в корзину">В
                                             корзину</a>
                                     </div>
                                 </div>
@@ -1718,12 +1718,12 @@
                                 </a>
                                 <div class="product-button-hover">
                                     <a href="#" class="button view-button" data-toggle="modal"
-                                       data-target="#exampleModalCenter" data-toggle="tooltip" data-placement="left"
+                                       data-target="#exampleModalCenter" data-tooltip="tooltip" data-placement="left"
                                        title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip"
-                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                    <a href="#" class="button add-to-wishlist-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                 </div>
                             </div>
                             <div class="product-detail-wrapper">
@@ -1738,7 +1738,7 @@
                                 <div class="button-group effect-2">
                                     <div class="product-button-outer hi-icon">
                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                           data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В
+                                           data-tooltip="tooltip" data-placement="left" title="Добавить в корзину">В
                                             корзину</a>
                                     </div>
                                 </div>
@@ -1762,12 +1762,12 @@
                                 </a>
                                 <div class="product-button-hover">
                                     <a href="#" class="button view-button" data-toggle="modal"
-                                       data-target="#exampleModalCenter" data-toggle="tooltip" data-placement="left"
+                                       data-target="#exampleModalCenter" data-tooltip="tooltip" data-placement="left"
                                        title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip"
-                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                    <a href="#" class="button add-to-wishlist-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                 </div>
                             </div>
                             <div class="product-detail-wrapper">
@@ -1785,7 +1785,7 @@
                                 <div class="button-group effect-2">
                                     <div class="product-button-outer hi-icon">
                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                           data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В
+                                           data-tooltip="tooltip" data-placement="left" title="Добавить в корзину">В
                                             корзину</a>
                                     </div>
                                 </div>
@@ -1808,12 +1808,12 @@
                                 </a>
                                 <div class="product-button-hover">
                                     <a href="#" class="button view-button" data-toggle="modal"
-                                       data-target="#exampleModalCenter" data-toggle="tooltip" data-placement="left"
+                                       data-target="#exampleModalCenter" data-tooltip="tooltip" data-placement="left"
                                        title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip"
-                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                    <a href="#" class="button add-to-wishlist-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                 </div>
                             </div>
                             <div class="product-detail-wrapper">
@@ -1828,7 +1828,7 @@
                                 <div class="button-group effect-2">
                                     <div class="product-button-outer hi-icon">
                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                           data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В
+                                           data-tooltip="tooltip" data-placement="left" title="Добавить в корзину">В
                                             корзину</a>
                                     </div>
                                 </div>
@@ -1851,12 +1851,12 @@
                                 </a>
                                 <div class="product-button-hover">
                                     <a href="#" class="button view-button" data-toggle="modal"
-                                       data-target="#exampleModalCenter" data-toggle="tooltip" data-placement="left"
+                                       data-target="#exampleModalCenter" data-tooltip="tooltip" data-placement="left"
                                        title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip"
-                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                    <a href="#" class="button add-to-wishlist-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                 </div>
                             </div>
                             <div class="product-detail-wrapper">
@@ -1871,7 +1871,7 @@
                                 <div class="button-group effect-2">
                                     <div class="product-button-outer hi-icon">
                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                           data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В
+                                           data-tooltip="tooltip" data-placement="left" title="Добавить в корзину">В
                                             корзину</a>
                                     </div>
                                 </div>
@@ -1894,12 +1894,12 @@
                                 </a>
                                 <div class="product-button-hover">
                                     <a href="#" class="button view-button" data-toggle="modal"
-                                       data-target="#exampleModalCenter" data-toggle="tooltip" data-placement="left"
+                                       data-target="#exampleModalCenter" data-tooltip="tooltip" data-placement="left"
                                        title="Быстрый просмотр">Быстрый просмотр</a>
-                                    <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip"
-                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>
-                                    <a href="#" class="button compare-button" data-toggle="tooltip"
-                                       data-placement="left" title="Сравнить">Сравнить</a>
+<!--                                    <a href="#" class="button add-to-wishlist-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Добавить в любимые">Добавить в любимые</a>-->
+<!--                                    <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                       data-placement="left" title="Сравнить">Сравнить</a>-->
                                 </div>
                             </div>
                             <div class="product-detail-wrapper">
@@ -1914,7 +1914,7 @@
                                 <div class="button-group effect-2">
                                     <div class="product-button-outer hi-icon">
                                         <a href="#" class="button add_to_cart_button" rel="nofollow"
-                                           data-toggle="tooltip" data-placement="left" title="Добавить в корзину">В
+                                           data-tooltip="tooltip" data-placement="left" title="Добавить в корзину">В
                                             корзину</a>
                                     </div>
                                 </div>
@@ -2149,7 +2149,7 @@
         </div>
     </footer>
     <!--end footer#colophon-->
-    <div id="back-to-top" class="back-to-top effect-1" data-toggle="tooltip" title="Наверх">
+    <div id="back-to-top" class="back-to-top effect-1" data-tooltip="tooltip" title="Наверх">
         <div class="hi-icon"><i class="fa fa-chevron-up"></i></div>
     </div>
 </div>
@@ -2180,13 +2180,13 @@
                                              class="secondary-image attachment-shop-catalog img-fluid" alt="">
                                         <span class="onsale">-6%</span>
                                     </a>
-                                    <div class="product-button-hover opacity-none">
-                                        <a href="#" class="button add-to-wishlist-button" data-toggle="tooltip"
-                                           data-placement="left" title="" data-original-title="Добавить в любимые">Добавить
-                                            в любимые</a>
-                                        <a href="#" class="button compare-button" data-toggle="tooltip"
-                                           data-placement="left" title="" data-original-title="Сравнить">Сравнить</a>
-                                    </div>
+<!--                                    <div class="product-button-hover opacity-none">-->
+<!--                                        <a href="#" class="button add-to-wishlist-button" data-tooltip="tooltip"-->
+<!--                                           data-placement="left" title="" data-original-title="Добавить в любимые">Добавить-->
+<!--                                            в любимые</a>-->
+<!--                                        <a href="#" class="button compare-button" data-tooltip="tooltip"-->
+<!--                                           data-placement="left" title="" data-original-title="Сравнить">Сравнить</a>-->
+<!--                                    </div>-->
                                 </div>
                             </div>
                         </div>
@@ -2223,9 +2223,9 @@
                                     </div>
                                     <div class="widget_shopping_cart_content">
                                         <p class="mini-cart__buttons buttons mt-3 d-flex flex-row">
-                                            <a href="" class="hi-btn animate animate-1 mr-1" data-toggle="tooltip"
+                                            <a href="" class="hi-btn animate animate-1 mr-1" data-tooltip="tooltip"
                                                title="Добавить в корзину">В корзину</a>
-                                            <a href="" class="hi-btn one animate animate-1 mr-1" data-toggle="tooltip"
+                                            <a href="" class="hi-btn one animate animate-1 mr-1" data-tooltip="tooltip"
                                                title="Купить в один клик">Купить быстро</a>
                                         </p>
                                     </div>
@@ -2252,7 +2252,10 @@
     $(document).ready(function () {
         var swiper = new Swiper('.swiper-container');
         $('.carousel').carousel({interval: 10000});
-        $('[data-toggle="tooltip"]').tooltip();
+        $('[data-tooltip="tooltip"]').tooltip();
+        $('[data-tooltip="tooltip"]').click(function () {
+            $(".tooltip").hide();
+        });
     });
 </script>
 </body>

@@ -647,6 +647,10 @@
             @include sm() {
                 width: 300px;
             }
+
+            @include xs() {
+                width: 260px;
+            }
         }
 
         & .searchsubmit {
@@ -712,7 +716,7 @@
                     padding: 0;
                     border-width: 0;
                     top: 10px;
-                    left: 15px;
+                    right: 277px;
                     display: none;
                     justify-content: center;
                     align-items: center;
@@ -721,21 +725,21 @@
                     border-radius: 5px;
                     transition: background-color .3s;
 
-                    @include md() {
-                        display: flex;
-                    }
-
-                    @include sm() {
-                        display: flex;
-                    }
-
-                    @include xs() {
-                        display: flex;
-                    }
+                    //@include md() {
+                    //    display: flex;
+                    //}
+                    //
+                    //@include sm() {
+                    //    display: flex;
+                    //}
+                    //
+                    //@include xs() {
+                    //    display: flex;
+                    //}
 
                     .mainmenu-btn {
                         font-family: 'Font Awesome';
-                        color: $white;
+                        color: $black;
                         transition: color .3s;
 
                         &:after {
@@ -757,7 +761,10 @@
                 margin-bottom: 0;
                 padding-top: 5px;
                 padding-bottom: 6px;
-                margin-left: 50px;
+                font-size: 30px;
+                cursor: pointer;
+                padding-right: 10px;
+                //margin-left: 50px;
 
                 @include md() {
                     display: block;
@@ -768,6 +775,8 @@
                 }
 
                 @include xs() {
+                    font-size: 22px;
+                    padding-top: 10px;
                     display: block;
                 }
             }

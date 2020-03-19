@@ -49,7 +49,7 @@ $(function () {
         }
     });
 
-    $("#hamburger").click(function (e) {
+    $("#hamburger, .mainmenu-btn-wrapper").click(function (e) {
         e.preventDefault();
         $("#mega-menu").toggleClass("mobile-menu");
         $(".mainmenu-btn").toggleClass("press-btn");
