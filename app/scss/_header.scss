@@ -40,7 +40,7 @@
     &-main {
         position: relative;
         padding: 0;
-        min-height: 120px;
+        min-height: 184px;
     }
 
     &-middle {
@@ -229,7 +229,7 @@
             cursor: pointer;
             position: relative;
             font-size: 9px;
-            font-weight: 500;
+            font-weight: 300;
             text-transform: uppercase;
             color: $white;
         }
@@ -373,7 +373,7 @@
             cursor: pointer;
             position: relative;
             font-size: 9px;
-            font-weight: 500;
+            font-weight: 300;
             text-transform: uppercase;
             color: $white;
 
@@ -720,7 +720,7 @@
         background-color: $yellow;
         padding: 0;
         position: relative;
-        float: left;
+        //float: left;
         width: 100%;
         border-top: 3px solid rgb(81, 125, 20);
 
@@ -738,7 +738,7 @@
         .main-navigation {
             text-align: left;
             margin: 0;
-            float: left;
+            //float: left;
             background-color: $yellow;
             width: 100%;
 
@@ -866,7 +866,6 @@
 
                         &.current_page_item {
                             font-size: 14px;
-                            letter-spacing: 1px;
 
                             & > a {
 
@@ -903,7 +902,6 @@
                                 }
 
                                 & > a {
-                                    letter-spacing: 1px;
                                     color: $black;
                                 }
                             }
@@ -1019,7 +1017,6 @@
                                 padding: 20px 10px;
 
                                 & a {
-                                    letter-spacing: 1px;
                                     font-size: 12px;
                                     font-weight: 400;
                                     text-align: left;
@@ -1380,6 +1377,12 @@
                 }
             }
         }
+    }
+
+    & .Price-amount, & .quantity, & .Price-currencySymbol {
+        color: $black;
+        display: inline-block;
+        font-size: 13px;
     }
 
     & .total {

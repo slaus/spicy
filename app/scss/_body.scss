@@ -11,6 +11,12 @@ body {
   font-size: 16px;
   overflow-x: hidden;
 
+  &.body {
+    & .main {
+      padding-top: 0;
+    }
+  }
+
   &.mobile {
     position: relative;
     overflow: hidden;
@@ -455,9 +461,31 @@ a.button-green {
 
 .modal {
 
+  .modal-body {
+
+    & .product {
+      padding: 10px;
+    }
+
+    @include sm() {
+      padding: 0 1rem;
+    }
+
+    @include xs() {
+      padding: 0 1rem;
+    }
+  }
+
   .modal-content {
     border: 10px solid rgba(0, 0, 0, .3);
     border-radius: 0;
+    width: 90%;
+    margin-left: 5%;
+
+    @include xs() {
+      width: 100%;
+      margin-left: 0%;
+    }
   }
 
   .modal-header {
@@ -474,7 +502,6 @@ a.button-green {
     border-radius: 0;
 
     & .close {
-      line-height: 0;
       margin: 0;
       padding: 0;
     }
@@ -501,6 +528,11 @@ a.button-green {
         font-size: 14px;
         background: $yellow;
         color: $black;
+
+      @include xs() {
+        padding: 5px 10px;
+        font-size: 11px;
+      }
 
         &:hover {
             color: $white;
@@ -590,4 +622,20 @@ a.button-green {
       border-bottom: 1px dashed #e5bd00;
     }
   }
+}
+
+.border-top {
+  border-top: 5px solid #e3e3e3 !important;
+}
+
+.border-bottom {
+  border-bottom: 5px solid #e3e3e3 !important;
+}
+
+.border-right {
+  border-right: 5px solid #e3e3e3 !important;
+}
+
+.border-left {
+  border-left: 5px solid #e3e3e3 !important;
 }

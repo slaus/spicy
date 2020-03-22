@@ -1,7 +1,9 @@
 /*!
  * Main content
  */
-
+.main {
+  padding-top: 20px;
+}
 
 .section {
 
@@ -127,7 +129,7 @@
   }
 
   &-manufacturers {
-    border-top: 5px solid #e3e3e3;
+    border-top: 5px solid $lightgrey;
   }
 
   & h1.title {
@@ -528,7 +530,7 @@
         font-size: 16px;
         font-weight: 300;
         line-height: 1.4em;
-        border: 5px solid #e3e3e3;
+        border: 5px solid $lightgrey;
         border-right: none;
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0);
 
@@ -560,7 +562,7 @@
           justify-content: center;
 
           .section-subscribe-form-input {
-            border-right: 5px solid #e3e3e3;
+            border-right: 5px solid $lightgrey;
             text-align: center;
           }
 
@@ -704,6 +706,14 @@
 
 .product {
   margin-bottom: 30px;
+
+  @include sm() {
+    padding: 10px;
+  }
+
+  @include xs() {
+    padding: 2px;
+  }
 
   &-block-inner {
     position: relative;
@@ -936,7 +946,7 @@
       display: inline-block;
       position: absolute;
       right: auto;
-      left: 20px;
+      left: 25px;
       top: 20px;
       z-index: 1;
       background-color: $green;
@@ -958,7 +968,6 @@
       -o-transition: all 0.3s ease-out 0s;
 
       @include xs() {
-        left: 20px;
         top: 15px;
         height: 34px;
         width: 34px;
@@ -995,7 +1004,7 @@
     & .product-button-hover {
       position: absolute;
       width: 50px;
-      top: 5%;
+      top: 12px;
       bottom: auto;
       left: auto;
       right: 15px;
@@ -1223,6 +1232,14 @@
 
     & h1.title {
         font-size: 32px;
+
+      @include sm() {
+        font-size: 30px;
+      }
+
+      @include xs() {
+        font-size: 26px;
+      }
     }
 
     & .products-block-visual {
@@ -1238,7 +1255,7 @@
     }
 
     & .products-block {
-        border-bottom: 1px solid #e3e3e3;
+        border-bottom: 1px solid $lightgrey;
         padding-bottom: 10px;
     }
 
@@ -1246,13 +1263,14 @@
 
         &.dropdown {
             list-style: none;
-            background: #e3e3e3;
+            background: $lightgrey;
             padding: 0 10px;
             display: inline-block;
             font-weight: 300;
 
             & .btn {
-                background: #e3e3e3;
+                background: $lightgrey;
+              line-height: 17px;
             }
         }
 
@@ -1303,7 +1321,13 @@
   & .menu-item {
 
     @include sm() {
-      border: 1px solid #e3e3e3;
+      border: 1px solid $lightgrey;
+      display: inline-block;
+      margin-bottom: 4px;
+    }
+
+    @include xs() {
+      border: 1px solid $lightgrey;
       display: inline-block;
       margin-bottom: 4px;
     }
@@ -1357,7 +1381,7 @@
                 display: flex;
                 width: 40px;
                 height: 40px;
-                border: 2px solid #e3e3e3;
+                border: 2px solid $lightgrey;
                 margin: 4px;
                 justify-content: center;
                 align-items: center;
@@ -1367,6 +1391,10 @@
                 color: $black;
                 font-weight: 400;
 
+              @include xs() {
+                margin: 1px;
+              }
+
                 &:hover {
                     background: $yellow;
                     border: 2px solid $yellow;
@@ -1374,4 +1402,192 @@
             }
         }
     }
+}
+
+.section-breadcrumb {
+
+  .breadcrumb {
+
+    font-size: 14px;
+    justify-content: flex-start;
+    background: none;
+
+    & a {
+      color: $black;
+      text-decoration: none;
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+}
+
+.products {
+
+  & .top-block {
+    position: relative;
+    z-index: 2;
+  }
+
+  & .tabs-block .nav.nav-tabs {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    justify-content: flex-start;
+    border-bottom: 1px solid $lightgrey;
+
+    li {
+      position: relative;
+      margin-bottom: -1px;
+      margin-right: -1px;
+      padding: 0;
+
+      & a {
+        display: block;
+        padding: 10px 25px;
+        border: 1px solid $lightgrey;
+        color: $black;
+        background-color: #f6f6f6;
+
+        @include xs() {
+          padding: 10px 15px;
+        }
+
+        &.active {
+          background: $white;
+        }
+      }
+    }
+  }
+
+  & .tag {
+    font-size: 14px;
+    color:  $grey;
+
+    & a {
+      color:  $grey;
+      text-decoration: none;
+
+      &:hover {
+        color:  $green;
+      }
+    }
+  }
+
+  & .table, & ul {
+    font-size: 15px;
+  }
+
+  & .btn {
+    border-radius: 0;
+  }
+
+  & .socialsharing_product {
+
+    .twitter {
+      font-size: 14px;
+
+      & .fa {
+        color: #00aaf0;
+      }
+
+      &:hover {
+        background: #00aaf0;
+        color: $white;
+
+        & .fa {
+          color: $white;
+        }
+      }
+    }
+
+    .facebook {
+      font-size: 14px;
+
+      & .fa {
+        color: #435f9f;
+      }
+
+      &:hover {
+        background: #435f9f;
+        color: $white;
+
+        & .fa {
+          color: $white;
+        }
+      }
+    }
+
+    .pinterest {
+      font-size: 14px;
+
+      & .fa {
+        color: #ce1f21;
+      }
+
+      &:hover {
+        background: #ce1f21;
+        color: $white;
+
+        & .fa {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  & .payment-logo {
+
+    & img {
+      width: 150px;
+      height: auto;
+    }
+  }
+
+  & h1.product-name, & h1.product-name:hover {
+    font-size: 42px;
+    font-family: "Pacifico", cursive;
+    line-height: 46px;
+    color: $black;
+    text-transform: none;
+    margin-bottom: 10px;
+    padding-right: 100px;
+
+    @include sm() {
+      font-size: 38px;
+    }
+
+    @include xs() {
+      font-size: 34px;
+    }
+  }
+
+  & .title-block {
+    border-bottom: 1px solid $lightgrey;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  & .price {
+    font-size: 28px;
+    padding: 0 0 7px;
+    position: relative;
+    line-height: 24px;
+
+    & del {
+      font-size: 18px;
+    }
+
+    @include sm() {
+      font-size: 26px;
+    }
+
+    @include xs() {
+      font-size: 24px;
+
+      & del {
+        font-size: 16px;
+      }
+    }
+  }
 }
